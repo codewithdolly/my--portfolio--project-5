@@ -1,0 +1,40 @@
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$textWhite: white;
+$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+
+.footer {
+  background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 400px;
+  padding-top: .5rem;
+  text-align: center;
+  padding-top: 5rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 1rem;
+  .footer--project1{
+      color: $textColor;
+      font-size: 50px;
+  }
+  .footer--project2{
+      color: $textWhite;
+      margin-top: -2rem;
+      margin-bottom: 4rem;
+  }
+  #filled-hidden-label-normal{
+      padding-right: 20rem;
+      color: $textWhite;
+      border-radius: 10px;
+      background-color: rgba(192, 192, 192, 0.185);
+      padding-top: 2rem;
+  }
+  #filled-hidden-label-normal:hover{
+    padding-right: 24rem;
+  }
+  .footer--project1--btn-hover:hover{
+      color: $textColor;
+  }
+}

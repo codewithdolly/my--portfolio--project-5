@@ -1,0 +1,51 @@
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mainHeader {
+  background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+  background-color: $backGroundcolor;
+  font-family: sans-serif;
+  color: $textColor;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .mainHeader--nav {
+    display: flex;
+    justify-content: space-between;
+    .mainHeader--nav--link {
+      text-decoration: none;
+      color: $textColor;
+      padding-right: 18px;
+      padding-left: 18px;
+      text-transform: uppercase;
+      .mainHeader--nav--link--submenu {
+        display: none;
+      }
+    }
+    .active,
+    .mainHeader--nav--link:hover {
+      padding-bottom: 1rem;
+      border-bottom: 3px solid $textColor;
+    }
+  }
+  .mainHeader--ConnectBtn {
+    color: $textColor;
+    border: 0.7px solid $textColor;
+    border-radius: 0;
+  }
+  .mainHeader--ConnectBtn:hover {
+    padding: 10px 20px 10px 20px;
+    box-shadow: 1px 1px 5px silver;
+    color: white;
+    background-color: $textColor;
+  }
+  .PrivateTabIndicator-colorSecondary-3 {
+    background-color: $textColor;
+  }
+}
