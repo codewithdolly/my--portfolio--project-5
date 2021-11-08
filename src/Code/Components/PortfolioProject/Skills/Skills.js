@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Work = () => {
+const Skills = () => {
     return (
         <div>
-            Work
+            Skills  
         </div>
     )
 }
 
-export default Work
+export default Skills

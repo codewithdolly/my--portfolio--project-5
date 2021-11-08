@@ -12,7 +12,7 @@ import {
 } from "react-router-dom";
 import CallIcon from '@mui/icons-material/Call';
 import Home from "../Home/Home";
-import Work from "../Work/Work";
+import Skills from "../Skills/Skills";
 import About from "../About/About";
 import Contacts from "../Contacts/Contacts";
 import Projects from "../Projects/Projects";
@@ -34,8 +34,8 @@ const Header = () => {
             </Link>
           </li>
           <li style={{ listStyleType: "none" }}>
-            <Link to="/work" className="mainHeader--nav--link">
-              Work
+            <Link to="/skills" className="mainHeader--nav--link">
+              Skills
             </Link>
           </li>
           <li style={{ listStyleType: "none" }}>
@@ -50,7 +50,7 @@ const Header = () => {
           </li>
           <li style={{ listStyleType: "none" }}>
             <Link to="/contacts" className="mainHeader--nav--link">
-              Contacts
+              Contact
             </Link>
           </li>
         </ul>
@@ -67,7 +67,7 @@ const Header = () => {
       </div>
       <Routes element={<Header />}>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/work" element={<Work />} />
+        <Route exact path="/Skills" element={<Skills />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/projects" element={<Projects />} />
         <Route exact path="/contacts" element={<Contacts />} />

@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../../Footer/Footer";
+import InspringQuotes from "../InspringQuotes/InspringQuotes";
 import "./Home3.scss";
 
 const services = [
@@ -46,6 +47,7 @@ const Home3 = () => {
           </>
         ))}
       </div>
+      <InspringQuotes />
       <Footer />
     </>
   );
