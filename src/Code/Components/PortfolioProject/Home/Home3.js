@@ -1,7 +1,8 @@
 import React from "react";
+import "./Home3.scss";
 import Footer from "../../Footer/Footer";
 import InspringQuotes from "../InspringQuotes/InspringQuotes";
-import "./Home3.scss";
+
 
 const services = [
   {

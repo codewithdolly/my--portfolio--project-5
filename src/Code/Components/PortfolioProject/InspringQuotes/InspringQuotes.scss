@@ -2,3 +2,36 @@ $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $textWhite: white;
 $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+
+
+.quotes{
+    background-color: #311e25;
+    text-align: center;
+    padding: 5rem; 
+    padding-left: 20rem;
+    padding-right: 20rem;
+    
+    .quotes--head{
+        font-size: 70px;
+        font-weight: 100;
+        text-align: center;
+        color: $textWhite;
+    } 
+    .quotes--lines{
+        display: flex;
+      text-align: center;
+      margin-left: 10rem;
+        background-color: $backGroundcolor;
+        color: $textWhite;
+        height: 50px;
+        padding-left: 10px;
+
+    }
+    .quotes--btn{
+        color: $textColor;
+        width: 20px;
+        padding: 18px 0 18px 0;
+        border: 1px solid $textColor;
+        border-radius: 50%;
+    }
+}
