@@ -1,15 +1,6 @@
 import { Button } from "@material-ui/core";
 import React from "react";
 import "./Home.scss";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Link,
-  redirect,
-  Navigate,
-  UseLocation,
-} from "react-router-dom";
 import Home2 from "./Home2";
 
 const Home = () => {

@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import "./InspringQuotes.scss";
 import { useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import { padding } from "@mui/system";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -19,26 +15,27 @@ const images = [
     label: " Steve Jobs",
     imgPath: "https://akshaysaini.in/img/quotes/steve-jobs.jpg",
     quotes:
-      " Success is a lousy teacher. It seduces smart people into thinking they can't lose. ",
+      "Because the people who are crazy enough to think they can change the world are the ones who do.",
   },
   {
     label: "Bill Gates",
     imgPath: "https://akshaysaini.in/img/quotes/bill-gates.jpg",
     quotes:
-      " Success is a lousy teacher. It seduces smart people into thinking they can't lose. ",
+      "Success is a lousy teacher. It seduces smart people into thinking they can't lose.",
+  },
+  {
+    label: "Larry Page",
+    imgPath: "https://akshaysaini.in/img/quotes/linus-torvalds.jpg",
+    quotes:
+      "If you're changing the world, you're working on important things. You're excited to get up in the morning.",
   },
   {
     label: "Linus Torvalds",
     imgPath: "https://akshaysaini.in/img/quotes/larry-page.jpg",
     quotes:
-      " Success is a lousy teacher. It seduces smart people into thinking they can't lose. ",
+      "See, you not only have to be a good coder to create system like Linux, you have to be a sneaky bastard too",
   },
-  {
-    label: " Larry Page",
-    imgPath: "https://akshaysaini.in/img/quotes/linus-torvalds.jpg",
-    quotes:
-      " Success is a lousy teacher. It seduces smart people into thinking they can't lose. ",
-  },
+  
 ];
 
 function InspringQuotes() {
@@ -80,10 +77,12 @@ function InspringQuotes() {
             </div>
           ))}
         </AutoPlaySwipeableViews>
-        <p className="quotes--lines">
+        {/* <img src={images[quote].imgPath} alt={images[quote].lable} style={{ borderRadius: "50%" }}/> */}  {/* if we use like this then only button will work. */}
+
+        <p className="quotes--lines quotes--line">
           "<i>{images[quote].quotes}"</i>
         </p>
-        <p className="quotes--lines">
+        <p className="quotes--lines quotes--name">
           By <b style={{ color: "#db9a64" }}>&nbsp; {images[quote].label}</b>
         </p>
         <MobileStepper

@@ -20,12 +20,19 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
     .quotes--lines{
         display: flex;
       text-align: center;
-      margin-left: 10rem;
         background-color: $backGroundcolor;
         color: $textWhite;
         height: 50px;
         padding-left: 10px;
 
+    }
+    .quotes--line{
+        font-size: 28px;
+    }
+    .quotes--name{
+        text-align: center;
+        margin-left: 24rem;
+        margin-top: 4rem;
     }
     .quotes--btn{
         color: $textColor;

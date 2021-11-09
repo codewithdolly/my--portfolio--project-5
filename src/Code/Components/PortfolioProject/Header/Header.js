@@ -26,7 +26,7 @@ const Header = () => {
   return (
     <Router>
       <div className="mainHeader">
-        <h1>Dolly.</h1>
+        <h1>JONY.</h1>
         <ul className="mainHeader--nav">
           <li style={{ listStyleType: "none" }} active>
             <Link to="/" className="mainHeader--nav--link active">

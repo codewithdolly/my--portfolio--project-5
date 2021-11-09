@@ -1,13 +1,15 @@
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
 
 .main {
-  background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+  background-image: $background-image;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 810px;
+  margin-top: -80px;
   .main--body {
     display: flex;
     color: white;

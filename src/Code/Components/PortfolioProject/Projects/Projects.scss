@@ -1,0 +1,38 @@
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$textWhite: white;
+$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+
+.Projects {
+  .Projects--bgImg {
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    margin-top: -130px;
+    margin-bottom: 5rem;
+    .Projects--bgImg--h1 {
+      color: $textWhite;
+      text-align: center;
+      padding-top: 15rem;
+      font-size: 50px;
+    }
+  }
+  .Projects--details {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 10px;
+    display: inline-block;
+    .Projects--details--card {
+      max-width: 420px;
+      margin: 1rem;
+    }
+    .Projects--details--card:hover {
+      max-width: 440px;
+      border: 2px solid gray;
+      box-shadow: 2px 2px 10px silver;
+    }
+  }
+}
