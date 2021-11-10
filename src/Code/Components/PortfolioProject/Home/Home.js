@@ -13,7 +13,7 @@ const Home = () => {
             <span className="main--body--name2">Softwere Developeer</span>
           </h1>
           <Button
-            href="http://localhost:3000/work"
+            href="http://localhost:3000/projects"
             variant="outlined"
             size="large"
             className="main--body--btn"
