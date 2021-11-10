@@ -1,0 +1,51 @@
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$backgroundcolor2: #3b2930;
+$textWhite: white;
+$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+
+.about {
+  .about--main {
+    background-color: $backGroundcolor;
+    width: 100%;
+    height: 80vh;
+    margin-top: -5rem;
+    text-align: center;
+    .about--main--img {
+      margin-top: 6rem;
+    }
+    .about--main--name {
+      font-family: cursive;
+      font-size: 70px;
+      color: $textWhite;
+      margin-top: -3rem;
+    }
+  }
+  .about--intro {
+    width: 80%;
+    margin: 3rem;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-around;
+    .about--intro1 {
+      width: 35%;
+      padding-left: 15rem;
+      padding-top: 5rem;
+      .about--intro1--img {
+        border-radius: 50%;
+      }
+    }
+    .about--intro2 {
+      width: 60%;
+      line-height: 25px;
+      text-align: justify;
+      color: gray;
+      .about--intro2--h2 {
+        color: rgb(82, 80, 80);
+        font-size: 50px;
+        font-weight: 200;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.scss";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -9,6 +9,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import DescriptionIcon from "@mui/icons-material/Description";
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import Footer from "../../Footer/Footer";
+import YouTube from "./YouTube";
 
 const ProjectDetails = [
   {
@@ -16,12 +17,13 @@ const ProjectDetails = [
     header: "1. YouTube Project cloned with HTML, CSS, BootsTrap & JavaScript",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
+      projectLink: <YouTube />,
     youtubeLink: "https://www.youtube.com/watch?v=MFV4WSxAnjs&t=30s",
   },
-  
+
   {
     img: "process.env.PUBLIC_URL + ../../Images/mintra.jpg",
-    header: "4. Myntra Project cloned with React, and Material-ui (mui)",
+    header: "2. Myntra Project cloned with React, and Material-ui (mui)",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink:
@@ -29,22 +31,22 @@ const ProjectDetails = [
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/gaana.jpg",
-    header: "6. Gaana Project cloned with HTML, CSS & BootsTrap",
+    header: "3. Gaana Project cloned with HTML, CSS & BootsTrap",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=qxvtOmXSHCc",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/cowin.jpg",
-    header: "5. CoWIN Project cloned with React, and Material-ui (mui)",
+    header: "4. CoWIN Project cloned with React, and Material-ui (mui)",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=Y6z2GuEu1f0&t=25s",
   },
-  
+
   {
     img: "process.env.PUBLIC_URL + ../../Images/form.jpg",
-    header: "3. Google Form created from scratch using Material-ui (mui)",
+    header: "4. Google Form created from scratch using Material-ui (mui)",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink:
@@ -52,12 +54,11 @@ const ProjectDetails = [
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/static.jpg",
-    header: "2. Static Website created from scratch using HTML, CSS, BootsTrap",
+    header: "5. Static Website created from scratch using HTML, CSS, BootsTrap",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=tQ1dn55q8jA&t=262s",
   },
- 
 ];
 
 const Projects = () => {
@@ -86,14 +87,19 @@ const Projects = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button
+                  <Link to="/youtube"> <Button
                     size="small"
                     color="primary"
                     variant="contained"
                     startIcon={<DescriptionIcon />}
+                   content={ project.projectLink}
                   >
-                    More
-                  </Button>
+                    more
+                  </Button></Link>
+                  <Routes>
+                    <Route exact path="/youtube" element={<YouTube />} />
+                  </Routes>
+
                   <Button
                     sx={{ ml: 2 }}
                     href={project.youtubeLink}
@@ -116,3 +122,8 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
+
+
+

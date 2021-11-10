@@ -56,12 +56,6 @@ const Footer = () => {
               style={{ color: "#287bbc", paddingRight: "10px" }}
             ></span>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=6300810401&text">
-            <span
-              class="fab fa-whatsapp-square"
-              style={{ color: "#00cc00", paddingRight: "10px" }}
-            ></span>
-          </a>
           <a href="mailto: heydollysingh@gmail.com">
             <span
               class="far fa-envelope"

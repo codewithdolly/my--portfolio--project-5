@@ -14,15 +14,10 @@ import CallIcon from '@mui/icons-material/Call';
 import Home from "../Home/Home";
 import Skills from "../Skills/Skills";
 import About from "../About/About";
-import Contacts from "../Contacts/Contacts";
+import YouTube from "../YouTube/YouTube";
 import Projects from "../Projects/Projects";
 
 const Header = () => {
-  const [value, setValue] = useState(0);
-
-  const changeTab = (event, newValue) => {
-    setValue(newValue);
-  };
   return (
     <Router>
       <div className="mainHeader">
@@ -38,19 +33,20 @@ const Header = () => {
               Skills
             </Link>
           </li>
-          <li style={{ listStyleType: "none" }}>
-            <Link to="/about" className="mainHeader--nav--link">
-              About
-            </Link>
-          </li>
+          
           <li style={{ listStyleType: "none" }}>
             <Link to="/projects" className="mainHeader--nav--link">
               Projects
             </Link>
           </li>
           <li style={{ listStyleType: "none" }}>
-            <Link to="/contacts" className="mainHeader--nav--link">
-              Contact
+            <Link to="/youtube" className="mainHeader--nav--link">
+            YouTube
+            </Link>
+          </li>
+          <li style={{ listStyleType: "none" }}>
+            <Link to="/about" className="mainHeader--nav--link">
+              About me
             </Link>
           </li>
         </ul>
@@ -68,9 +64,9 @@ const Header = () => {
       <Routes element={<Header />}>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Skills" element={<Skills />} />
-        <Route exact path="/about" element={<About />} />
         <Route exact path="/projects" element={<Projects />} />
-        <Route exact path="/contacts" element={<Contacts />} />
+        <Route exact path="/youtube" element={<YouTube />} />
+        <Route exact path="/about" element={<About />} />
       </Routes>
     </Router>
   );
