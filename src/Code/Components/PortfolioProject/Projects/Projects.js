@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.scss";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {Routes, Route, Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -17,7 +17,8 @@ const ProjectDetails = [
     header: "1. YouTube Project cloned with HTML, CSS, BootsTrap & JavaScript",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
-      projectLink: <YouTube />,
+    projectLink: <YouTube />,
+    path: "/youtube",
     youtubeLink: "https://www.youtube.com/watch?v=MFV4WSxAnjs&t=30s",
   },
 
@@ -62,6 +63,7 @@ const ProjectDetails = [
 ];
 
 const Projects = () => {
+
   return (
     <>
       <div className="Projects">
@@ -71,6 +73,12 @@ const Projects = () => {
         {ProjectDetails.map((project) => (
           <>
             <div className="Projects--details">
+              <Link to="/project/youtube">
+                Hi
+              </Link>
+              <Link to="/project/coWin">
+                Cowin
+              </Link>
               <Card className="Projects--details--card">
                 <CardActionArea>
                   <CardMedia
@@ -87,17 +95,19 @@ const Projects = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Link to="/youtube"> <Button
-                    size="small"
-                    color="primary"
-                    variant="contained"
-                    startIcon={<DescriptionIcon />}
-                   content={ project.projectLink}
-                  >
-                    more
-                  </Button></Link>
+                  <Link to="/youtube" style={{textDecoration:"none"}}>
+                    
+                    <Button
+                      size="small"
+                      color="primary"
+                      variant="contained"
+                      startIcon={<DescriptionIcon />}
+                    >
+                      more
+                    </Button>
+                  </Link>
                   <Routes>
-                    <Route exact path="/youtube" element={<YouTube />} />
+                    <Route exact path={project.path} element={project.projectLink} />
                   </Routes>
 
                   <Button
@@ -122,8 +132,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-
-
-

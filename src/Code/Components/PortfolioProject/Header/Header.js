@@ -10,7 +10,7 @@ import {
   Navigate,
   UseLocation,
 } from "react-router-dom";
-import CallIcon from '@mui/icons-material/Call';
+import CallIcon from "@mui/icons-material/Call";
 import Home from "../Home/Home";
 import Skills from "../Skills/Skills";
 import About from "../About/About";
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <Router>
       <div className="mainHeader">
-        <h1>JONY.</h1>
+        <h1>Dolly.</h1>
         <ul className="mainHeader--nav">
           <li style={{ listStyleType: "none" }} active>
             <Link to="/" className="mainHeader--nav--link active">
@@ -33,7 +33,7 @@ const Header = () => {
               Skills
             </Link>
           </li>
-          
+
           <li style={{ listStyleType: "none" }}>
             <Link to="/projects" className="mainHeader--nav--link">
               Projects
@@ -41,9 +41,10 @@ const Header = () => {
           </li>
           <li style={{ listStyleType: "none" }}>
             <Link to="/youtube" className="mainHeader--nav--link">
-            YouTube
+              YouTube
             </Link>
           </li>
+          
           <li style={{ listStyleType: "none" }}>
             <Link to="/about" className="mainHeader--nav--link">
               About me
@@ -55,18 +56,18 @@ const Header = () => {
           variant="outlined"
           size="large"
           className="mainHeader--ConnectBtn"
-         startIcon={<CallIcon />}
-         href="tel: 6300810401">
+          startIcon={<CallIcon />}
+          href="tel: 6300810401"
+        >
           Let's Connect
-          
         </Button>
       </div>
       <Routes element={<Header />}>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/Skills" element={<Skills />} />
-        <Route exact path="/projects" element={<Projects />} />
-        <Route exact path="/youtube" element={<YouTube />} />
-        <Route exact path="/about" element={<About />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/youtube" element={<YouTube />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );

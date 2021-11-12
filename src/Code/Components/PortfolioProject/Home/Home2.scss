@@ -39,7 +39,6 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
       justify-content: space-between;
       width: 50%;
     }
-    .home2--info2 {
       .home2--info2--rating {
         padding: 1px;
         padding-right: 2rem;
@@ -49,7 +48,12 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
           padding: 2px;
           background-color: $textColor;
         }
+         .home2--info2--rating--inner2{
+        padding: 2px;
+        padding-right: 1rem;
+        background-color: $textColor;
+
+      }
       }
     }
   }
-}

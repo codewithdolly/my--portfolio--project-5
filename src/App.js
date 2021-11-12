@@ -1,5 +1,6 @@
 import './App.scss';
 import Portfolio from './Code/Components/PortfolioProject/Portfolio';
+import Test from './Code/Components/Test/Test';
 
 
 
@@ -12,6 +13,8 @@ const App=()=> {
     {/* <Myntra /> */}
     {/* <Gaana /> */}
     {/* <CoWin /> */}
+
+    {/* <Test /> */}
     
 
 

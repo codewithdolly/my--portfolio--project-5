@@ -11,7 +11,7 @@ const Home = () => {
         <div>
           <h1 className="main--body--name1">
             Hi There, I Am Dolly <br />
-            <span className="main--body--name2">Softwere Developer</span>
+            <span className="main--body--name2">Software Developer</span>
           </h1>
           <Button
             href="https://www.canva.com/design/DAEY8Pnsb70/Gk7V8fwb5AFxZJ48UUanYQ/view"
@@ -24,11 +24,12 @@ const Home = () => {
         </div>
         <div>
           <img
+          className="main--body--img"
           src={DollyHome}
           height="500"
           // width="400px"
             // src="https://preview.colorlib.com/theme/jony/img/about/xmy_img.png.pagespeed.ic.aEQUG6gU0_.webp"
-            alt=""
+            alt="Dolly"
           />
         </div>
       </div>

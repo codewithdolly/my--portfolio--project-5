@@ -53,7 +53,7 @@ const Home2 = () => {
               <p>85%</p>
             </div>
             <div className="home2--info2--rating">
-              <div className="home2--info2--rating--inner"></div>
+              <div className="home2--info2--rating--inner2"></div>
             </div>
 
             <div className="home2--info2--marks boots">
