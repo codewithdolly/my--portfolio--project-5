@@ -17,6 +17,7 @@ const Test=()=> {
   return (
     <div>
       <nav>
+      <Link to="/">Home</Link>
         <Link to="me">My Profile</Link>
       </nav>
 

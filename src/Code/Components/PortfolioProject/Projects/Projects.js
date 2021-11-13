@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.scss";
-import {Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Navigate } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -10,6 +10,12 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import Footer from "../../Footer/Footer";
 import YouTube from "./YouTube";
+import Static from "./Static";
+import Myntra from "./Myntra"
+import Gaana from "./Gaana"
+import CoWin from "./CoWin"
+import Home from "../Home/Home";
+
 
 const ProjectDetails = [
   {
@@ -17,9 +23,9 @@ const ProjectDetails = [
     header: "1. YouTube Project cloned with HTML, CSS, BootsTrap & JavaScript",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
-    projectLink: <YouTube />,
     path: "/youtube",
     youtubeLink: "https://www.youtube.com/watch?v=MFV4WSxAnjs&t=30s",
+    projectLink: <YouTube />,
   },
 
   {
@@ -29,6 +35,7 @@ const ProjectDetails = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink:
       "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA/playlists",
+      projectLink: <Myntra />,
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/gaana.jpg",
@@ -36,6 +43,7 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=qxvtOmXSHCc",
+    projectLink: <Gaana />,
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/cowin.jpg",
@@ -43,6 +51,7 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=Y6z2GuEu1f0&t=25s",
+    projectLink: <CoWin />,
   },
 
   {
@@ -52,6 +61,7 @@ const ProjectDetails = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink:
       "https://www.youtube.com/watch?v=U3ZXQkdx1pY&list=PLiuOhj6PP4klXq3E8pF-og9UfzmgT4par&index=2",
+      projectLink: <Home />,
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/static.jpg",
@@ -59,26 +69,21 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=tQ1dn55q8jA&t=262s",
+    projectLink: <Static />,
   },
 ];
 
 const Projects = () => {
-
   return (
     <>
       <div className="Projects">
         <div className="Projects--bgImg">
           <h1 className="Projects--bgImg--h1">Projects</h1>
         </div>
+
         {ProjectDetails.map((project) => (
           <>
             <div className="Projects--details">
-              <Link to="/project/youtube">
-                Hi
-              </Link>
-              <Link to="/project/coWin">
-                Cowin
-              </Link>
               <Card className="Projects--details--card">
                 <CardActionArea>
                   <CardMedia
@@ -95,8 +100,7 @@ const Projects = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Link to="/youtube" style={{textDecoration:"none"}}>
-                    
+                  <Link to="/youtube" element={project.projectLink} style={{ textDecoration: "none" }}>
                     <Button
                       size="small"
                       color="primary"
@@ -107,7 +111,11 @@ const Projects = () => {
                     </Button>
                   </Link>
                   <Routes>
-                    <Route exact path={project.path} element={project.projectLink} />
+                    <Route
+                      exact
+                      path={project.path}
+                      element={project.projectLink}
+                    />
                   </Routes>
 
                   <Button
@@ -127,6 +135,10 @@ const Projects = () => {
         ))}
       </div>
       <Footer />
+      <YouTube /><Static /> <Myntra />
+      <Gaana />
+      <CoWin />
+
     </>
   );
 };

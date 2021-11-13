@@ -14,7 +14,7 @@ const Home = () => {
             <span className="main--body--name2">Software Developer</span>
           </h1>
           <Button
-            href="https://www.canva.com/design/DAEY8Pnsb70/Gk7V8fwb5AFxZJ48UUanYQ/view"
+            href="http://localhost:3000/projects"
             variant="outlined"
             size="large"
             className="main--body--btn"

@@ -33,7 +33,7 @@ const Home2 = () => {
               variant="outlined"
               size="large"
               className="home2--btn"
-              href="http://localhost:3000/projects"
+              href="https://www.canva.com/design/DAEY8Pnsb70/Gk7V8fwb5AFxZJ48UUanYQ/view"
               endIcon={<SaveAltIcon />}
             >
               Download CV

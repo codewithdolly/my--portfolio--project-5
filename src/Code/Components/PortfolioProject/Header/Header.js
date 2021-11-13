@@ -15,6 +15,7 @@ import Home from "../Home/Home";
 import Skills from "../Skills/Skills";
 import About from "../About/About";
 import YouTube from "../YouTube/YouTube";
+import Cowin from "../Projects/CoWin"
 import Projects from "../Projects/Projects";
 
 const Header = () => {
@@ -44,7 +45,7 @@ const Header = () => {
               YouTube
             </Link>
           </li>
-          
+
           <li style={{ listStyleType: "none" }}>
             <Link to="/about" className="mainHeader--nav--link">
               About me
@@ -65,7 +66,9 @@ const Header = () => {
       <Routes element={<Header />}>
         <Route path="/" element={<Home />} />
         <Route path="/Skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="projects" element={<Projects />} >
+        {/* <Route path="cowin" element={<Cowin />} > */}
+        </Route>
         <Route path="/youtube" element={<YouTube />} />
         <Route path="/about" element={<About />} />
       </Routes>
