@@ -25,7 +25,7 @@ const ProjectDetails = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     path: "/youtube",
     youtubeLink: "https://www.youtube.com/watch?v=MFV4WSxAnjs&t=30s",
-    projectLink: <YouTube />,
+    singleProjectDetails: <YouTube/>,
   },
 
   {
@@ -35,7 +35,7 @@ const ProjectDetails = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink:
       "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA/playlists",
-      projectLink: <Myntra />,
+      singleProjectDetails: <YouTube/>,
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/gaana.jpg",
@@ -43,7 +43,7 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=qxvtOmXSHCc",
-    projectLink: <Gaana />,
+    singleProjectDetails: <YouTube/>,
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/cowin.jpg",
@@ -51,7 +51,7 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=Y6z2GuEu1f0&t=25s",
-    projectLink: <CoWin />,
+    singleProjectDetails: <YouTube/>,
   },
 
   {
@@ -61,7 +61,7 @@ const ProjectDetails = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink:
       "https://www.youtube.com/watch?v=U3ZXQkdx1pY&list=PLiuOhj6PP4klXq3E8pF-og9UfzmgT4par&index=2",
-      projectLink: <Home />,
+      singleProjectDetails: <YouTube/>,
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/static.jpg",
@@ -69,7 +69,9 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=tQ1dn55q8jA&t=262s",
-    projectLink: <Static />,
+    singleProjectDetails: <YouTube/>,
+    projectPage: "/Static"
+    
   },
 ];
 
@@ -100,21 +102,21 @@ const Projects = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Link to="/youtube" element={project.projectLink} style={{ textDecoration: "none" }}>
+                 <Link to="/">
                     <Button
                       size="small"
                       color="primary"
                       variant="contained"
                       startIcon={<DescriptionIcon />}
                     >
-                      more
+                      Blog
                     </Button>
-                  </Link>
+                    </Link>
                   <Routes>
-                    <Route
+                    <Route path={project.projectPage}
                       exact
-                      path={project.path}
-                      element={project.projectLink}
+                      element={project.singleProjectDetails}
+                     
                     />
                   </Routes>
 

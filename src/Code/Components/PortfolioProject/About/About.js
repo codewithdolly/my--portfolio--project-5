@@ -9,13 +9,14 @@ const About = () => {
     <>
       <div className="about">
         <div className="about--main">
-          <img src={Plane} alt="plane" className="about--main--img" />
+          <div style={{paddingTop:"4rem"}}></div>
+          <span className="about--main--img" ><img src={Plane} alt="plane" /></span>
           <h1 className="about--main--name">Dolly Singh</h1>
         </div>
         <div className="about--intro">
           <div className="about--intro1">
-            <img
-              className="about--intro1--img"
+          <img className="about--intro1--img"
+              
               src={myImg}
               alt="Dolly"
               width="220px"
@@ -25,25 +26,25 @@ const About = () => {
             >
               <a href="https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA">
                 <span
-                  class="fab fa-youtube"
+                  className="fab fa-youtube"
                   style={{ color: "red", paddingRight: "10px" }}
                 ></span>
               </a>
               <a href="https://www.facebook.com/intensedolly">
                 <span
-                  class="fab fa-facebook-square"
+                  className="fab fa-facebook-square"
                   style={{ color: "#3b5998", paddingRight: "10px" }}
                 ></span>
               </a>
               <a href="https://in.linkedin.com/in/intensedolly">
                 <span
-                  class="fab fa-linkedin"
+                  className="fab fa-linkedin"
                   style={{ color: "#287bbc", paddingRight: "10px" }}
                 ></span>
               </a>
               <a href="mailto: heydollysingh@gmail.com">
                 <span
-                  class="far fa-envelope"
+                  className="far fa-envelope"
                   style={{ color: "#b32d00", paddingRight: "10px" }}
                 ></span>
               </a>
