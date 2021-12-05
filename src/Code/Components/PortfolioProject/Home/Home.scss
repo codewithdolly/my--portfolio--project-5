@@ -1,4 +1,4 @@
-@import "../../media-queriey.scss";
+// @import "../../media-queriey.scss";
 
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
@@ -20,7 +20,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     justify-content: space-evenly;
     padding: 5rem 9% 0 9%;
     cursor: pointer;
-    .main--body--img{
+    .main--body--img {
       margin-left: -10rem;
       margin-bottom: -5px;
     }
@@ -33,24 +33,21 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       margin-bottom: -2px;
       cursor: pointer;
     }
-    .main--body--names{
+    .main--body--names {
       width: 100%;
       cursor: pointer;
       text-align: center;
       height: 50px;
       margin-bottom: 5rem;
       padding-left: 3rem;
-      
-    .main--body--name2 {
-      color: $textColor;
-      font-size: 3rem;
-      font-weight: bold;
-      height: 70px;
+
+      .main--body--name2 {
+        color: $textColor;
+        font-size: 3rem;
+        font-weight: bold;
+        height: 70px;
+      }
     }
-  
-  
-  
-  }
     .main--body--btn {
       color: $textColor;
       padding: 15px 25px 15px 25px;
@@ -67,17 +64,15 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       background-color: $textColor;
     }
   }
-  @include tablet{
-    .main--body--name1{
-      font-size: 20px;
-    }
-  }
-  @include mobile{
-    .main--body--name1{
-      font-size: 10px;
-    }
-  }
-  
+
+  // @include breapoint(mobile) {
+  //   .main--body--name1 {
+  //     font-size: 10px;
+  //   }
+  // }
+  // @include breapoint(tablat) {
+  //   .main--body--name1 {
+  //     font-size: 20px;
+  //   }
+  // }
 }
-
-

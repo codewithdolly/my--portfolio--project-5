@@ -1,4 +1,4 @@
-@import "../media-queriey.scss";
+@import "../media-queriey";
 
 
 $textColor: #db9a64;
@@ -10,7 +10,6 @@ body {
 }
 
 .mainHeader {
-  // background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
   background-color: $backGroundcolor;
   font-family: sans-serif;
   color: $textColor;
@@ -56,23 +55,7 @@ body {
     background-color: $textColor;
   }
 
-  @include tablet{
-    
-    .mainHeader{
-      justify-items:center;
-      display: grid;
-    }
-    .mainHeader--menu{
-      display: block;
-      font-size: 40px;
-    }
-    .mainHeader--nav, .mainHeader--ConnectBtn{
-      display: none;
-    }
-   
-  }
-
-  @include mobile{
+  @include breapoint(mobile){
     
     .mainHeader{
       justify-items:center;
@@ -89,4 +72,21 @@ body {
 
    
   }
+
+  @include breapoint(tablat){
+    
+    .mainHeader{
+      justify-items:center;
+      display: grid;
+    }
+    .mainHeader--menu{
+      display: block;
+      font-size: 40px;
+    }
+    .mainHeader--nav, .mainHeader--ConnectBtn{
+      display: none;
+    }
+   
+  }
+
 }
