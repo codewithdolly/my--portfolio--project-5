@@ -3,16 +3,18 @@ $textWhite: white;
 $backGroundcolor: #311e25;
 $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 
-.home3{
+.homeService{
     background-color: #3b2930;
-    padding: 90px 15% 90px 10%;
+    padding: 90px 15% 90px 15%;
     cursor: pointer;
+    
 
-    .home3--service{
+    .homeService--service{
         color: $textWhite;
         font-size: 40px;
+        
     }
-    .home3--cards{
+    .homeService--cards{
         color: $textWhite;
         border: 1px solid $textColor;
         margin: 2rem;
@@ -20,11 +22,12 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
         width: 35%;
         display: inline-block;
         text-align: center;
-        .home3--cards--header{
+        align-items: center;
+        .homeService--cards--header{
             color: $textColor;
         }
     }
-    .home3--cards:hover{
+    .homeService--cards:hover{
         border: 2px solid $backGroundcolor;
         box-shadow: 2px 2px 10px $backGroundcolor;
     }

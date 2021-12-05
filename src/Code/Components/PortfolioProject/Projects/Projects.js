@@ -15,7 +15,7 @@ import Myntra from "./Myntra"
 import Gaana from "./Gaana"
 import CoWin from "./CoWin"
 import Home from "../Home/Home";
-
+import { motion } from "framer-motion";
 
 const ProjectDetails = [
   {
@@ -85,8 +85,13 @@ const Projects = () => {
 
         {ProjectDetails.map((project) => (
           <>
-            <div className="Projects--details">
-              <Card className="Projects--details--card">
+            <motion.div
+            whileHover={{scale:1.1}}
+            transition={{duration:.5}}
+             className="Projects--details">
+              <Card 
+            
+              className="Projects--details--card">
                 <CardActionArea>
                   <CardMedia
                     component="img"
@@ -102,7 +107,7 @@ const Projects = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                 <Link to="/">
+                 <Link to="/" className="Projects--details--card--btn">
                     <Button
                       size="small"
                       color="primary"
@@ -126,20 +131,21 @@ const Projects = () => {
                     size="small"
                     color="error"
                     variant="outlined"
+                    target="_blank"
                     startIcon={<VideoLibraryIcon />}
                   >
                     Video
                   </Button>
                 </CardActions>
               </Card>
-            </div>
+            </motion.div>
           </>
         ))}
       </div>
       <Footer />
-      <YouTube /><Static /> <Myntra />
+      {/* <YouTube /><Static /> <Myntra />
       <Gaana />
-      <CoWin />
+      <CoWin /> */}
 
     </>
   );

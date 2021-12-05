@@ -8,12 +8,12 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        <p className="footer--project1">Coffee with me.</p>
-        <p className="footer--project2">
+        <p className="footer--AboutMe">Coffee with me.</p>
+        <p className="footer--AboutMe--me">
           I am always excited to work on some awesome projects, message me and
           let's discuss over coffee.
         </p>
-        <div style={{ textAlign: "center", marginLeft: "80px" }}>
+        <div style={{ textAlign: "center", marginLeft: "80px" }}  className="footer--input">
           <TextField
             sx={{ color: "#db9a64" }}
             hiddenLabel
@@ -24,48 +24,51 @@ const Footer = () => {
           <IconButton aria-label="send" href="http://localhost:3000/">
             <ArrowForwardIcon
               className="footer--project1--btn-hover"
-              sx={{ fontSize: "4rem", color: "#bebbb8ce" }}
+              sx={{ fontSize: "4rem", color: "#bebbb8ce", fontSize: "3rem" }}
             />
           </IconButton>
         </div>
-        <small style={{ color: "white", marginTop:"20rem" }}>
-          You can connect me here as well
+        <small  className="footer--feedme">
+          You can find me here as well
         </small>
-        <div style={{ fontSize: "60px" }}>
+        <div className="footer--Icons">
           <a href="https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA">
             <span
-              className="fab fa-youtube"
-              style={{ color: "red", paddingRight: "10px" }}
+              className="fab fa-youtube footer--Icon"
+              style={{ color: "red"}}
             ></span>
           </a>
-          <a href="https://www.facebook.com/intensedolly">
+          <a href="https://www.facebook.com/codewithdolly/">
             <span
-              className="fab fa-facebook-square"
-              style={{ color: "#3b5998", paddingRight: "10px" }}
+              className="fab fa-facebook-square footer--Icon"
+              style={{
+                color: "#3b5998",
+              }}
             ></span>
           </a>
-          <a href="https://twitter.com/intensedolly">
-            <span
-              className="fab fa-twitter-square"
-              style={{ color: "#33adff", paddingRight: "10px" }}
-            ></span>
+          <a href="https://www.instagram.com/codewithdolly">
+            <i class="fab fa-instagram instagram "></i>
           </a>
-          <a href="https://in.linkedin.com/in/intensedolly">
+          <a href="https://www.linkedin.com/in/codewithdolly/">
             <span
-              className="fab fa-linkedin"
-              style={{ color: "#287bbc", paddingRight: "10px" }}
+              className="fab fa-linkedin footer--Icon"
+              style={{
+                color: "#287bbc"
+              }}
             ></span>
           </a>
           <a href="mailto: heydollysingh@gmail.com">
             <span
-              className="far fa-envelope"
-              style={{ color: "#b32d00", paddingRight: "10px" }}
+              className="fas fa-envelope footer--Icon"
+              style={{
+                color: "#b32d00",
+              }}
             ></span>
           </a>
         </div>
         <center>
           <p style={{ marginTop: "4rem", color: "gray" }}>
-            Copyright ©2021 All rights reserved | This template is Cloned by
+          No ©copyright issues | This portfolio is made by
             <span style={{ color: "#db9a64" }}> Dolly</span>
             <DoneAllOutlinedIcon />
           </p>

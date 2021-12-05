@@ -1,3 +1,5 @@
+@import "../../media-queriey.scss";
+
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
@@ -16,10 +18,10 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     display: flex;
     color: white;
     justify-content: space-evenly;
-    padding: 3rem 9% 0 9%;
+    padding: 5rem 9% 0 9%;
     cursor: pointer;
     .main--body--img{
-      margin-left: -7rem;
+      margin-left: -10rem;
       margin-bottom: -5px;
     }
     .main--body--name1 {
@@ -28,13 +30,27 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       text-align: center;
       padding-top: 2rem;
       padding-left: 8rem;
+      margin-bottom: -2px;
       cursor: pointer;
     }
+    .main--body--names{
+      width: 100%;
+      cursor: pointer;
+      text-align: center;
+      height: 50px;
+      margin-bottom: 5rem;
+      padding-left: 3rem;
+      
     .main--body--name2 {
       color: $textColor;
-      font-size: 4.5rem;
-      cursor: pointer;
+      font-size: 3rem;
+      font-weight: bold;
+      height: 70px;
     }
+  
+  
+  
+  }
     .main--body--btn {
       color: $textColor;
       padding: 15px 25px 15px 25px;
@@ -46,10 +62,22 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     }
     .main--body--btn:hover {
       padding: 15px 25px 15px 25px;
-      box-shadow: 1px 1px 5px pink;
+      box-shadow: 2px 2px 5px #311e2525;
       color: white;
       background-color: $textColor;
     }
   }
+  @include tablet{
+    .main--body--name1{
+      font-size: 20px;
+    }
+  }
+  @include mobile{
+    .main--body--name1{
+      font-size: 10px;
+    }
+  }
   
 }
+
+

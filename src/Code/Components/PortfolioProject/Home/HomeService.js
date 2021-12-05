@@ -1,8 +1,8 @@
 import React from "react";
-import "./Home3.scss";
+import "./HomeService.scss";
 import Footer from "../../Footer/Footer";
 import InspringQuotes from "../InspringQuotes/InspringQuotes";
-
+import {motion} from "framer-motion"
 
 const services = [
   {
@@ -32,19 +32,26 @@ const services = [
   },
 ];
 
-const Home3 = () => {
+const HomeService = () => {
   return (
     <>
-      <div className="home3">
-        <h2 className="home3--service">My Services</h2>
+      <div className="homeService">
+        <motion.h2 
+        animate={{x: 0}}
+        initial={{x:-300}}
+        transition= {{duration: 1}}
+        className="homeService--service">My Services</motion.h2>
 
         {services.map((service) => (
           <>
-            <div className="home3--cards">
+            <motion.div
+            whileHover={{scale:1.2}}
+            transition={{duration:.5}}
+             className="homeService--cards">
               <img src={service.image} alt="" width="100px" />
-              <h2 className="home3--cards--header">{service.header}</h2>
+              <h2 className="homeService--cards--header">{service.header}</h2>
               <p>{service.about}</p>
-            </div>
+            </motion.div>
           </>
         ))}
       </div>
@@ -54,4 +61,4 @@ const Home3 = () => {
   );
 };
 
-export default Home3;
+export default HomeService;

@@ -1,3 +1,6 @@
+@import "../media-queriey.scss";
+
+
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 
@@ -7,7 +10,7 @@ body {
 }
 
 .mainHeader {
-  background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+  // background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
   background-color: $backGroundcolor;
   font-family: sans-serif;
   color: $textColor;
@@ -15,6 +18,9 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  .mainHeader--menu{
+    display: none;
+  }
   .mainHeader--nav {
     display: flex;
     justify-content: space-between;
@@ -23,6 +29,7 @@ body {
       color: $textColor;
       padding-right: 18px;
       padding-left: 18px;
+     
       text-transform: uppercase;
       .mainHeader--nav--link--submenu {
         display: none;
@@ -35,17 +42,51 @@ body {
     }
   }
   .mainHeader--ConnectBtn {
+    background-color: #311e2525;
     color: $textColor;
     border: 0.7px solid $textColor;
-    border-radius: 0;
   }
   .mainHeader--ConnectBtn:hover {
     padding: 10px 20px 10px 20px;
-    box-shadow: 1px 1px 5px silver;
+    box-shadow: 2px 2px 5px #311e2525;
     color: white;
     background-color: $textColor;
   }
   .PrivateTabIndicator-colorSecondary-3 {
     background-color: $textColor;
+  }
+
+  @include tablet{
+    
+    .mainHeader{
+      justify-items:center;
+      display: grid;
+    }
+    .mainHeader--menu{
+      display: block;
+      font-size: 40px;
+    }
+    .mainHeader--nav, .mainHeader--ConnectBtn{
+      display: none;
+    }
+   
+  }
+
+  @include mobile{
+    
+    .mainHeader{
+      justify-items:center;
+      display: grid;
+    }
+    .mainHeader--menu{
+      display: block;
+      font-size: 40px;
+    }
+    
+    .mainHeader--nav, .mainHeader--ConnectBtn{
+      display: none;
+    }
+
+   
   }
 }

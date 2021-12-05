@@ -24,14 +24,16 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     }
   }
   .Projects--details {
-    margin-left: 1.5rem;
+    margin-left: 5rem;
     margin-bottom: 2rem;
-    padding: 10px;
     display: inline-block;
     .Projects--details--card {
       max-width: 400px;
       border: 3px solid $backGroundcolor;
       margin: 1rem;
+      .Projects--details--card--btn{
+        text-decoration: none;
+      }
     }
     .Projects--details--card:hover {
       // max-width: 420px;

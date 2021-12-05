@@ -1,1 +1,1 @@
-export {default as AuthExample} from "./AuthExample/AuthExample"
+export {default as Header} from "./Header/Header"

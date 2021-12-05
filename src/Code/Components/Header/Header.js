@@ -1,29 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.scss";
-import { Tabs, Tab, Button } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Link,
-  redirect,
-  Navigate,
-  UseLocation,
 } from "react-router-dom";
+import MenuIcon from '@mui/icons-material/Menu';
 import CallIcon from "@mui/icons-material/Call";
-import Home from "../Home/Home";
-import Skills from "../Skills/Skills";
-import About from "../About/About";
-import YouTube from "../YouTube/YouTube";
-import Cowin from "../Projects/CoWin"
-import Projects from "../Projects/Projects";
+import Home from "../PortfolioProject/Home/Home";
+import Skills from "../PortfolioProject/Skills/Skills";
+import About from "../PortfolioProject/About/About";
+import YouTube from "../PortfolioProject/YouTube/YouTube";
+import Projects from "../PortfolioProject/Projects/Projects";
+import { motion } from "framer-motion";
+
 
 const Header = () => {
   return (
     <Router>
-      <div className="mainHeader">
-        <h1>Dolly.</h1>
-        <ul className="mainHeader--nav">
+      <div
+       className="mainHeader">
+        <motion.h1
+         animate={{y:0, opacity:5}}
+        initial={{y:-30 ,opacity:0}}
+        transition={{duration: .5}}
+        >Dolly.</motion.h1>
+        <motion.ul className="mainHeader--nav"
+        animate={{y:0}}
+        initial={{y:50}}
+        >
           <li style={{ listStyleType: "none" }} active>
             <Link to="/" className="mainHeader--nav--link active">
               Home
@@ -51,8 +58,14 @@ const Header = () => {
               About me
             </Link>
           </li>
-        </ul>
+        </motion.ul>
+       
+       <motion.div
+        animate={{y:10}}
+        initial={{y:50}}
+       >
 
+      
         <Button
           variant="outlined"
           size="large"
@@ -60,15 +73,15 @@ const Header = () => {
           startIcon={<CallIcon />}
           href="tel: 6300810401"
         >
-          Let's Connect
+          Hire me
         </Button>
+        </motion.div>
+        <MenuIcon className="mainHeader--menu" />
       </div>
       <Routes element={<Header />}>
         <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/Skills" element={<Skills />} />
-        <Route path="projects" element={<Projects />} >
-        {/* <Route path="cowin" element={<Cowin />} > */}
-        </Route>
         <Route path="/youtube" element={<YouTube />} />
         <Route path="/about" element={<About />} />
       </Routes>

@@ -1,39 +1,59 @@
 import { Button } from "@material-ui/core";
 import React from "react";
 import "./Home.scss";
-import Home2 from "./Home2";
-import DollyHome from "../../Images/1.png"
+import HomeInfo from "./HomeInfo";
+import DollyHome from "../../Images/1.png";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <div className="main">
       <div className="main--body">
-        <div>
+        <motion.div
+          initial={{ opacity: 0,}}
+          animate={{ opacity: 5,fontSize:"50"}}
+          transition={{ duration: 1 }}
+        >
           <h1 className="main--body--name1">
-            Hi There, I Am Dolly <br />
-            <span className="main--body--name2">Software Developer</span>
+            Hi There, I Am Dolly       
           </h1>
+          <marquee
+          direction="up"
+          scrollamount="5"
+          className="main--body--names"
+        >
+           <p className="main--body--name2">A Web Developer.</p>
+           <p className="main--body--name2">A Youtuber.</p>
+           <p className="main--body--name2">A Digital Marketer.</p>
+           <p className="main--body--name2">A SEO  Analyst.</p>
+           <p className="main--body--name2">A Proud Indian.</p>
+        </marquee>
+        
+          <motion.div
+          initial={{x:"-100vw"}}
+          animate={{x:0}}
+          transition={{duration:"1", type:"spring"}}
+          >
           <Button
             href="http://localhost:3000/projects"
             variant="outlined"
             size="large"
             className="main--body--btn"
           >
-            View Works
+            My Works
           </Button>
-        </div>
+          </motion.div>
+        </motion.div>
         <div>
           <img
-          className="main--body--img"
-          src={DollyHome}
-          height="500"
-          // width="400px"
-            // src="https://preview.colorlib.com/theme/jony/img/about/xmy_img.png.pagespeed.ic.aEQUG6gU0_.webp"
+            className="main--body--img"
+            src={DollyHome}
+            height="520"
             alt="Dolly"
           />
         </div>
       </div>
-      <Home2 />
+      <HomeInfo />
     </div>
   );
 };

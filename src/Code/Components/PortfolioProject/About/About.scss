@@ -49,3 +49,22 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     }
   }
 }
+
+
+.instagram {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 100;
+  background: #f09433;
+  color: white;
+  border-radius: 5px;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+ 
+}

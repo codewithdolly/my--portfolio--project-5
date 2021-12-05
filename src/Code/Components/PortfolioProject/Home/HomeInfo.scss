@@ -1,0 +1,90 @@
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$textWhite: white;
+$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+
+.rating{
+  padding: 1px;
+  background-color: silver;
+  border-radius: 2px;
+  .homeInfo--info2--rating--inner {
+    padding: 2px;
+    background-color: $textColor;
+  }
+}
+
+
+
+.homeInfo {
+  background-color: $backGroundcolor;
+  font-family: $font-family;
+  padding: 110px 10% 90px 10%;
+  flex-wrap: wrap;
+  color: $textWhite;
+  .homeInfo--information {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+  .homeInfo--btn {
+    color: $textColor;
+    padding: 15px 25px 15px 25px;
+    margin-top: 10px;
+    border: 0.7px solid $textColor;
+    border-radius: 0;
+  }
+  .homeInfo--btn:hover {
+    padding: 15px 25px 15px 25px;
+    box-shadow: 2px 2px 5px #311e2525;
+    color: $textWhite;
+    background-color: $textColor;
+  }
+  .homeInfo--info {
+    display: flex;
+    justify-content: space-between;
+    .homeInfo--info1 {
+      width: 55%;
+      padding-top: 3rem;
+    }
+    .homeInfo--info2 {
+      width: 40%;
+      margin-left: 5%;
+      .homeInfo--info2--marks {
+        .homeInfo--info2--marks--mark {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .homeInfo--info2--HTML{
+        @extend .rating;
+        padding-right: 5rem;
+      }
+
+      .homeInfo--info2--CSS{
+        @extend .rating;
+        padding-right: 6.5rem;
+      }
+      .homeInfo--info2--bootstrap{
+        @extend .rating;
+        padding-right:  8rem;
+      }
+      .homeInfo--info2--javascript{
+        @extend .rating;
+        padding-right:  9.5rem;
+      }
+      .homeInfo--info2--sass{
+        @extend .rating;
+        padding-right:  8rem;
+      }
+      .homeInfo--info2--mui{
+        @extend .rating;
+        padding-right:  9.5rem;
+      }
+
+      .homeInfo--info2--react{
+        @extend .rating;
+        padding-right: 10.5rem;
+      }
+    }
+  }
+}

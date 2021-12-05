@@ -9,14 +9,16 @@ const About = () => {
     <>
       <div className="about">
         <div className="about--main">
-          <div style={{paddingTop:"4rem"}}></div>
-          <span className="about--main--img" ><img src={Plane} alt="plane" /></span>
+          <div style={{ paddingTop: "4rem" }}></div>
+          <span className="about--main--img">
+            <img src={Plane} alt="plane" />
+          </span>
           <h1 className="about--main--name">Dolly Singh</h1>
         </div>
         <div className="about--intro">
           <div className="about--intro1">
-          <img className="about--intro1--img"
-              
+            <img
+              className="about--intro1--img"
               src={myImg}
               alt="Dolly"
               width="220px"
@@ -36,11 +38,15 @@ const About = () => {
                   style={{ color: "#3b5998", paddingRight: "10px" }}
                 ></span>
               </a>
-              <a href="https://in.linkedin.com/in/intensedolly">
+              <a href="https://www.linkedin.com/in/codewithdolly/">
                 <span
                   className="fab fa-linkedin"
                   style={{ color: "#287bbc", paddingRight: "10px" }}
                 ></span>
+
+                <a href="https://www.instagram.com/codewithdolly">
+                  <span class="fab fa-instagram instagram"></span>
+                </a>
               </a>
               <a href="mailto: heydollysingh@gmail.com">
                 <span
@@ -53,10 +59,17 @@ const About = () => {
           <div className="about--intro2">
             <h2 className="about--intro2--h2">About me.</h2>
             <p>
-              Hello! I am Dolly Singh, Web developer, Digital marketer, YouTuber and Student, I live in Hyderabad, India. I am Full stack developer and I have build some projects on wordpress Elementor. I manage one food website with 1,00,000 per month. I also do SEO and write articles for my websites. I have Youtube Channel where I upload my projects video and many more things. 
+              Hello! I am Dolly Singh, Web developer, Digital marketer and YouTuber. I live in Hyderabad, India. I am Full stack developer
+              and I have build some projects on wordpress Elementor. I manage
+              one food website with 1,00,000 per month. I also do SEO and write
+              articles for my websites. I have Youtube Channel where I upload my
+              projects video and many more things.
             </p>
             <p>
-             Have a Look at My YouTube Channel, It will Students/developer to learn thing in easy ways and help you to make projects. Or you can connect me on Facebook, Linkdin or Instagram.  I am always excited to talk about Tech.  
+              Have a Look at My YouTube Channel, It will Students/developer to
+              learn thing in easy ways and help you to make projects. Or you can
+              connect me on Facebook, Linkdin or Instagram. I am always excited
+              to talk about Tech.
             </p>
           </div>
         </div>

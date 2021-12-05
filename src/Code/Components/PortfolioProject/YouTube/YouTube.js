@@ -34,7 +34,7 @@ const YouTube = () => {
             JavaScript
           </h2>
           <p>First project, personal experience and personal trics</p>
-          <Button href="https://www.youtube.com/watch?v=MFV4WSxAnjs&t=31s" variant="outlined" size="lg" color="error" rounded sx={{ px: 2 }}>
+          <Button href="https://www.youtube.com/watch?v=MFV4WSxAnjs&t=31s"  target="_blank" variant="outlined" size="lg" color="error" rounded sx={{ px: 2 }}>
             Watch Video
           </Button>
         </center>
