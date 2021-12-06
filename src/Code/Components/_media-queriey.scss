@@ -1,6 +1,5 @@
 @mixin breapoint($point) {
   @if $point== mobile {
-    @mixin mobile {
       @media only screen and (min-width: 100px) and (max-width: 576px) {
         @content;
       }
@@ -22,4 +21,3 @@
         }
       }
   }
-}

@@ -1,4 +1,4 @@
-// @import "../../media-queriey.scss";
+// @import "../../media-queriey";
 
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
@@ -18,7 +18,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     display: flex;
     color: white;
     justify-content: space-evenly;
-    padding: 5rem 9% 0 9%;
+    padding-top: 5rem;
     cursor: pointer;
     .main--body--img {
       margin-left: -10rem;
@@ -29,16 +29,15 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       font-size: 4rem;
       text-align: center;
       padding-top: 2rem;
-      padding-left: 8rem;
-      margin-bottom: -2px;
+      padding-left: 3rem;
+      margin-bottom: 0;
       cursor: pointer;
     }
     .main--body--names {
       width: 100%;
       cursor: pointer;
-      text-align: center;
-      height: 50px;
-      margin-bottom: 5rem;
+      height: 70px;
+      margin-bottom: 10rem;
       padding-left: 3rem;
 
       .main--body--name2 {
@@ -51,8 +50,8 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     .main--body--btn {
       color: $textColor;
       padding: 15px 25px 15px 25px;
-      margin-left: 9rem;
-      margin-top: -2rem;
+      margin-left: 3rem;
+      margin-top: -5rem;
       border: 0.7px solid $textColor;
       border-radius: 0;
       cursor: pointer;

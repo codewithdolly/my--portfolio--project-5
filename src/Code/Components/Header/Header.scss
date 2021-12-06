@@ -1,6 +1,5 @@
 @import "../media-queriey";
 
-
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 
@@ -17,7 +16,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  .mainHeader--menu{
+  .mainHeader--menu {
     display: none;
   }
   .mainHeader--nav {
@@ -28,7 +27,7 @@ body {
       color: $textColor;
       padding-right: 18px;
       padding-left: 18px;
-     
+
       text-transform: uppercase;
       .mainHeader--nav--link--submenu {
         display: none;
@@ -55,38 +54,26 @@ body {
     background-color: $textColor;
   }
 
-  @include breapoint(mobile){
-    
-    .mainHeader{
-      justify-items:center;
+  @mixin header {
+    .mainHeader {
+      justify-items: center;
       display: grid;
     }
-    .mainHeader--menu{
+    .mainHeader--menu {
       display: block;
       font-size: 40px;
     }
-    
-    .mainHeader--nav, .mainHeader--ConnectBtn{
+    .mainHeader--nav,
+    .mainHeader--ConnectBtn {
       display: none;
     }
-
-   
   }
 
-  @include breapoint(tablat){
-    
-    .mainHeader{
-      justify-items:center;
-      display: grid;
-    }
-    .mainHeader--menu{
-      display: block;
-      font-size: 40px;
-    }
-    .mainHeader--nav, .mainHeader--ConnectBtn{
-      display: none;
-    }
-   
+  @include breapoint(mobile) {
+    @include header;
   }
 
+  @include breapoint(tablat) {
+    @include header;
+  }
 }
