@@ -1,4 +1,4 @@
-// @import "../../media-queriey";
+@import "../../media-queriey";
 
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
@@ -62,16 +62,30 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       color: white;
       background-color: $textColor;
     }
-  }
+    @mixin aboutMe {
+      .homeInfo{
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .main--body--name1{
+        color: red;
+        font-size: 3rem;
 
-  // @include breapoint(mobile) {
-  //   .main--body--name1 {
-  //     font-size: 10px;
-  //   }
-  // }
-  // @include breapoint(tablat) {
-  //   .main--body--name1 {
-  //     font-size: 20px;
-  //   }
-  // }
+      }
+      .main--body--mobileimg{
+        width: 70%;
+        border-radius: 50%;
+      }
+      .main--body--img{
+        display: none;
+      }
+    }
+    @include breapoint(mobile) {
+      @include aboutMe;
+    }
+    @include breapoint(tablat) {
+      @include aboutMe;
+    }
+  }
+ 
 }

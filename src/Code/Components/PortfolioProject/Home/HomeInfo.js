@@ -16,18 +16,17 @@ const HomeInfo = () => {
         <div className="homeInfo--info">
           <div className="homeInfo--info1">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              praesentium commodi earum! Quaerat, architecto a, quasi deserunt
-              sapiente provident optio ducimus tempora sunt aperiam iusto minima
-              maiores libero ad facere. Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Numquam dolorem quis soluta laboriosam incidunt?
-              Facere doloribus reprehenderit ex dolor provident.
+            Hello! I am Dolly Singh, Web developer, Digital marketer and YouTuber. I live in Hyderabad, India. I am Full stack developer
+              and I have build some projects on wordpress Elementor. I manage
+              one food website with 1,00,000 per month. I also do SEO and write
+              articles for my websites. I have Youtube Channel where I upload my
+              projects video and many more things.
             </p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
-              molestiae nesciunt aspernatur ad veniam cupiditate dolorem
-              praesentium voluptatibus consequuntur id nisi, quia adipisci
-              eveniet beatae non, provident, qui eligendi. Eius?
+            Have a Look at My YouTube Channel, It will Students/developer to
+              learn thing in easy ways and help you to make projects. Or you can
+              connect me on Facebook, Linkdin or Instagram. I am always excited
+              to talk about Tech.
             </p>
 
             <Button

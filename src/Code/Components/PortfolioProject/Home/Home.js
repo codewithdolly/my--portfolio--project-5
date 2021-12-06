@@ -3,12 +3,14 @@ import React from "react";
 import "./Home.scss";
 import HomeInfo from "./HomeInfo";
 import DollyHome from "../../Images/1.png";
+import DollyMobile from "../../Images/dolly.jpg";
 import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <div className="main">
       <div className="main--body">
+      {/* <div><img src={DollyMobile} alt="" className="main--body--mobileimg"/></div> */}
         <motion.div
           initial={{ opacity: 0,}}
           animate={{ opacity: 5,fontSize:"50"}}

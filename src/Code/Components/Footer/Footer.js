@@ -24,7 +24,7 @@ const Footer = () => {
           <IconButton aria-label="send" href="http://localhost:3000/">
             <ArrowForwardIcon
               className="footer--project1--btn-hover"
-              sx={{ fontSize: "4rem", color: "#bebbb8ce", fontSize: "3rem" }}
+              sx={{color: "#bebbb8ce", fontSize: "3rem" }}
             />
           </IconButton>
         </div>

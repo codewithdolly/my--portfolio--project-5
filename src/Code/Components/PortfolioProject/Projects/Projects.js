@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.scss";
-import { Routes, Route, Link, Navigate } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -14,7 +14,6 @@ import Static from "./Static";
 import Myntra from "./Myntra"
 import Gaana from "./Gaana"
 import CoWin from "./CoWin"
-import Home from "../Home/Home";
 import { motion } from "framer-motion";
 
 const ProjectDetails = [
@@ -143,9 +142,9 @@ const Projects = () => {
         ))}
       </div>
       <Footer />
-      {/* <YouTube /><Static /> <Myntra />
+      <YouTube /><Static /> <Myntra />
       <Gaana />
-      <CoWin /> */}
+      <CoWin />
 
     </>
   );
