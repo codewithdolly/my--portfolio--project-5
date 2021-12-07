@@ -73,7 +73,7 @@ body {
     @include header;
   }
 
-  @include breapoint(tablat) {
+  @include breapoint(tablet) {
     @include header;
   }
  

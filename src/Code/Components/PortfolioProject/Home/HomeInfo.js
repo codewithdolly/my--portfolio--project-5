@@ -8,22 +8,23 @@ const HomeInfo = () => {
   return (
     <>
       <div className="homeInfo">
-          <h2 className="homeInfo--information">
-            Hello I’m Dolly, a Softwere engineer in Hyderabad, India. She loves
-            Technology & likes to develop new tech things, She knows I also
-            enjoy cooking.
-          </h2>
+        <h2 className="homeInfo--information">
+          Hello I’m Dolly, a Software engineer in Hyderabad, India. She loves
+          Technology & likes to develop new tech things, She knows I also enjoy
+          cooking.
+        </h2>
         <div className="homeInfo--info">
           <div className="homeInfo--info1">
             <p>
-            Hello! I am Dolly Singh, Web developer, Digital marketer and YouTuber. I live in Hyderabad, India. I am Full stack developer
+              Hello! I am Dolly Singh, Web developer, SEO(on-page SEO) and
+              YouTuber. I live in Hyderabad, India. I am Full stack developer
               and I have build some projects on wordpress Elementor. I manage
               one food website with 1,00,000 per month. I also do SEO and write
               articles for my websites. I have Youtube Channel where I upload my
               projects video and many more things.
             </p>
             <p>
-            Have a Look at My YouTube Channel, It will Students/developer to
+              Have a Look at My YouTube Channel, It will Students/developer to
               learn thing in easy ways and help you to make projects. Or you can
               connect me on Facebook, Linkdin or Instagram. I am always excited
               to talk about Tech.
@@ -61,7 +62,7 @@ const HomeInfo = () => {
                 <div className="homeInfo--info2--rating--inner "></div>
               </div>
             </div>
-           
+
             <div className="homeInfo--info2--marks">
               <div className="homeInfo--info2--marks--mark">
                 <p>Bootstrap</p>
@@ -82,7 +83,7 @@ const HomeInfo = () => {
               </div>
             </div>
 
-           <div className="homeInfo--info2--marks">
+            <div className="homeInfo--info2--marks">
               <div className="homeInfo--info2--marks--mark">
                 <p>Sass</p>
                 <p>75%</p>
@@ -92,7 +93,6 @@ const HomeInfo = () => {
               </div>
             </div>
 
-            
             <div className="homeInfo--info2--marks">
               <div className="homeInfo--info2--marks--mark">
                 <p>MUI(material-ui)</p>

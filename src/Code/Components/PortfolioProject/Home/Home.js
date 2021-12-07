@@ -24,11 +24,11 @@ const Home = () => {
           scrollamount="5"
           className="main--body--names"
         >
-           <p className="main--body--name2">A Web Developer.</p>
-           <p className="main--body--name2">A Youtuber.</p>
-           <p className="main--body--name2">A Digital Marketer.</p>
-           <p className="main--body--name2">A SEO  Analyst.</p>
-           <p className="main--body--name2">A Proud Indian.</p>
+           <p className="main--body--work">A Web Developer.</p>
+           <p className="main--body--work">A Youtuber.</p>
+           <p className="main--body--work">A Digital Marketer.</p>
+           <p className="main--body--work">A SEO  Analyst.</p>
+           <p className="main--body--work">A Proud Indian.</p>
         </marquee>
         
           <motion.div
@@ -55,7 +55,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <HomeInfo />
+      {/* <HomeInfo /> */}
     </div>
   );
 };

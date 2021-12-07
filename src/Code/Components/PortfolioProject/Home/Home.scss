@@ -8,21 +8,17 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
 .main {
   background-image: $background-image;
   background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 700px;
-  padding-top: 5rem;
-  margin-top: -80px;
+  background-size: 100% 980px;
 
   .main--body {
     display: flex;
     color: white;
     justify-content: space-evenly;
-    padding-top: 5rem;
     cursor: pointer;
+    position: relative;
     .main--body--img {
-      margin-left: -10rem;
-      margin-bottom: -5px;
+    position: absolute;
+    bottom: 0;
     }
     .main--body--name1 {
       font-family: $font-family;
@@ -40,7 +36,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       margin-bottom: 10rem;
       padding-left: 3rem;
 
-      .main--body--name2 {
+      .main--body--work {
         color: $textColor;
         font-size: 3rem;
         font-weight: bold;
@@ -70,11 +66,13 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       .main--body--name1{
         color: red;
         font-size: 3rem;
-
       }
       .main--body--mobileimg{
         width: 70%;
         border-radius: 50%;
+      }
+      .main--body--work{
+        font-size: 20px;
       }
       .main--body--img{
         display: none;
@@ -83,7 +81,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     @include breapoint(mobile) {
       @include aboutMe;
     }
-    @include breapoint(tablat) {
+    @include breapoint(tablet) {
       @include aboutMe;
     }
   }
