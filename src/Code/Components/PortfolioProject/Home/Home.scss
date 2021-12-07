@@ -8,7 +8,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
 .main {
   background-image: $background-image;
   background-repeat: no-repeat;
-  background-size: 100% 980px;
+  background-size: 100% 40rem;
 
   .main--body {
     display: flex;
@@ -20,19 +20,18 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     position: absolute;
     bottom: 0;
     }
-    .main--body--name1 {
+    .main--body--name {
       font-family: $font-family;
       font-size: 4rem;
       text-align: center;
-      padding-top: 2rem;
-      padding-left: 3rem;
+
       margin-bottom: 0;
       cursor: pointer;
     }
-    .main--body--names {
+    .main--body--degi {
       width: 100%;
       cursor: pointer;
-      height: 70px;
+      // height: 70px;
       margin-bottom: 10rem;
       padding-left: 3rem;
 
@@ -40,7 +39,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
         color: $textColor;
         font-size: 3rem;
         font-weight: bold;
-        height: 70px;
+        // height: 70px;
       }
     }
     .main--body--btn {

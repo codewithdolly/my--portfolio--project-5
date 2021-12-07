@@ -1,5 +1,14 @@
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: $textColor;
+  background-color: $backGroundcolor;
 }

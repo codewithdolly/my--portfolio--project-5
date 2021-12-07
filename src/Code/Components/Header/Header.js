@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import { Button } from "@material-ui/core";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
@@ -10,14 +10,11 @@ import About from "../PortfolioProject/About/About";
 import YouTube from "../PortfolioProject/YouTube/YouTube";
 import Projects from "../PortfolioProject/Projects/Projects";
 import { motion } from "framer-motion";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import AddIcon from "@mui/icons-material/Add";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Toolbar from "@mui/material/Toolbar";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
-let menubar= ["Home", "Skills", "About", "YouTube", "Projects" ]
+
+let menubar = ["Home", "Skills", "About", "YouTube", "Projects"];
 
 const Header = () => {
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -74,7 +71,7 @@ const Header = () => {
           </li>
         </motion.ul>
 
-        <motion.div animate={{ y: 10 }} initial={{ y: 50 }}>
+        <motion.div animate={{ y: 0 }} initial={{ y: 50 }}>
           <Button
             variant="outlined"
             size="large"
@@ -85,25 +82,23 @@ const Header = () => {
             Hire me
           </Button>
         </motion.div>
-        
+
         <MenuIcon className="mainHeader--menu" onClick={OpenMenu} />
         <Menu
-            anchorEl={anchorElUser}
-            keepMounted   
-            open={Boolean(anchorElUser)}
-            onClose={closeMenu}
-          >
-            {menubar.map((setting) => (
-              <MenuItem id= "item" onClick={closeMenu}>{setting}
+          anchorEl={anchorElUser}
+          keepMounted
+          open={Boolean(anchorElUser)}
+          onClose={closeMenu}
+        >
+          {menubar.map((setting) => (
+            <MenuItem id="item" onClick={closeMenu}>
+              {setting}
               <Routes>
-              <Route path="/projects" element={setting} />
+                <Route path="/projects" element={setting} />
               </Routes>
-              
-              </MenuItem>
-            ))}
-          </Menu>
-
-
+            </MenuItem>
+          ))}
+        </Menu>
       </div>
       <Routes element={<Header />}>
         <Route path="/" element={<Home />} />

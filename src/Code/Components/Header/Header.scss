@@ -3,19 +3,12 @@
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .mainHeader {
-  background-color: $backGroundcolor;
   font-family: sans-serif;
-  color: $textColor;
-  margin: 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 15px 0;
   .mainHeader--menu {
     display: none;
   }

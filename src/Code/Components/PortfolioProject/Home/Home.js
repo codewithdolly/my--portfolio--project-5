@@ -16,13 +16,13 @@ const Home = () => {
           animate={{ opacity: 5,fontSize:"50"}}
           transition={{ duration: 1 }}
         >
-          <h1 className="main--body--name1">
+          <h1 className="main--body--name">
             Hi There, I Am Dolly       
           </h1>
           <marquee
           direction="up"
           scrollamount="5"
-          className="main--body--names"
+          className="main--body--degi"
         >
            <p className="main--body--work">A Web Developer.</p>
            <p className="main--body--work">A Youtuber.</p>
