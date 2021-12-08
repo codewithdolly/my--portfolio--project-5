@@ -2,22 +2,25 @@ import { Button } from "@material-ui/core";
 import React from "react";
 import "./Home.scss";
 import HomeInfo from "./HomeInfo";
-import DollyHome from "../../Images/1.png";
+// import DollyHome from "../../Images/1.png";
+import DollyHome from "../../Images/dolly2.png";
 import DollyMobile from "../../Images/dolly.jpg";
 import { motion } from "framer-motion";
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const Home = () => {
   return (
     <div className="main">
+          <img src={DollyMobile} alt="" className="main--body--mobileimg"/>
       <div className="main--body">
-      {/* <div><img src={DollyMobile} alt="" className="main--body--mobileimg"/></div> */}
+
         <motion.div
           initial={{ opacity: 0,}}
           animate={{ opacity: 5,fontSize:"50"}}
           transition={{ duration: 1 }}
         >
           <h1 className="main--body--name">
-            Hi There, I Am Dolly       
+            <span>Hi There,</span> I am Dolly       
           </h1>
           <marquee
           direction="up"
@@ -38,11 +41,11 @@ const Home = () => {
           >
           <Button
             href="http://localhost:3000/projects"
-            variant="outlined"
             size="large"
             className="main--body--btn"
+            endIcon={<ArrowRightAltIcon />}
           >
-            My Works
+            Let's see my work process
           </Button>
           </motion.div>
         </motion.div>
@@ -50,7 +53,6 @@ const Home = () => {
           <img
             className="main--body--img"
             src={DollyHome}
-            height="520"
             alt="Dolly"
           />
         </div>
