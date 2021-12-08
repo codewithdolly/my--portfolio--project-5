@@ -7,34 +7,51 @@ import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
+import { Avatar } from "@material-ui/core";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
     label: " Steve Jobs",
-    imgPath: "https://akshaysaini.in/img/quotes/steve-jobs.jpg",
+    imgPath:"process.env.PUBLIC_URL +../../Images/steve-jobs.jpg",
     quotes:
       "Because the people who are crazy enough to think they can change the world are the ones who do.",
   },
   {
     label: "Bill Gates",
-    imgPath: "https://akshaysaini.in/img/quotes/bill-gates.jpg",
+    imgPath:"process.env.PUBLIC_URL +../../Images/bill-gates.jpg",
     quotes:
       "Success is a lousy teacher. It seduces smart people into thinking they can't lose.",
   },
   {
     label: "Larry Page",
-    imgPath: "https://akshaysaini.in/img/quotes/linus-torvalds.jpg",
+    imgPath:"process.env.PUBLIC_URL +../../Images/larry-page.jpg",
     quotes:
       "If you're changing the world, you're working on important things. You're excited to get up in the morning.",
   },
+
   {
-    label: "Linus Torvalds",
-    imgPath: "https://akshaysaini.in/img/quotes/larry-page.jpg",
+    label: "Winston S. Churchill",
+    imgPath:"process.env.PUBLIC_URL +../../Images/1.jpg",
     quotes:
-      "See, you not only have to be a good coder to create system like Linux, you have to be a sneaky bastard too",
+    "Success is not final; failure is not fatal: It is the courage to continue that counts.",
   },
+
+  {
+    label: "Jim Rohn",
+    imgPath:"process.env.PUBLIC_URL +../../Images/3.jpg",
+    quotes:
+    "If you are not willing to risk the usual, you will have to settle for the ordinary.",
+  },
+
+  {
+    label: "Colin Powell",
+    imgPath:"process.env.PUBLIC_URL +../../Images/1.jpg",
+    quotes:
+    "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
+  },
+  
   
 ];
 
@@ -59,6 +76,7 @@ function InspringQuotes() {
     <>
       <div className="quotes">
         <p className="quotes--head">Inspiring Quotes.</p>
+        {/* <p className="quotes--head--border">~~~~~~~~~~~~~~~~~~~~~~~~~</p> */}
         <AutoPlaySwipeableViews
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={quote}
@@ -77,7 +95,6 @@ function InspringQuotes() {
             </div>
           ))}
         </AutoPlaySwipeableViews>
-        {/* <img src={images[quote].imgPath} alt={images[quote].lable} style={{ borderRadius: "50%" }}/> */}  {/* if we use like this then only button will work. */}
 
         <p className="quotes--lines quotes--line">
           "<i>{images[quote].quotes}"</i>

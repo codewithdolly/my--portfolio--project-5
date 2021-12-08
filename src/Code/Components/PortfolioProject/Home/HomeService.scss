@@ -24,8 +24,12 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
     margin: 2rem;
     padding: 2rem 5rem;
     display: inline-block;
+    .homeService--cards--icon{
+        font-size: 3rem;
+    }
     .homeService--cards--header {
       color: $textColor;
+      margin: 5px 0;
     }
   }
   .homeService--cards:hover {
