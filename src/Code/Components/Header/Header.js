@@ -69,6 +69,12 @@ const Header = () => {
               About me
             </Link>
           </li>
+
+          <li style={{ listStyleType: "none" }}>
+            <Link to="/blog" className="mainHeader--nav--link">
+              Blog
+            </Link>
+          </li>
         </motion.ul>
 
         <motion.div animate={{ y: 0 }} initial={{ y: 50 }}>
@@ -105,7 +111,8 @@ const Header = () => {
         {/*<Route path="/projects" element={<Projects />} />
         <Route path="/Skills" element={<Skills />} />
         <Route path="/youtube" element={<YouTube />} />
-        <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
+         <Route path="/blog" element={<Blog />} /> */}
       </Routes>
     </Router>
   );

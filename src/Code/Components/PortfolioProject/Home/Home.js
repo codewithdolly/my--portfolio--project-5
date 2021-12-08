@@ -11,7 +11,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 const Home = () => {
   return (
     <div className="main">
-          <img src={DollyMobile} alt="" className="main--body--mobileimg"/>
+          {/* <img src={DollyMobile} alt="" className="main--body--mobileimg"/> */}
       <div className="main--body">
 
         <motion.div
@@ -57,7 +57,7 @@ const Home = () => {
           />
         </div>
       </div>
-      {/* <HomeInfo /> */}
+      <HomeInfo />
     </div>
   );
 };

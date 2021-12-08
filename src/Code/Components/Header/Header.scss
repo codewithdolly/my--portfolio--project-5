@@ -2,8 +2,11 @@
 
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
+$background-image2: url("../Images/Dark.jpg");
+$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
 
 .mainHeader {
+  // background-image: $background-image;
   font-family: sans-serif;
   display: flex;
   justify-content: space-evenly;
