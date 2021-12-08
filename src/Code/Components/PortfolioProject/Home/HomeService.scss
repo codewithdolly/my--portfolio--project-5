@@ -3,32 +3,33 @@ $textWhite: white;
 $backGroundcolor: #311e25;
 $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 
-.homeService{
-    background-color: #3b2930;
-    padding: 90px 15% 90px 15%;
-    cursor: pointer;
-    
+.homeService {
+  background-color: #3b2930;
+  cursor: pointer;
+  padding: 3rem 18%;
 
-    .homeService--service{
-        color: $textWhite;
-        font-size: 40px;
-        
+  .homeService--service {
+    color: $textWhite;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .homeService--border {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+  .homeService--cards {
+    color: $textWhite;
+    border: 1px solid $textColor;
+    width: 40%;
+    margin: 2rem;
+    padding: 2rem 5rem;
+    display: inline-block;
+    .homeService--cards--header {
+      color: $textColor;
     }
-    .homeService--cards{
-        color: $textWhite;
-        border: 1px solid $textColor;
-        margin: 2rem;
-        padding: 2rem;
-        width: 35%;
-        display: inline-block;
-        text-align: center;
-        align-items: center;
-        .homeService--cards--header{
-            color: $textColor;
-        }
-    }
-    .homeService--cards:hover{
-        border: 2px solid $backGroundcolor;
-        box-shadow: 2px 2px 10px $backGroundcolor;
-    }
+  }
+  .homeService--cards:hover {
+    border: 2px solid $backGroundcolor;
+    box-shadow: 2px 2px 10px $backGroundcolor;
+  }
 }

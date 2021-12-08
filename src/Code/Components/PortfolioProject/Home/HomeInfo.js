@@ -9,7 +9,8 @@ const HomeInfo = () => {
   return (
     <>
       <div className="homeInfo">
-      <h2>My Sills.</h2>
+      <h2 className="homeInfo--skills">My Skills.</h2>
+      <p className="homeInfo--border">~~~~~~~~~~~~~~~~~~~~</p>
         <h2 className="homeInfo--information">
           Hello I’m Dolly, a Software engineer in Hyderabad, India. She loves
           Technology & likes to develop new tech things, She knows I also enjoy

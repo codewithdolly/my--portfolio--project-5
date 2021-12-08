@@ -23,9 +23,19 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 }
 .homeInfo {
   font-family: $font-family;
-  padding: 110px 10% 90px 10%;
+  margin: 50px 10% 90px 10%;
   flex-wrap: wrap;
   color: $textWhite;
+  .homeInfo--skills{
+    font-size: 3rem;
+    text-align: center;
+
+  }
+  .homeInfo--border{
+    text-align: center;
+    margin-bottom: 6rem;
+  
+  }
   
   .homeInfo--information {
     font-size: 30px;

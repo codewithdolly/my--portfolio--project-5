@@ -41,14 +41,14 @@ const HomeService = () => {
         initial={{x:-300}}
         transition= {{duration: 1}}
         className="homeService--service">My Services</motion.h2>
-
+        <p className="homeService--border">~~~~~~~~~~~~~~~~~~~~~~~~~</p>
         {services.map((service) => (
           <>
             <motion.div
-            whileHover={{scale:1.2}}
+            whileHover={{scale:1.3}}
             transition={{duration:.5}}
              className="homeService--cards">
-              <img src={service.image} alt="" width="100px" />
+              <img src={service.image} alt="" />
               <h2 className="homeService--cards--header">{service.header}</h2>
               <p>{service.about}</p>
             </motion.div>
