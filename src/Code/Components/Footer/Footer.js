@@ -4,71 +4,85 @@ import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import DoneAllOutlinedIcon from "@mui/icons-material/DoneAllOutlined";
+import { Button } from "@material-ui/core";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
+import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
+import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+
+const socialMedia = [
+  {
+    icon: <LocationOnOutlinedIcon className="footer--connect--social--Icon" />,
+    type: "Address",
+    add: "Banjara Hills ",
+    add2: "Hyderabad, 500045",
+  },
+  {
+    icon: <PhoneInTalkOutlinedIcon className="footer--connect--social--Icon" />,
+    type: "Phone",
+    add: "+91 6300-810-401",
+    add2: "+91 8328-082-526",
+  },
+  {
+    icon: <MailOutlinedIcon className="footer--connect--social--Icon" />,
+    type: "Email",
+    add: "heydollysingh@gmail.com",
+    add2: "intensedolly321@gmail.com",
+  },
+  {
+    icon: <ChatOutlinedIcon className="footer--connect--social--Icon" />,
+    type: "LinkedIn Chat",
+    add: "@CodeWithDolly",
+  },
+];
+
 const Footer = () => {
   return (
     <>
       <div className="footer">
-        <p className="footer--AboutMe">Coffee with me.</p>
-        <p className="footer--AboutMe--me">
-          I am always excited to work on some awesome projects, message me and
-          let's discuss over coffee.
-        </p>
-        <div style={{ textAlign: "center", marginLeft: "80px" }}  className="footer--input">
-          <TextField
-            sx={{ color: "#db9a64" }}
-            hiddenLabel
-            id="filled-hidden-label-normal"
-            placeholder="Message..."
-            variant="filled"
-          />
-          <IconButton aria-label="send" href="http://localhost:3000/">
-            <ArrowForwardIcon
-              className="footer--project1--btn-hover"
-              sx={{color: "#bebbb8ce", fontSize: "3rem" }}
-            />
-          </IconButton>
+        <center>
+          {" "}
+          <Button
+            href="https://www.linkedin.com/in/codewithdolly/"
+            target="_blank"
+            variant="outlined"
+            className="footer--btn"
+          >
+            Get in Touch
+          </Button>
+        </center>
+        <div className="footer--connect">
+          {socialMedia.map((social) => {
+            return (
+              <div className="footer--connect--social">
+                <div>{social.icon}</div>
+                <p className="footer--connect--social--type">{social.type}</p>
+                <p className="footer--connect--social--add">{social.add}</p>
+                <p className="footer--connect--social--add">{social.add2}</p>
+              </div>
+            );
+          })}
         </div>
-        <small  className="footer--feedme">
-          You can find me here as well
-        </small>
-        <div className="footer--Icons">
-          <a href="https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA">
-            <span
-              className="fab fa-youtube footer--Icon"
-              style={{ color: "red"}}
-            ></span>
-          </a>
-          <a href="https://www.facebook.com/codewithdolly/">
-            <span
-              className="fab fa-facebook-square footer--Icon"
-              style={{
-                color: "#3b5998",
-              }}
-            ></span>
-          </a>
-          <a href="https://www.instagram.com/codewithdolly">
-            <i class="fab fa-instagram instagram "></i>
-          </a>
-          <a href="https://www.linkedin.com/in/codewithdolly/">
-            <span
-              className="fab fa-linkedin footer--Icon"
-              style={{
-                color: "#287bbc"
-              }}
-            ></span>
-          </a>
-          <a href="mailto: heydollysingh@gmail.com">
-            <span
-              className="fas fa-envelope footer--Icon"
-              style={{
-                color: "#b32d00",
-              }}
-            ></span>
-          </a>
+
+        <div className="footer--moreInfo">
+          <div className="footer--moreInfo--SocialIcons">
+            <h2>Let’s Connect</h2>
+            <div className="footer--moreInfo--SocialIcons--social">
+           <div className="footer--moreInfo--SocialIcons--social--icon"> <FacebookOutlinedIcon sx={{ mr: 2 }} />
+                <p>FaceBook</p></div>
+               
+            </div>
+          </div>
+
+          <div className="footer--moreInfo--form">
+            <h2>Send Me a Message</h2>
+          </div>
         </div>
+
         <center>
           <p style={{ marginTop: "4rem", color: "gray" }}>
-          No ©copyright issues | This portfolio is made by
+            No ©copyright issues | This portfolio is made by
             <span style={{ color: "#db9a64" }}> Dolly</span>
             <DoneAllOutlinedIcon />
           </p>

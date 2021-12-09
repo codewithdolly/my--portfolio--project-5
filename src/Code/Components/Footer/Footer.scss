@@ -7,80 +7,61 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
   background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
   background-repeat: no-repeat;
   background-position: center;
-  width: 80%;
-  padding-top: 0.5rem;
-  text-align: center;
-  padding-top: 5rem;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 1rem;
-  .footer--AboutMe {
-    color: $textColor;
-    font-size: 50px;
-  }
-  .footer--AboutMe--me {
+  width: 100%;
+  padding: 5rem 15rem;
+
+  .footer--btn {
+    font-size: 25px;
+    text-transform: capitalize;
+    padding: 10px 35px;
     color: $textWhite;
-    margin-top: -2rem;
-    margin-bottom: 4rem;
+    border: 2px solid $textWhite;
+    border-radius: 0;
   }
-  #filled-hidden-label-normal {
-    padding-right: 20rem;
-    color: $textWhite;
-    border-radius: 10px;
-    background-color: rgba(192, 192, 192, 0.185);
-    padding-top: 2rem;
-  }
-  #filled-hidden-label-normal:hover {
-    padding-right: 21rem;
-  }
-  .footer--project1--btn-hover:hover {
-    color: $textColor;
-  }
-  .footer--feedme{
-    color: white;
-    margin-top: 20rem;
-    font-size: 3rem;
-  }
-  .footer--Icons {
-    font-size: 60px;
-    .footer--Icon {
-      padding-right: 10px;
-      font-size: 3rem;
+  .footer--connect {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem 0;
+    .footer--connect--social {
+      .footer--connect--social--Icon {
+        font-size: 30px;
+      }
+      .footer--connect--social--type {
+        font-weight: bold;
+        color: $textWhite;
+      }
+      .footer--connect--social--add {
+        color: silver;
+        font-size: 14px;
+      }
     }
   }
-}
+  .footer--moreInfo{
+    display: flex;
+    .footer--moreInfo--SocialIcons{
+      width: 40%;
+      margin-left: 4rem;
+      h2{
+        color: $textWhite;
+        font-weight: 400;
+      }
+      .footer--moreInfo--SocialIcons--social{
+        color: $textWhite;
+        .footer--moreInfo--SocialIcons--social{
+        padding: 20px 0;
+        .footer--moreInfo--SocialIcons--social--icon{
+          display: flex;
+        }
+        }
 
-.instagram {
-  font-size: 2.8rem;
-  font-weight: 100;
-  padding: 1px 3px;
-  background: #f09433;
-  color: white;
-  border-radius: 13px;
-  margin-right: 10px;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
- 
+      }
+    }
+    .footer--moreInfo--form{
+      width: 60%;
+      h2{
+        color: $textWhite;
+        font-weight: 400;
+      }
+    }
+  }
 }

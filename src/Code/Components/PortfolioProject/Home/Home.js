@@ -56,7 +56,7 @@ const Home = () => {
       <UseFullTools />
       <QualificationAndExperience />
       <InspringQuotes />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
