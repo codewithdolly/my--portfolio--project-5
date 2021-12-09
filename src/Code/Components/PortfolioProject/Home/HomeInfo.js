@@ -2,7 +2,6 @@ import { Button } from "@material-ui/core";
 import React from "react";
 import "./HomeInfo.scss";
 import SaveAltIcon from "@mui/icons-material/SaveAlt";
-import HomeService from "./HomeService";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const HomeInfo = () => {
@@ -126,7 +125,6 @@ const HomeInfo = () => {
           </div>
         </div>
       </div>
-      <HomeService />
     </>
   );
 };

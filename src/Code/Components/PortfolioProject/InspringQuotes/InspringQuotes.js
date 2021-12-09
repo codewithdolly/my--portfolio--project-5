@@ -33,21 +33,21 @@ const images = [
 
   {
     label: "Winston S. Churchill",
-    imgPath:"process.env.PUBLIC_URL +../../Images/1.jpg",
+    imgPath:"process.env.PUBLIC_URL +../../Images/Winston.jpg",
     quotes:
     "Success is not final; failure is not fatal: It is the courage to continue that counts.",
   },
 
   {
     label: "Jim Rohn",
-    imgPath:"process.env.PUBLIC_URL +../../Images/3.jpg",
+    imgPath:"process.env.PUBLIC_URL +../../Images/Jim.jpg",
     quotes:
     "If you are not willing to risk the usual, you will have to settle for the ordinary.",
   },
 
   {
     label: "Colin Powell",
-    imgPath:"process.env.PUBLIC_URL +../../Images/1.jpg",
+    imgPath:"process.env.PUBLIC_URL +../../Images/Colin.jpg",
     quotes:
     "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
   },

@@ -1,7 +1,6 @@
 import React from "react";
 import "./HomeService.scss";
-import Footer from "../../Footer/Footer";
-import InspringQuotes from "../InspringQuotes/InspringQuotes";
+
 import { motion } from "framer-motion";
 import ImportantDevicesIcon from "@mui/icons-material/ImportantDevices";
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
@@ -82,8 +81,8 @@ const HomeService = () => {
           </>
         ))}
       </div>
-      <InspringQuotes />
-      <Footer />
+      
+
     </>
   );
 };
