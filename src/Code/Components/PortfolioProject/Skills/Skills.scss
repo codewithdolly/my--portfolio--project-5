@@ -1,6 +1,6 @@
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
-$backgroundcolor2: #3b2930 ; 
+$backgroundcolor2: #3b2930;
 $textWhite: white;
 $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
@@ -13,14 +13,14 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     margin-top: -10rem;
     text-align: center;
     .skills--main--name {
-      font-size: 70px;
-      font-weight: 300;
+      font-family: auto;
+      font-size: 60px;
+      font-weight: 400;
       color: $textWhite;
       padding-top: 12rem;
     }
-    .skills--main--img{
-     margin-left: 20rem;
+    .skills--main--img {
+      margin-left: 20rem;
     }
   }
-  
 }

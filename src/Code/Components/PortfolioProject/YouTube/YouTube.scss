@@ -42,6 +42,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       color: $textColor;
       border: 1px solid $textColor;
       text-transform: capitalize;
+      border-radius: 0;
       &:hover{
         background-color: rgb(231, 110, 66);
         color: $textWhite;
