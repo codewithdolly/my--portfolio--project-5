@@ -8,13 +8,16 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import DescriptionIcon from "@mui/icons-material/Description";
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
-import Footer from "../../Footer/Footer";
-import YouTube from "./YouTube";
-import Static from "./Static";
-import Myntra from "./Myntra"
-import Gaana from "./Gaana"
-import CoWin from "./CoWin"
 import { motion } from "framer-motion";
+import YouTubeProject from "./YouTubeProject";
+import Static from "./Static";
+import Myntra from "./Myntra";
+import Gaana from "./Gaana";
+import CoWin from "./CoWin";
+import Slack from "./Slack";
+import WhatsApp from "./WhatsApp";
+import Footer from "../../Footer/Footer";
+
 
 const ProjectDetails = [
   {
@@ -24,7 +27,8 @@ const ProjectDetails = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     path: "/youtube",
     youtubeLink: "https://www.youtube.com/watch?v=MFV4WSxAnjs&t=30s",
-    singleProjectDetails: <YouTube/>,
+    singleProjectDetails: <YouTubeProject />,
+    projectpath: "/youtube",
   },
 
   {
@@ -33,8 +37,9 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink:
-      "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA/playlists",
-      singleProjectDetails: <YouTube/>,
+      "https://www.youtube.com/watch?v=ege7EYue2RE&t=3s",
+    singleProjectDetails: <Myntra />,
+    projectpath: "/myntra",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/gaana.jpg",
@@ -42,7 +47,8 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=qxvtOmXSHCc",
-    singleProjectDetails: <YouTube/>,
+    singleProjectDetails: <Gaana />,
+    projectpath: "/gaana",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/cowin.jpg",
@@ -50,7 +56,8 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=Y6z2GuEu1f0&t=25s",
-    singleProjectDetails: <YouTube/>,
+    singleProjectDetails: <CoWin />,
+    projectpath: "/cowin",
   },
 
   {
@@ -59,8 +66,9 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink:
-      "https://www.youtube.com/watch?v=U3ZXQkdx1pY&list=PLiuOhj6PP4klXq3E8pF-og9UfzmgT4par&index=2",
-      singleProjectDetails: <YouTube/>,
+      "https://www.youtube.com/watch?v=U3ZXQkdx1pY&t=179s",
+    singleProjectDetails: <CoWin />,
+    projectpath: "/google-form",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/static.jpg",
@@ -68,9 +76,28 @@ const ProjectDetails = [
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=tQ1dn55q8jA&t=262s",
-    singleProjectDetails: <YouTube/>,
-    projectPage: "/Static"
-    
+    singleProjectDetails: <Static />,
+    projectpath: "/youtube",
+  },
+
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/whatsapp.jpg",
+    header: "6. WhatsApp Clone from scratch using React, MUI(material-ui)",
+    content:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
+    youtubeLink: "",
+    singleProjectDetails: <WhatsApp />,
+    projectpath: "/whatsapp",
+  },
+
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/slack.jpg",
+    header: "7. Slack Clone from scratch using React, MUI(material-ui)",
+    content:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
+    youtubeLink: "",
+    singleProjectDetails: <Slack />,
+    projectpath: "/slack",
   },
 ];
 
@@ -79,25 +106,23 @@ const Projects = () => {
     <>
       <div className="Projects">
         <div className="Projects--bgImg">
-          <h1 className="Projects--bgImg--h1">Projects</h1>
+          <motion.h1 
+          initial={{ opacity: 0, x:-100 }}
+          animate={{ opacity: 2, x: 0 }}
+          transition={{ duration: .5 }}
+          className="Projects--bgImg--h1">Projects</motion.h1>
         </div>
-
+<div className="Projects--details">
         {ProjectDetails.map((project) => (
           <>
             <motion.div
-            whileHover={{scale:1.1}}
-            transition={{duration:.5}}
-             className="Projects--details">
-              <Card 
-            
-              className="Projects--details--card">
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.5 }}
+              className="Projects--details--single"
+            >
+              <Card className="Projects--details--single--card">
                 <CardActionArea>
-                  <CardMedia
-                    component="img"
-                    // height="140"
-                    image={project.img}
-                    alt=""
-                  />
+                  <CardMedia component="img" image={project.img} alt="" />
                   <CardContent>
                     <Typography>{project.header}</Typography>
                     <Typography variant="body2" color="text.secondary">
@@ -106,7 +131,7 @@ const Projects = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                 <Link to="/" className="Projects--details--card--btn">
+                  <Link to="{project.projectpath}" className="Projects--details--single--card--btn">
                     <Button
                       size="small"
                       color="primary"
@@ -115,12 +140,12 @@ const Projects = () => {
                     >
                       Blog
                     </Button>
-                    </Link>
+                  </Link>
                   <Routes>
-                    <Route path={project.projectPage}
+                    <Route
+                      path={project.projectpath}
                       exact
                       element={project.singleProjectDetails}
-                     
                     />
                   </Routes>
 
@@ -141,11 +166,11 @@ const Projects = () => {
           </>
         ))}
       </div>
+      </div>
       <Footer />
-      <YouTube /><Static /> <Myntra />
+      {/* <YouTube /><Static /> <Myntra />
       <Gaana />
-      <CoWin />
-
+      <CoWin /> */}
     </>
   );
 };

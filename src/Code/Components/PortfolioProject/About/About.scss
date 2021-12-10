@@ -30,9 +30,8 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
         border: 5px solid $backGroundcolor;
         box-shadow: 1px 3px 20px rgba(192, 192, 192, 0.404);
       }
-      .about--socialLink{
-        padding: 0;
-        margin: 0;
+      .about--socialLink {
+        margin-right: 4rem;
         font-size: 20px;
         text-align: center;
       }
@@ -47,41 +46,40 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
         font-weight: 200;
         margin-bottom: 1rem;
       }
-      .about--intro2--info{
+      .about--intro2--info {
         line-height: 25px;
         margin-bottom: 2rem;
         text-align: justify;
       }
-      .about--intro2--contact{
+      .about--intro2--contact {
         display: flex;
         justify-content: space-around;
         padding-bottom: 1rem;
         border-bottom: 1px solid rgba(192, 192, 192, 0.342);
-        h4{
+        h4 {
           color: $textColor;
           font-weight: 400;
         }
-        .about--intro2--contact--info{
-         
-          div{
-            margin-bottom: 10px;            
+        .about--intro2--contact--info {
+          div {
+            margin-bottom: 10px;
           }
         }
       }
-      .about--intro2--btns{
+      .about--intro2--btns {
         margin-top: 20px;
-        Button{
+        Button {
           color: $textColor;
           border: 1px solid $textColor;
           margin-right: 10px;
           padding: 10px 20px;
           border-radius: 0;
-          &:hover{
-            background-color:  rgb(231, 110, 66);
+          &:hover {
+            background-color: rgb(231, 110, 66);
             color: $textWhite;
           }
         }
-        .about--intro2--btns--contact{
+        .about--intro2--btns--contact {
           background-color: $textColor;
           color: $textWhite;
         }
@@ -90,12 +88,9 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
   }
 }
 
-
 .instagram {
   color: white;
-  font-size: 1.9rem;
   font-weight: 100;
-  background: #f09433;
   color: white;
   border-radius: 5px;
   background: linear-gradient(
@@ -106,5 +101,5 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     #cc2366 75%,
     #bc1888 100%
   );
- 
+  margin-right: 10px;
 }

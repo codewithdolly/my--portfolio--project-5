@@ -10,30 +10,43 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     background-image: $background-image;
     width: 100%;
     height: 65vh;
-    margin-top: -10rem;
     text-align: center;
     .youtube--main--name {
-      font-size: 70px;
-      font-weight: 300;
+      font-family: auto;
+      font-size: 60px;
+      font-weight: 400;
       color: $textWhite;
-      padding-top: 12rem;
+      padding-top: 10rem;
     }
     
   }
   .youtube--video{
+    background-color: $backgroundcolor2;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(225, 244, 252, 0.521);
     text-align: center;
     padding-top: 6rem;
-    padding-bottom: 5rem;
-
 
   }
   .youtube--video2{
-    background-color: rgba(225, 244, 252, 0.521);
-      margin-top: -5rem;
-      padding-bottom: 2rem;
+    background-color: $backgroundcolor2;
+    padding: 1rem 0;
+    padding-bottom: 6rem;
+    color: silver;
+    h2{
+      color: $textWhite;
+      padding-bottom: 1rem;
+    }
+    .youtube--video2--btn{
+      color: $textColor;
+      border: 1px solid $textColor;
+      text-transform: capitalize;
+      &:hover{
+        background-color: rgb(231, 110, 66);
+        color: $textWhite;
+      }
+    }
   }
+  
 }

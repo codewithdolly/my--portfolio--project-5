@@ -137,7 +137,7 @@ const Footer = () => {
         </div>
 
         <center>
-          <p style={{ marginTop: "3rem", paddingBottom:"1rem", color: "gray" }}>
+          <p style={{ marginTop: "2rem", paddingBottom:"1rem", color: "gray" }}>
             No ©copyright issues | This portfolio is made by
             <span style={{ color: "#db9a64" }}> Dolly</span>
             <DoneAllOutlinedIcon />

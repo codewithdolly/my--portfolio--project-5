@@ -77,7 +77,7 @@ const Myntra = () => {
               Project Link
             </Button>
             <Button
-            href="https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA/playlists"
+            href="https://www.youtube.com/watch?v=ege7EYue2RE&t=3s"
               className="projects--details--info--btn2"
               variant="contained"
               fullWidth

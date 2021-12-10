@@ -3,17 +3,18 @@ $backGroundcolor: #311e25;
 $textWhite: white;
 $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 
-.inputBackground{
+.inputBackground {
   color: white;
   background-color: rgba(255, 255, 255, 0.096);
   outline: none;
   border: none;
-  margin:  5px 0 10px 0;
+  margin: 5px 0 10px 0;
   padding: 10px;
   padding-right: 4rem;
-  &:hover{
+  &:hover {
     background-color: rgba(255, 255, 255, 0.123);
-}}
+  }
+}
 
 .footer {
   background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
@@ -21,7 +22,7 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
   background-position: center;
   width: 100%;
   padding: 10rem 15rem;
-padding-bottom: 0;
+  padding-bottom: 0;
   .footer--btn {
     font-size: 25px;
     text-transform: capitalize;
@@ -48,105 +49,101 @@ padding-bottom: 0;
       }
     }
   }
-  .footer--moreInfo{
+  .footer--moreInfo {
     display: flex;
-    .footer--moreInfo--SocialIcons{
+    .footer--moreInfo--SocialIcons {
       width: 40%;
       margin-left: 5rem;
-      h2{
+      h2 {
         color: $textWhite;
         font-weight: 400;
       }
-      .footer--moreInfo--SocialIcons--social{
+      .footer--moreInfo--SocialIcons--social {
         color: $textWhite;
         padding: 20px 0;
-        .footer--moreInfo--SocialIcons--social--icon{
+        .footer--moreInfo--SocialIcons--social--icon {
           display: flex;
           padding: 5px 0;
           align-items: center;
           text-decoration: none;
           color: white;
-          i{ 
+          i {
             padding: 7px 9px;
             margin-right: 1rem;
             border: 1px solid silver;
             border-radius: 50%;
-            &:hover{
+            &:hover {
               background-color: rgba(255, 255, 255, 0.116);
             }
           }
-          p{
+          p {
             font-size: 12px;
           }
         }
-
       }
     }
-    .footer--moreInfo--form{
+    .footer--moreInfo--form {
       width: 60%;
       color: white;
-      h2{
+      h2 {
         color: $textWhite;
         font-weight: 400;
       }
-      .footer--moreInfo--form--name{
+      .footer--moreInfo--form--name {
         display: flex;
         margin-top: 1.5rem;
 
-        .footer--moreInfo--form--userName{
-          label{
+        .footer--moreInfo--form--userName {
+          label {
             font-size: 14px;
           }
-          input{
+          input {
             @extend .inputBackground;
             margin-right: 3rem;
             padding: 10px;
             padding-right: 6rem;
-            }
+          }
         }
-       
       }
-      .footer--moreInfo--form--email{
-        label{
+      .footer--moreInfo--form--email {
+        label {
           font-size: 14px;
         }
-        input{
+        input {
           @extend .inputBackground;
           padding-right: 6rem;
         }
       }
+    }
+    .footer--moreInfo--form--sub {
+      label {
+        font-size: 14px;
       }
-      .footer--moreInfo--form--sub{
-        label{
-          font-size: 14px;
-        }
-        input{
-          @extend .inputBackground;
-          width: 100%;
-        }
+      input {
+        @extend .inputBackground;
+        width: 100%;
       }
-      .footer--moreInfo--form--message{
-        label{
-          font-size: 14px;
-        }
-        textarea{
-          @extend .inputBackground;
-          width: 100%;
-        }
-       
+    }
+    .footer--moreInfo--form--message {
+      label {
+        font-size: 14px;
       }
-      .footer--moreInfo--form--btn{
-        font-size: 12px;
-        float: right;
-        color: $textWhite;
-        background-color: $textColor;
-        border: 1px solid $textColor;
-        border-radius: 0;
-        padding: 10px 15px;
-        &:hover{
-          background-color: #db9a6469;
-        }
+      textarea {
+        @extend .inputBackground;
+        width: 100%;
+      }
+    }
+    .footer--moreInfo--form--btn {
+      font-size: 12px;
+      float: right;
+      color: $textWhite;
+      background-color: $textColor;
+      border: 1px solid $textColor;
+      border-radius: 0;
+      padding: 10px 15px;
+      &:hover {
+        background-color: #db9a6469;
       }
     }
   }
-
+}

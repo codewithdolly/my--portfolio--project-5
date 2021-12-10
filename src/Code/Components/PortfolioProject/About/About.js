@@ -1,12 +1,12 @@
 import React from "react";
 import "./About.scss";
 import Plane from "../../Images/plane.gif";
-import myImg from "../../Images/dolly.jpg";
-import Dolly from "../../Images/d3.png";
+import Dolly from "../../Images/d2.png";
 import Footer from "../../Footer/Footer";
 import { Button } from "@mui/material";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -14,7 +14,11 @@ const About = () => {
       <div className="about">
         <div className="about--main">
           <img src={Plane} alt="plane" />
-          <h1 className="about--main--name">Dolly Singh</h1>
+          <motion.h1 
+           initial={{ opacity: 0, x:-100 }}
+          animate={{ opacity: 2, x: 0 }}
+          transition={{ duration: .5 }}
+          className="about--main--name">Dolly Singh</motion.h1>
         </div>
         <div className="about--intro">
           <div className="about--intro1">
@@ -61,11 +65,14 @@ const About = () => {
                 project's video and many more things.
               </p>
               <p>
-                Have a Look at My 
+                Have a Look at My
                 <a
                   href="https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA"
                   style={{ color: "gray" }}
-                > Youtube </a> 
+                >
+                  {" "}
+                  Youtube{" "}
+                </a>
                 Channel, It will Students/developer to learn thing in easy ways
                 and help you to make projects. Or you can connect me on
                 Facebook, Linkdin or Instagram. I am always excited to talk
@@ -107,9 +114,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <hr />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
