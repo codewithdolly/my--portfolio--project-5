@@ -102,11 +102,11 @@ const Header = () => {
       </div>
       <Routes element={<Header />}>
          <Route path="/" element={<Home />} />
-        {/*<Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/Skills" element={<Skills />} />
         <Route path="/youtube" element={<YouTube />} />
         <Route path="/about" element={<About />} />
-        */}
+       
       </Routes>
     </Router>
   );

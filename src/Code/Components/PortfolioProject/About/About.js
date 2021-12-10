@@ -56,7 +56,7 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="about--intro2">
+          {/* <div className="about--intro2">
             <h2 className="about--intro2--h2">About me.</h2>
             <p>
               Hello! I am Dolly Singh, Web developer, Digital marketer and YouTuber. I live in Hyderabad, India. I am Full stack developer
@@ -71,11 +71,11 @@ const About = () => {
               connect me on Facebook, Linkdin or Instagram. I am always excited
               to talk about Tech.
             </p>
-          </div>
+          </div> */}
         </div>
         <hr />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

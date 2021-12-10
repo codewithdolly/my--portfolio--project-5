@@ -1,15 +1,12 @@
 import React from "react";
 import "./Footer.scss";
-import TextField from "@mui/material/TextField";
-import IconButton from "@mui/material/IconButton";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import DoneAllOutlinedIcon from "@mui/icons-material/DoneAllOutlined";
 import { Button } from "@material-ui/core";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const socialMedia = [
   {
@@ -37,12 +34,44 @@ const socialMedia = [
   },
 ];
 
+const SocialIcon = [
+  {
+    name: "Facebook",
+    icon: <i class="fab fa-facebook-f "></i>,
+    link: "https://www.facebook.com/codewithdolly/",
+  },
+  {
+    name: "Instagram",
+    icon: <i class="fab fa-instagram"></i>,
+    link: "https://www.instagram.com/codewithdolly/",
+  },
+  {
+    name: "LinkedIn",
+    icon: <i class="fab fa-linkedin-in"></i>,
+    link: "https://www.linkedin.com/in/codewithdolly/",
+  },
+  {
+    name: "Twitter",
+    icon: <i class="fab fa-twitter"></i>,
+    link: "https://twitter.com/intensedolly",
+  },
+  {
+    name: "YouTube",
+    icon: <i class="fab fa-youtube"></i>,
+    link: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
+  },
+  {
+    name: "Skype",
+    icon: <i class="fab fa-skype"></i>,
+    link: "https://www.linkedin.com/in/codewithdolly/",
+  },
+];
+
 const Footer = () => {
   return (
     <>
       <div className="footer">
         <center>
-          {" "}
           <Button
             href="https://www.linkedin.com/in/codewithdolly/"
             target="_blank"
@@ -69,19 +98,46 @@ const Footer = () => {
           <div className="footer--moreInfo--SocialIcons">
             <h2>Let’s Connect</h2>
             <div className="footer--moreInfo--SocialIcons--social">
-           <div className="footer--moreInfo--SocialIcons--social--icon"> <FacebookOutlinedIcon sx={{ mr: 2 }} />
-                <p>FaceBook</p></div>
-               
+              {SocialIcon.map((social) => {
+                return (
+                  <a
+                    href={social.link}
+                    target="_blank"
+                    className="footer--moreInfo--SocialIcons--social--icon"
+                  >
+                    {social.icon}
+                    <p>{social.name}</p>
+                  </a>
+                );
+              })}
             </div>
           </div>
-
           <div className="footer--moreInfo--form">
             <h2>Send Me a Message</h2>
+            <div className="footer--moreInfo--form--name">
+           <div className="footer--moreInfo--form--userName">
+           <label>name*</label> <br />
+            <input type="text" placeholder="Name" importent />
+           </div>
+           <div className="footer--moreInfo--form--email">
+           <label>Email*</label> <br />
+            <input type="text" placeholder="hello@gmail.com"/>
+           </div>
+            </div>
+            <div className="footer--moreInfo--form--sub">
+           <label>Subject*</label> <br />
+            <input type="text" placeholder="address"/>
+           </div>
+           <div className="footer--moreInfo--form--message">
+           <label>Message*</label> <br />
+            <textarea type="text" placeholder="Message..." rows="5" cols="10"/>
+           </div>
+           <Button endIcon={<ArrowRightAltIcon />}className="footer--moreInfo--form--btn">Send a Message</Button>
           </div>
         </div>
 
         <center>
-          <p style={{ marginTop: "4rem", color: "gray" }}>
+          <p style={{ marginTop: "3rem", paddingBottom:"1rem", color: "gray" }}>
             No ©copyright issues | This portfolio is made by
             <span style={{ color: "#db9a64" }}> Dolly</span>
             <DoneAllOutlinedIcon />
