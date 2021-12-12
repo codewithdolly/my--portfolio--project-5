@@ -7,7 +7,6 @@ import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import PermDataSettingIcon from "@mui/icons-material/PermDataSetting";
 import LeaderboardIcon from '@mui/icons-material/Leaderboard';
-import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import InsightsIcon from '@mui/icons-material/Insights';
 
 const services = [

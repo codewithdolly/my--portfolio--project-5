@@ -4,7 +4,6 @@ import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import { Button } from "@material-ui/core";
 import { motion } from "framer-motion";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import laptop from "../../Images/laptop2.png";
 
 const Images = [
   {

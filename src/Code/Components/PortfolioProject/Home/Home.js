@@ -14,7 +14,7 @@ import UseFullTools from "./UseFullTools";
 const Home = () => {
   return (
     <div className="main">
-      {/* <img src={DollyMobile} alt="" className="main--body--mobileimg"/> */}
+
       <div className="main--body">
         <motion.div
           initial={{ opacity: 0 }}
@@ -22,15 +22,18 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="main--body--name">
-            <span>Hi There,</span> I am Dolly
+            <span>Hello There,</span> I am Dolly
           </h1>
-          <marquee direction="up" scrollamount="5" className="main--body--degi">
+          <div className="main--body--degi">
+          <p className="main--body--work">A Web Developer.</p>
+          </div>
+          {/* <marquee direction="up" scrollamount="5" className="main--body--degi">
             <p className="main--body--work">A Web Developer.</p>
             <p className="main--body--work">A Youtuber.</p>
             <p className="main--body--work">A Digital Marketer.</p>
             <p className="main--body--work">A SEO Analyst.</p>
             <p className="main--body--work">A Proud Indian.</p>
-          </marquee>
+          </marquee> */}
 
           <motion.div
             initial={{ x: "-100vw" }}
@@ -51,12 +54,12 @@ const Home = () => {
           <img className="main--body--img" src={DollyHome} alt="Dolly" />
         </div>
       </div>
-      <HomeInfo />
+      {/* <HomeInfo />
       <HomeService />
       <UseFullTools />
       <QualificationAndExperience />
       <InspringQuotes />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
