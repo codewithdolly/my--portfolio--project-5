@@ -92,7 +92,8 @@ const UseFullTools = () => {
                   }}
                   transition={{ duration: 0.5 }}
                   src={image.imgPath}
-                  alt=""
+                  alt={image.alt}
+                  name={image.alt}
                   className="useFullTools--WeaponsImg--image"
                 />
               </>

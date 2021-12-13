@@ -17,21 +17,28 @@ const HomeInfo = () => {
         </h2>
         <div className="homeInfo--info">
           <div className="homeInfo--info1">
-            <p>
-              Hello! I am Dolly Singh, Web developer, SEO(on-page SEO) and
-              YouTuber. I live in Hyderabad, India. I am Full stack developer
-              and I have build some projects on wordpress Elementor. I manage
-              one food website with 1,00,000 per month. I also do SEO and write
-              articles for my websites. I have Youtube Channel where I upload my
-              projects video and many more things.
-            </p><br />
-            <p>
-              Have a Look at My YouTube Channel, It will Students/developer to
-              learn thing in easy ways and help you to make projects. Or you can
-              connect me on Facebook, Linkdin or Instagram. I am always excited
-              to talk about Tech.
-            </p><br />
-
+          <p>
+                Hello! I am Dolly Singh, Web developer, Digital marketer and a
+                YouTuber. I live in Hyderabad, India. I am Full stack developer
+                and I have build some projects on wordpress Elementor.I also
+                know basic about SEO. I have Youtube Channel where I upload my
+                project's video and many more things.
+              </p><br />
+              <p className="homeInfo--info1--p2">
+                Have a Look at My
+                <a
+                  href="https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA"
+                  style={{ color: "white" }}
+                >
+                  {" "}
+                  Youtube{" "}
+                </a>
+                Channel, It will Students/developer to learn thing in easy ways
+                and help you to make projects. Or you can connect me on
+                Facebook, Linkdin or Instagram. I am always excited to talk
+                about Tech.
+              </p><br />
+<div  className="homeInfo--info--contact--btn">
             <Button
               size="large"
               className="homeInfo--info--contact"
@@ -50,6 +57,7 @@ const HomeInfo = () => {
             >
               Download CV
             </Button>
+            </div>
           </div>
 
           <div className="homeInfo--info2">

@@ -114,10 +114,10 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
   }
 }
 
-@mixin forMobile--HomeInfp {
+@mixin forMobile--HomeInfo {
   .homeInfo {
     font-family: $font-family;
-    margin: 50px 10% 100px 10%;
+    margin: 0 10% 100px 10%;
     flex-wrap: wrap;
     color: $textWhite;
     .homeInfo--skills {
@@ -126,28 +126,122 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
     }
     .homeInfo--border {
       text-align: center;
-      margin-bottom: 6rem;
+      margin-bottom: 0;
     }
     .homeInfo--information {
       display: none;
     }
   }
-  .homeInfo--info{
-    display: inline;
-    .homeInfo--info1{
-      width: 100%
+  .homeInfo--info {
+    display: block !important;
+    text-align: justify;
+
+    .homeInfo--info1 {
+      width: 100% !important;
+      .homeInfo--info1--p2 {
+        display: none;
+      }
     }
-    .homeInfo--info2{
+    .homeInfo--info2 {
       width: 100%;
-      margin-left: 0
+      margin-left: 0;
+    }
+    .homeInfo--info--contact--btn {
+      display: flex;
+      margin-top: 10px !important;
+
+      margin-bottom: 4rem !important;
+      .homeInfo--info--contact {
+        margin-top: 0 !important;
+        font-size: 10px !important;
+        padding: 10px  5px  !important;
+        font-weight: none !important;
+      }
+      .homeInfo--info--CV {
+        margin-top: 0 !important;
+        font-size: 10px !important;
+        padding: 10px 5px !important;
+        font-weight: none !important;
+      }
+    }
+    .homeInfo--info2 {
+      .homeInfo--info2--marks {
+        // margin-bottom: 1rem !important;
+      }
     }
   }
 }
 
+@mixin forTablat--HomeInfo {
+  .homeInfo {
+    font-family: $font-family;
+    margin: 15rem 10% 200px 10%;
+    flex-wrap: wrap;
+    color: $textWhite;
+    .homeInfo--skills {
+      font-size: 3rem;
+      text-align: center;
+    }
+    .homeInfo--border {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .homeInfo--information {
+      display: none;
+    }
+  }
+  .homeInfo--info {
+    display: block !important;
+    text-align: justify;
+
+    .homeInfo--info1 {
+      width: 100% !important;
+      p{
+        font-size: 25px !important;
+      }
+    }
+    .homeInfo--info2 {
+      width: 100%;
+      margin-left: 0;
+    }
+    .homeInfo--info--contact--btn {
+      margin-top: 3rem !important;
+      margin-bottom: 4rem !important;
+      .homeInfo--info--contact {
+        margin-top: 0 !important;
+        padding: 20px 25px !important;
+        font-size: 25px !important;
+        font-weight: none !important;
+      }
+      .homeInfo--info--CV {
+        margin-top: 0 !important;
+        padding: 20px 25px !important;
+        font-size: 25px !important;
+        font-weight: none !important;
+      }
+    }
+    .homeInfo--info2 {
+      .homeInfo--info2--marks {
+        margin-bottom: 1rem !important;
+        .homeInfo--info2--marks--mark{
+          p{
+            font-size: 32px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 @include breapoint(mobile) {
-  @include forMobile--HomeInfp;
+  @include forMobile--HomeInfo;
 }
 
 @include breapoint(tablet) {
-  // @include forTablat;
+  @include forTablat--HomeInfo;
+}
+
+@include breapoint(desktop) {
+  @include forTablat--HomeInfo;
 }

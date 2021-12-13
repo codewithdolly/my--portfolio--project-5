@@ -65,7 +65,7 @@ const HomeService = () => {
         >
           My Services
         </motion.h2>
-        <p className="homeService--border">~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+        <p className="homeService--border">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
         {services.map((service) => (
           <>
             <motion.div
@@ -75,7 +75,7 @@ const HomeService = () => {
             >
               <p>{service.icon}</p>
               <h2 className="homeService--cards--header">{service.header}</h2>
-              <p>{service.about}</p>
+              <p className="homeService--cards--abt">{service.about}</p>
             </motion.div>
           </>
         ))}

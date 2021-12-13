@@ -1,3 +1,5 @@
+@import "../../media-queriey";
+
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $backgroundColor2: #3b2930;
@@ -110,4 +112,234 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     }
   }
 
+}
+@mixin forMobile--qualificationAndExperience {
+  .qualificationAndExperience {
+    background-color: $backgroundColor2;
+    display: block;
+    padding: 1rem;
+   
+    .qualificationAndExperience--list {
+      width: 90%;
+      .qualificationAndExperience--list--Qualifications {
+        display: flex;
+        margin-top: 4rem;
+        .qualificationAndExperience--list--Qualifications--Qualification {
+          background-color: rgba(244, 165, 96, 0.144);
+          padding: 0 2px;
+        }
+      }
+      .qualificationAndExperience--list--Education{
+         .qualificationAndExperience--list--Education--h1{
+             margin: 3rem 1rem;
+             font-size: 30px;
+         } 
+         .qualificationAndExperience--list--Education--study{
+             display: flex;
+             margin-bottom: 4rem;
+             .qualificationAndExperience--list--Education--study--year{
+               width: 90%;
+                 padding-right: 0;
+                 margin-left: 1rem;
+             }
+             .qualificationAndExperience--list--Education--study--details{
+                 padding: 10px;
+                 border-left: 1px solid white;
+                 h3{
+                  font-size: 18px;
+                  color: rgb(247, 70, 26); 
+                  font-weight: 400;
+  
+                 }
+                 h2{
+                  color: rgba(255, 255, 255, 0.884);
+                  text-transform: capitalize;
+                  margin: 8px 0;
+                 }
+                 h4{
+                     font-size: 18px;
+                     font-weight: 500;
+                     color: rgb(175, 175, 250);
+                 }
+                 p{
+                     color: silver;
+                 }
+             }
+         }
+      }
+    }
+  
+    .qualificationAndExperience--list2 {
+      width: 50%;
+      .qualificationAndExperience--list2--Experiences {
+        display: flex;
+        .qualificationAndExperience--list--Qualifications--Qualification {
+          background-color: rgba(244, 165, 96, 0.144);
+          padding: 0 2px;
+        }
+      }
+      .qualificationAndExperience--list--Education{
+         .qualificationAndExperience--list--Education--h1{
+             font-family: auto;
+             color: white;
+             margin: 4rem;
+             font-size: 40px;
+         } 
+         .qualificationAndExperience--list--Education--study{
+             display: flex;
+             margin-bottom: 4rem;
+             .qualificationAndExperience--list--Education--study--year{
+                 color: silver;
+                 margin-right: 5rem;
+                 margin-left: 1rem;
+             }
+             .qualificationAndExperience--list--Education--study--details{
+                 padding: 10px;
+                 border-left: 1px solid white;
+                 h3{
+                  font-size: 18px;
+                  color: rgb(247, 70, 26); 
+                  font-weight: 400;
+  
+                 }
+                 h2{
+                  color: rgba(255, 255, 255, 0.884);
+                  text-transform: capitalize;
+                  margin: 8px 0;
+                 }
+                 h4{
+                     font-size: 18px;
+                     font-weight: 500;
+                     color: rgb(175, 175, 250);
+                 }
+                 p{
+                     color: silver;
+                 }
+             }
+         }
+      }
+    }
+  
+  }
+}
+
+@mixin forTablet--qualificationAndExperience {
+  .qualificationAndExperience {
+    background-color: $backgroundColor2;
+    display: flex;
+    padding: 10rem;
+    .qualificationAndExperience--list {
+      width: 50%;
+      .qualificationAndExperience--list--Qualifications {
+        display: flex;
+        .qualificationAndExperience--list--Qualifications--Qualification {
+          background-color: rgba(244, 165, 96, 0.144);
+          padding: 0 2px;
+        }
+      }
+      .qualificationAndExperience--list--Education{
+         .qualificationAndExperience--list--Education--h1{
+             font-family: auto;
+             color: white;
+             margin: 4rem;
+             font-size: 40px;
+         } 
+         .qualificationAndExperience--list--Education--study{
+             display: flex;
+             margin-bottom: 4rem;
+             .qualificationAndExperience--list--Education--study--year{
+                 color: silver;
+                 margin-right: 5rem;
+                 margin-left: 1rem;
+             }
+             .qualificationAndExperience--list--Education--study--details{
+                 padding: 10px;
+                 border-left: 1px solid white;
+                 h3{
+                  font-size: 18px;
+                  color: rgb(247, 70, 26); 
+                  font-weight: 400;
+  
+                 }
+                 h2{
+                  color: rgba(255, 255, 255, 0.884);
+                  text-transform: capitalize;
+                  margin: 8px 0;
+                 }
+                 h4{
+                     font-size: 18px;
+                     font-weight: 500;
+                     color: rgb(175, 175, 250);
+                 }
+                 p{
+                     color: silver;
+                 }
+             }
+         }
+      }
+    }
+  
+    .qualificationAndExperience--list2 {
+      width: 50%;
+      .qualificationAndExperience--list2--Experiences {
+        display: flex;
+        .qualificationAndExperience--list--Qualifications--Qualification {
+          background-color: rgba(244, 165, 96, 0.144);
+          padding: 0 2px;
+        }
+      }
+      .qualificationAndExperience--list--Education{
+         .qualificationAndExperience--list--Education--h1{
+             font-family: auto;
+             color: white;
+             margin: 4rem;
+             font-size: 40px;
+         } 
+         .qualificationAndExperience--list--Education--study{
+             display: flex;
+             margin-bottom: 4rem;
+             .qualificationAndExperience--list--Education--study--year{
+                 color: silver;
+                 margin-right: 5rem;
+                 margin-left: 1rem;
+             }
+             .qualificationAndExperience--list--Education--study--details{
+                 padding: 10px;
+                 border-left: 1px solid white;
+                 h3{
+                  font-size: 18px;
+                  color: rgb(247, 70, 26); 
+                  font-weight: 400;
+  
+                 }
+                 h2{
+                  color: rgba(255, 255, 255, 0.884);
+                  text-transform: capitalize;
+                  margin: 8px 0;
+                 }
+                 h4{
+                     font-size: 18px;
+                     font-weight: 500;
+                     color: rgb(175, 175, 250);
+                 }
+                 p{
+                     color: silver;
+                 }
+             }
+         }
+      }
+    }
+  
+  }
+}
+
+@include breapoint(mobile) {
+  @include forMobile--qualificationAndExperience;
+}
+
+@include breapoint(tablet) {
+  @include forTablet--qualificationAndExperience;
+}
+@include breapoint(desktop) {
+  @include forTablet--qualificationAndExperience;
 }

@@ -57,11 +57,13 @@ const Home = () => {
       </div>
 
       <HomeInfo />
-      
-      {/* <HomeInfo />
       <HomeService />
       <UseFullTools />
       <QualificationAndExperience />
+      {/*
+     
+      
+      
       <InspringQuotes />
       <Footer /> */}
     </div>

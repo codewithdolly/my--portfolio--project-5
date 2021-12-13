@@ -1,3 +1,5 @@
+@import "../../media-queriey";
+
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $backgroundColor2: #3b2930;
@@ -54,4 +56,115 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       border-radius: 15px;
     }
   }
+}
+
+@mixin forMobile--useFullTools {
+  .useFullTools {
+    padding: 1rem;
+    display: block;
+  
+    .useFullTools--Weapons {
+      width: 90%;
+      .useFullTools--Weapons--icon {
+        display: flex;
+        margin-top: 3rem;
+        .useFullTools--Weapons--Weapons--name {
+          background-color: rgba(244, 165, 96, 0.144);
+          padding: 0 2px;
+        }
+      }
+      .useFullTools--Weapons--favoriteTools {
+        color: white;
+        font-family: auto;
+        font-size: 30px;
+        padding: 3rem 0  0 0;
+        span {
+          color: $textColor;
+        }
+      }
+      p {
+        text-align: justify;
+        margin-top: 2rem;
+      }
+      .useFullTools--Weapons--btn {
+        text-decoration: underline;
+        text-transform: capitalize;
+        color: $textColor;
+        margin: 10px 0;
+        &:hover {
+          color: #db9a64af;
+        }
+      }
+    }
+    .useFullTools--WeaponsImg {
+      display: inline-block;
+      width: 100%;
+      margin-left: 2rem;
+      margin-top: 3rem;
+      .useFullTools--WeaponsImg--image {
+        width: 100px;
+      }
+    }
+  }
+}
+
+@mixin forTablet--useFullTools {
+  .useFullTools {
+    padding: 2rem;
+    display: block;
+  
+    .useFullTools--Weapons {
+      width: 90%;
+      font-size: 25px;
+      .useFullTools--Weapons--icon {
+        display: flex;
+        margin-top: 5rem;
+        .useFullTools--Weapons--Weapons--name {
+          background-color: rgba(244, 165, 96, 0.144);
+          padding: 0 2px;
+        }
+      }
+      .useFullTools--Weapons--favoriteTools {
+        color: white;
+        font-family: auto;
+        font-size: 43px;
+        padding: 3rem 0  0 0;
+        span {
+          color: $textColor;
+        }
+      }
+      p {
+        text-align: justify;
+        margin-top: 2rem;
+        font-size: 30px;
+      }
+      .useFullTools--Weapons--btn {
+        font-size: 25px;
+        margin: 20px 0;
+        &:hover {
+          color: #db9a64af;
+        }
+      }
+    }
+    .useFullTools--WeaponsImg {
+      display: inline-block;
+      width: 90%;
+      margin-left: 3rem;
+      margin-top: 3rem;
+      .useFullTools--WeaponsImg--image {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@include breapoint(mobile) {
+  @include forMobile--useFullTools;
+}
+
+@include breapoint(tablet) {
+  @include forTablet--useFullTools;
+}
+@include breapoint(desktop) {
+  @include forTablet--useFullTools;
 }
