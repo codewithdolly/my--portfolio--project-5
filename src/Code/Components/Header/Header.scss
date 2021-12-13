@@ -18,12 +18,10 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
   }
   .mainHeader--nav {
     display: flex;
-    justify-content: space-between;
     .mainHeader--nav--link {
       text-decoration: none;
       color: $textColor;
-      padding-right: 18px;
-      padding-left: 18px;
+      padding-right: 3rem;
 
       text-transform: uppercase;
       .mainHeader--nav--link--submenu {
@@ -53,8 +51,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
 
   @mixin header {
     .mainHeader {
-      justify-items: center;
-      display: grid;
+        justify-items: center;
     }
     .mainHeader--menu {
       display: block;

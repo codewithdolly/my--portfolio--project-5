@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import HomeInfo from "./HomeInfo";
 import DollyHome from "../../Images/dolly2.png";
+import Plane from "../../Images/plane.gif";
 import HomeService from "./HomeService";
 import Footer from "../../Footer/Footer";
 import InspringQuotes from "../InspringQuotes/InspringQuotes";
@@ -14,7 +15,7 @@ import UseFullTools from "./UseFullTools";
 const Home = () => {
   return (
     <div className="main">
-
+          <img src={Plane} alt="" className="main--plane"/>
       <div className="main--body">
         <motion.div
           initial={{ opacity: 0 }}
@@ -22,7 +23,7 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="main--body--name">
-            <span>Hello There,</span> I am Dolly
+            <span>Hello There!</span> I am Dolly
           </h1>
           <div className="main--body--degi">
           <p className="main--body--work">A Web Developer.</p>
@@ -54,6 +55,9 @@ const Home = () => {
           <img className="main--body--img" src={DollyHome} alt="Dolly" />
         </div>
       </div>
+
+      <HomeInfo />
+      
       {/* <HomeInfo />
       <HomeService />
       <UseFullTools />

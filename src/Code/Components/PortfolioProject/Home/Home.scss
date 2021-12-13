@@ -9,10 +9,10 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
   background-image: $background-image;
   background-repeat: no-repeat;
   background-size: inherit;
-  background-position: center;
   width: 100%;
-  height: auto;
-  .main--body--mobileimg {
+  height: 80vh;
+
+  .main--plane {
     display: none;
   }
   .main--body {
@@ -35,18 +35,16 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       text-align: center;
       margin-top: 12rem;
       cursor: pointer;
-     
     }
     .main--body--degi {
       width: 100%;
       cursor: pointer;
-      height: 60px;
       margin-bottom: 5rem;
       .main--body--work {
+        font-family: $font-family;
         color: $textColor;
         font-size: 4rem;
         font-weight: 500;
-
       }
     }
     .main--body--btn {
@@ -65,71 +63,124 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       color: white;
       background-color: $textColor;
     }
-    @mixin aboutMe {
-      .main{
-        background-position: center;
-        width: 100%; 
-      }
-      .main--body--name{
-        font-family: $font-family;
+  }
+}
+
+@mixin forMobile {
+  .main {
+    width: 100%;
+    height: 65vh;
+    .main--plane{
+      display: none;
+    }
+    .main--body {
+      margin: 0;
+      margin: 0 20px;
+      .main--body--name {
+        margin-top: 3.5rem;
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 3.7rem;
         text-align: center;
-        // margin-top: 12rem;
         cursor: pointer;
+        span {
+          display: none;
+        }
       }
       .main--body--degi {
+        font-family: $font-family;
         width: 100%;
         cursor: pointer;
         .main--body--work {
           color: $textColor;
           font-size: 2rem;
           font-weight: 500;
-  
         }
       }
       .main--body--btn {
+        font-size: 12px;
         color: $textColor;
-        padding: 15px 25px 15px 25px;
-        border-radius: 0;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        border-radius: 100px;
         position: relative;
-        // bottom: 2rem;
+        bottom: 4rem;
+        
+        &:hover {
+          padding: 10px;
+          box-shadow: 2px 2px 5px #311e2525;
+          box-shadow: 2px 2px 10px rgba(192, 192, 192, 0.692);
+          color: white;
+          background-color: $textColor;
+        }
       }
-      .main--body--btn:hover {
-        padding: 15px 25px 15px 25px;
-        box-shadow: 2px 2px 5px #311e2525;
-        color: white;
-        background-color: $textColor;
-      }
-
-      .main--body--img{
+      .main--body--img {
         display: none;
       }
-     
-      // .main--body--name {
-      //  display: none;
-      //   span {
-      //     display: none;
-      //   }}
-
-      // .main--body--work {
-      //   font-size: 20px;
-      //   margin-right: 2rem;
-      //   display: none;
-      // }
-      // .main--body--btn{
-      //   margin-right: 20px;
-      // }
-
-      // .main--body--img {
-      //   display: none;
-      // }
-    }
-    @include breapoint(mobile) {
-      @include aboutMe;
-    }
-    @include breapoint(tablet) {
-      @include aboutMe;
     }
   }
+}
+
+@mixin forTablat {
+  .main {
+    width: 100%;
+    position: relative;
+    top: 30%;
+    .main--plane{
+      width: 25rem;
+      display: block;
+      position: relative;
+      left: 25%;
+    }
+    .main--body {
+      margin: 0;
+      margin: 0 20px;
+      text-align: center;
+      margin: auto;
+      width: 90%;
+      .main--body--name {
+        margin-top: 0;
+        font-weight: bold;
+        font-size: 3.9rem;
+
+      }
+      .main--body--degi {
+        cursor: pointer;
+        .main--body--work {
+          color: $textColor;
+          font-size: 4.5rem;
+          font-weight: 500;
+        }
+      }
+      .main--body--btn {
+        font-size: 35px;
+        color: $textColor;
+        align-items: center;
+        padding: 20px;
+        border-radius: 100px;
+        cursor: pointer;
+        &:hover {
+          padding: 10px;
+          box-shadow: 2px 2px 5px #311e2525;
+          color: white;
+          background-color: $textColor;
+        }
+      }
+      .main--body--img {
+        display: none;
+     
+
+      }
+    }
+  }
+}
+
+
+@include breapoint(mobile) {
+  @include forMobile;
+}
+
+
+@include breapoint(tablet) {
+  @include forTablat;
 }

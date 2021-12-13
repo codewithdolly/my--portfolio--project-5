@@ -1,3 +1,5 @@
+@import "../../media-queriey";
+
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $textWhite: white;
@@ -12,7 +14,7 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
   font-weight: bold;
 }
 
-.rating{
+.rating {
   background-color: silver;
   border-radius: 2px;
   margin: 5px 0;
@@ -23,20 +25,18 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 }
 .homeInfo {
   font-family: $font-family;
-  margin: 50px 10% 90px 10%;
+  margin: 100px 10% 100px 10%;
   flex-wrap: wrap;
   color: $textWhite;
-  .homeInfo--skills{
+  .homeInfo--skills {
     font-size: 3rem;
     text-align: center;
-
   }
-  .homeInfo--border{
+  .homeInfo--border {
     text-align: center;
     margin-bottom: 6rem;
-  
   }
-  
+
   .homeInfo--information {
     font-size: 30px;
     font-weight: 700;
@@ -49,65 +49,105 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
     .homeInfo--info1 {
       width: 50%;
       padding-top: 5rem;
-      .homeInfo--info1, P{
+      .homeInfo--info1,
+      P {
         font-size: 16px;
       }
     }
-    .homeInfo--info--contact{
+    .homeInfo--info--contact {
       @extend .btn;
       background-color: $textColor;
       color: $textWhite;
       margin-right: 20px;
     }
-    .homeInfo--info--CV{
+    .homeInfo--info--CV {
       @extend .btn;
       color: $textColor;
     }
-    .homeInfo--info--contact:hover, .homeInfo--info--CV:hover{
-      background-color:  rgb(231, 110, 66);
-      color:white;
-      border: 1px solid $backGroundcolor
-    }}
-    .homeInfo--info2 {
-      width: 40%;
-      margin-left: 10%;
-      .homeInfo--info2--marks {
-        margin-bottom: 2rem;
-        .homeInfo--info2--marks--mark {
-          display: flex;
-          justify-content: space-between;
-        }
-      }
-      .homeInfo--info2--HTML{
-        @extend .rating;
-        padding-right: 5rem;
-      }
-
-      .homeInfo--info2--CSS{
-        @extend .rating;
-        padding-right: 6.5rem;
-      }
-      .homeInfo--info2--bootstrap{
-        @extend .rating;
-        padding-right:  8rem;
-      }
-      .homeInfo--info2--javascript{
-        @extend .rating;
-        padding-right:  9.5rem;
-      }
-      .homeInfo--info2--sass{
-        @extend .rating;
-        padding-right:  8rem;
-      }
-      .homeInfo--info2--mui{
-        @extend .rating;
-        padding-right:  9.5rem;
-      }
-
-      .homeInfo--info2--react{
-        @extend .rating;
-        padding-right: 10.5rem;
-      }
+    .homeInfo--info--contact:hover,
+    .homeInfo--info--CV:hover {
+      background-color: rgb(231, 110, 66);
+      color: white;
+      border: 1px solid $backGroundcolor;
     }
   }
+  .homeInfo--info2 {
+    width: 40%;
+    margin-left: 10%;
+    .homeInfo--info2--marks {
+      margin-bottom: 1.5rem;
+      .homeInfo--info2--marks--mark {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .homeInfo--info2--HTML {
+      @extend .rating;
+      padding-right: 5rem;
+    }
 
+    .homeInfo--info2--CSS {
+      @extend .rating;
+      padding-right: 6.5rem;
+    }
+    .homeInfo--info2--bootstrap {
+      @extend .rating;
+      padding-right: 8rem;
+    }
+    .homeInfo--info2--javascript {
+      @extend .rating;
+      padding-right: 9.5rem;
+    }
+    .homeInfo--info2--sass {
+      @extend .rating;
+      padding-right: 8rem;
+    }
+    .homeInfo--info2--mui {
+      @extend .rating;
+      padding-right: 9.5rem;
+    }
+
+    .homeInfo--info2--react {
+      @extend .rating;
+      padding-right: 10.5rem;
+    }
+  }
+}
+
+@mixin forMobile--HomeInfp {
+  .homeInfo {
+    font-family: $font-family;
+    margin: 50px 10% 100px 10%;
+    flex-wrap: wrap;
+    color: $textWhite;
+    .homeInfo--skills {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    .homeInfo--border {
+      text-align: center;
+      margin-bottom: 6rem;
+    }
+    .homeInfo--information {
+      display: none;
+    }
+  }
+  .homeInfo--info{
+    display: inline;
+    .homeInfo--info1{
+      width: 100%
+    }
+    .homeInfo--info2{
+      width: 100%;
+      margin-left: 0
+    }
+  }
+}
+
+@include breapoint(mobile) {
+  @include forMobile--HomeInfp;
+}
+
+@include breapoint(tablet) {
+  // @include forTablat;
+}
