@@ -18,7 +18,6 @@ import Slack from "./Slack";
 import WhatsApp from "./WhatsApp";
 import Footer from "../../Footer/Footer";
 
-
 const ProjectDetails = [
   {
     img: "process.env.PUBLIC_URL + ../../Images/youtube.jpg",
@@ -36,8 +35,7 @@ const ProjectDetails = [
     header: "2. Myntra Project cloned with React, and Material-ui (mui)",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
-    youtubeLink:
-      "https://www.youtube.com/watch?v=ege7EYue2RE&t=3s",
+    youtubeLink: "https://www.youtube.com/watch?v=ege7EYue2RE&t=3s",
     singleProjectDetails: <Myntra />,
     projectpath: "/myntra",
   },
@@ -65,8 +63,7 @@ const ProjectDetails = [
     header: "4. Google Form created from scratch using Material-ui (mui)",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
-    youtubeLink:
-      "https://www.youtube.com/watch?v=U3ZXQkdx1pY&t=179s",
+    youtubeLink: "https://www.youtube.com/watch?v=U3ZXQkdx1pY&t=179s",
     singleProjectDetails: <CoWin />,
     projectpath: "/google-form",
   },
@@ -106,71 +103,82 @@ const Projects = () => {
     <>
       <div className="Projects">
         <div className="Projects--bgImg">
-          <motion.h1 
-          initial={{ opacity: 0, x:-100 }}
-          animate={{ opacity: 2, x: 0 }}
-          transition={{ duration: .5 }}
-          className="Projects--bgImg--h1">Projects</motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 2, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="Projects--bgImg--h1"
+          >
+            Projects
+          </motion.h1>
         </div>
-<div className="Projects--details">
-        {ProjectDetails.map((project) => (
-          <>
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.5 }}
-              className="Projects--details--single"
-            >
-              <Card className="Projects--details--single--card">
-                <CardActionArea>
-                  <CardMedia component="img" image={project.img} alt="" />
-                  <CardContent>
-                    <Typography>{project.header}</Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      {project.content}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Link to="{project.projectpath}" className="Projects--details--single--card--btn">
-                    <Button
-                      size="small"
-                      color="primary"
-                      variant="contained"
-                      startIcon={<DescriptionIcon />}
+        <div className="Projects--details">
+          {ProjectDetails.map((project) => (
+            <>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.5 }}
+                className="Projects--details--single"
+              >
+                <Card className="Projects--details--single--card">
+                  <CardActionArea>
+                    <CardMedia component="img" image={project.img} alt="" />
+                    <CardContent>
+                      <Typography className="Projects--details--single--card--header">
+                        {project.header}
+                      </Typography>
+                      <Typography
+                        className="Projects--details--single--card--content"
+                        variant="body2"
+                        color="text.secondary"
+                      >
+                        {project.content}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Link
+                      to="{project.projectpath}"
+                      className="Projects--details--single--card--btn"
                     >
-                      Blog
-                    </Button>
-                  </Link>
-                  <Routes>
-                    <Route
-                      path={project.projectpath}
-                      exact
-                      element={project.singleProjectDetails}
-                    />
-                  </Routes>
+                      <Button
+                        size="small"
+                        color="primary"
+                        variant="contained"
+                        sx={{mb:2}}
+                        startIcon={<DescriptionIcon />}
+                      >
+                        Blog
+                      </Button>
+                    </Link>
+                    <Routes>
+                      <Route
+                        path={project.projectpath}
+                        exact
+                        element={project.singleProjectDetails}
+                      />
+                    </Routes>
 
-                  <Button
-                    sx={{ ml: 2 }}
-                    href={project.youtubeLink}
-                    size="small"
-                    color="error"
-                    variant="outlined"
-                    target="_blank"
-                    startIcon={<VideoLibraryIcon />}
-                  >
-                    Video
-                  </Button>
-                </CardActions>
-              </Card>
-            </motion.div>
-          </>
-        ))}
-      </div>
+                    <Button
+                       sx={{mb:2}}
+                      href={project.youtubeLink}
+                      size="small"
+                      className="projectBtn"
+                      color="error"
+                      variant="outlined"
+                      target="_blank"
+                      startIcon={<VideoLibraryIcon />}
+                    >
+                      Video
+                    </Button>
+                  </CardActions>
+                </Card>
+              </motion.div>
+            </>
+          ))}
+        </div>
       </div>
       <Footer />
-      {/* <YouTube /><Static /> <Myntra />
-      <Gaana />
-      <CoWin /> */}
     </>
   );
 };

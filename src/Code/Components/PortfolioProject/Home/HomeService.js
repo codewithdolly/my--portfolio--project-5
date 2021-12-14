@@ -32,7 +32,7 @@ const services = [
 
   {
     icon: <InsightsIcon className="homeService--cards--icon" />,
-    header: "Google Search Console",
+    header: "Search Console",
     about:
       "Sed eleifend sed nibh nec fringilla. Donec eu cursus sem vitae tristique ante ibero",
   },
@@ -69,8 +69,8 @@ const HomeService = () => {
         {services.map((service) => (
           <>
             <motion.div
-              whileHover={{ scale: 1.3 }}
-              transition={{ duration: 0.5 }}
+              // whileHover={{ scale: 1.3 }}
+              // transition={{ duration: 0.5 }}
               className="homeService--cards"
             >
               <p>{service.icon}</p>

@@ -84,10 +84,9 @@ const UseFullTools = () => {
                 {" "}
                 <motion.img
                   animate={{ opacity: 1 }}
-                  whileHover={{ scale: 1.2, rotate: 360, opacity: 1 }}
+                  whileHover={{ scale: 1.2, opacity: 1 }}
                   whileTap={{
                     scale: 0.8,
-                    rotate: 360,
                     borderRadius: "100%",
                   }}
                   transition={{ duration: 0.5 }}

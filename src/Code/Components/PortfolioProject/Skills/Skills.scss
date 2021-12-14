@@ -1,3 +1,5 @@
+@import "../../media-queriey";
+
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $backgroundcolor2: #3b2930;
@@ -19,4 +21,14 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       padding-top: 10rem;
     }
   }
+}
+
+
+
+@include breapoint(mobile) {
+  // @include forMobile--Footer;
+}
+
+@include breapoint(tablet) {
+  // @include forTablet--Footer;
 }

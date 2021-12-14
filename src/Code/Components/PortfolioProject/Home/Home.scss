@@ -69,7 +69,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
 @mixin forMobile {
   .main {
     width: 100%;
-    height: 65vh;
+    height: 50vh;
     .main--plane{
       display: none;
     }

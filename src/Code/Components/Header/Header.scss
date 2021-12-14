@@ -18,10 +18,12 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
   }
   .mainHeader--nav {
     display: flex;
+    justify-content: space-between;
     .mainHeader--nav--link {
       text-decoration: none;
       color: $textColor;
-      padding-right: 3rem;
+      padding-right: 18px;
+      padding-left: 18px;
 
       text-transform: uppercase;
       .mainHeader--nav--link--submenu {
@@ -38,9 +40,9 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     background-color: #311e2525;
     color: $textColor;
     border: 0.7px solid $textColor;
+    border-radius: 0;
   }
   .mainHeader--ConnectBtn:hover {
-    padding: 10px 20px 10px 20px;
     box-shadow: 2px 2px 5px #311e2525;
     color: white;
     background-color: $textColor;
@@ -52,6 +54,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
   @mixin header {
     .mainHeader {
         justify-items: center;
+      // display: grid;
     }
     .mainHeader--menu {
       display: block;

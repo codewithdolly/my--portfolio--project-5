@@ -23,7 +23,7 @@ const About = () => {
         <div className="about--intro">
           <div className="about--intro1">
             <img className="about--intro1--img" src={Dolly} alt="Dolly" />
-            <div className="about--socialLink">
+            <div className="about--intro1--socialLink">
               <a href="https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA">
                 <span
                   className="fab fa-youtube"
@@ -63,7 +63,7 @@ const About = () => {
                 and I have build some projects on wordpress Elementor.I also
                 know basic about SEO. I have Youtube Channel where I upload my
                 project's video and many more things.
-              </p>
+              </p><br />
               <p>
                 Have a Look at My
                 <a

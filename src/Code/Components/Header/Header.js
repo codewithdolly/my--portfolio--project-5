@@ -3,7 +3,6 @@ import "./Header.scss";
 import { Button } from "@material-ui/core";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import CallIcon from "@mui/icons-material/Call";
 import Home from "../PortfolioProject/Home/Home";
 import Skills from "../PortfolioProject/Skills/Skills";
 import About from "../PortfolioProject/About/About";
@@ -12,6 +11,7 @@ import Projects from "../PortfolioProject/Projects/Projects";
 import { motion } from "framer-motion";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
 
 
 let menubar = ["Home", "Skills", "About", "YouTube", "Projects"];
@@ -76,7 +76,7 @@ const Header = () => {
             variant="outlined"
             size="large"
             className="mainHeader--ConnectBtn"
-            startIcon={<CallIcon />}
+            startIcon={<CodeOutlinedIcon />}
             href="tel: 6300810401"
           >
             Hire me
@@ -102,10 +102,10 @@ const Header = () => {
       </div>
       <Routes element={<Header />}>
          <Route path="/" element={<Home />} />
-        {/* <Route path="/projects" element={<Projects />} />
-        <Route path="/Skills" element={<Skills />} />
-        <Route path="/youtube" element={<YouTube />} />
-        <Route path="/about" element={<About />} /> */}
+         <Route path="/projects" element={<Projects />} />
+         <Route path="/Skills" element={<Skills />} />
+         <Route path="/youtube" element={<YouTube />} />
+        <Route path="/about" element={<About />} />
        
       </Routes>
     </Router>

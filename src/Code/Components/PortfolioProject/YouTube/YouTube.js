@@ -15,12 +15,13 @@ const YouTube = () => {
            initial={{ opacity: 0, x:-100 }}
           animate={{ opacity: 2, x: 0 }}
           transition={{ duration: .5 }}
-          className="youtube--main--name">My YouTube Videos</motion.h1>
+          className="youtube--main--name">YouTube Videos</motion.h1>
         </div>
         <div className="youtube--video">
           <KeyboardBackspaceIcon />
           <div>
             <iframe
+             className="youtube--video--Link"
               width="560"
               height="315"
               src="https://www.youtube.com/embed/MFV4WSxAnjs"
@@ -38,9 +39,9 @@ const YouTube = () => {
         </div>
         <center className="youtube--video2">
           <h2 style={{ marginBottom: "-10px" }}>
-            YouTube-clone design from scratch using <br /> HTML, CSS, JavaScript
+            YouTube
           </h2>
-          <p>First project, personal experience and personal trics</p>
+          <p>Designed from scratch using HTML, CSS, JavaScript</p>
           <Button
             href="https://www.youtube.com/watch?v=MFV4WSxAnjs&t=31s"
             target="_blank"
@@ -53,7 +54,14 @@ const YouTube = () => {
           </Button>
         </center>
       </div>
-      <Footer />
+      <div className="alert">
+      <center>
+        Please Open in iPad or Desktop/Laptop. 
+        </center>
+      </div>
+     
+     <div  id= "aboutFooter"></div>
+      <Footer/>
     </>
   );
 };

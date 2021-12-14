@@ -1,3 +1,5 @@
+@import "../../media-queriey";
+
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $backgroundcolor2: #3b2930;
@@ -30,7 +32,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
         border: 5px solid $backGroundcolor;
         box-shadow: 1px 3px 20px rgba(192, 192, 192, 0.404);
       }
-      .about--socialLink {
+      .about--intro1--socialLink {
         margin-right: 4rem;
         font-size: 20px;
         text-align: center;
@@ -91,8 +93,9 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
 .instagram {
   color: white;
   font-weight: 100;
-  color: white;
   border-radius: 5px;
+  padding-right: 3px;
+  margin-right: 10px;
   background: linear-gradient(
     45deg,
     #f09433 0%,
@@ -101,5 +104,152 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     #cc2366 75%,
     #bc1888 100%
   );
-  margin-right: 10px;
+
+}
+
+
+@mixin forMobile--about {
+  .about{
+    .about--main{
+      height: 40vh;
+      img{
+        width: 200px;
+      }
+      .about--main--name{
+        font-size: 50px;
+      }
+    }
+    .about--intro{
+      display: inline-block;
+      padding: 3rem;
+      .about--intro1{
+        width: 90%;
+        .about--intro1--img{
+          align-items: center;
+          width: 250px;
+        }
+        .about--intro1--socialLink {
+          display: flex;
+          margin-right: 0;
+          margin-left: 3.5rem;
+        }
+      }
+    }
+    .about--intro2{
+      width: 90% !important;
+      margin-top: 3rem;
+      .about--intro2--h2{
+        font-size: 50px !important;
+        
+      }
+      .about--intro2--contact {
+        display: block !important;
+        width: 100%;
+        h4 {
+          color: $textColor;
+          font-weight: 400;
+        }
+        .about--intro2--contact--info {
+          display: block;
+          width: 100%;
+
+          div {
+            padding: 5px;
+          }
+        }
+      
+      }
+      .about--intro2--btns{
+        display: flex;
+        Button{
+          font-size: 9px;
+          padding: 2px 8px !important;
+          margin: 5px  !important;
+        }
+
+        .about--intro2--btns--contact{
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+@mixin forTablet--about {
+  .about{
+    .about--main{
+      height: 50vh;
+      img{
+        width: 400px;
+      }
+      .about--main--name{
+        font-size: 70px;
+      }
+    }
+    .about--intro{
+      display: inline-block;
+      padding: 4rem;
+      .about--intro1{
+        width: 90%;
+        align-items: center;
+        .about--intro1--img{          
+          width: 600px;
+          margin-left: 1rem;
+        }
+        .about--intro1--socialLink {
+          display: flex;
+          margin: 20px 0;
+          text-indent: 5px;
+          margin-left:12rem;
+          font-size: 40px;
+        }
+      }
+    }
+    .about--intro2{
+      width: 90% !important;
+      margin-top: 6rem;
+      .about--intro2--h2{
+        font-size: 70px !important; 
+      }
+      p{
+        font-size: 25px;
+      }
+      .about--intro2--contact {
+        display: block;
+        width: 100%;
+        h4 {
+          color: $textColor;
+          font-weight: 400;
+        }
+        .about--intro2--contact--info {
+          font-size: 25px;
+          display: block;
+          width: 100%;
+          div {
+            padding: 20px;
+          }
+        }
+      
+      }
+      .about--intro2--btns{
+        display: flex;
+        Button{
+          font-size: 20px;
+          padding: 15px 25px !important;
+        }
+
+        .about--intro2--btns--contact{
+          margin-right: 30px !important;
+        }
+      }
+    }
+  }
+}
+
+
+@include breapoint(mobile) {
+  @include forMobile--about;
+}
+
+@include breapoint(tablet) {
+  @include forTablet--about;
 }

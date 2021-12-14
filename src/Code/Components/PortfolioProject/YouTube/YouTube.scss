@@ -1,3 +1,5 @@
+@import "../../media-queriey";
+
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $backgroundcolor2: #3b2930 ; 
@@ -50,4 +52,52 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     }
   }
   
+}
+.alert{
+  display: none;
+}
+
+@mixin forMobile--YouTube {
+  .youtube{
+   display: none;
+  
+  }
+  #aboutFooter {
+    display: none !important;
+  }
+  .alert{
+    display: block;
+    font-size: 30px;
+    color: white;
+    margin-top: 10rem;
+  }
+}
+
+@mixin forTablet--YouTube {
+  .youtube{
+    .youtube--main{
+      height: 40vh;
+    }
+    .youtube--video2{
+      font-family: $font-family
+      h2{
+        font-size: 40px; 
+      }
+      p{
+        font-size: 25px;
+      }
+      .youtube--video2--btn{
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+
+@include breapoint(mobile) {
+  @include forMobile--YouTube;
+}
+
+@include breapoint(tablet) {
+  @include forTablet--YouTube;
 }

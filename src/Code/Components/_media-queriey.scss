@@ -8,14 +8,10 @@
         @content;
       }
     } @else if $point== desktop {
-      @media only screen and (min-width: 769px) and (max-width: 992px) {
+      @media only screen and (min-width: 769px) and (max-width: 1200px) {
         @content;
       }
-    } @else if $point== largeScreen {
-        @media only screen and (min-width: 993px) and (max-width: 1200px) {
-          @content;
-        }
-      } @else if $point== LargerScreen {
+    } @else if $point== LargerScreen {
         @media only screen and (min-width: 1201px){
           @content;
         }

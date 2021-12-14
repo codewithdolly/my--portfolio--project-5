@@ -23,7 +23,7 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="main--body--name">
-            <span>Hello There!</span> I am Dolly
+            <span>Hello There,</span> I am Dolly
           </h1>
           <div className="main--body--degi">
           <p className="main--body--work">A Web Developer.</p>
@@ -47,7 +47,7 @@ const Home = () => {
               className="main--body--btn"
               endIcon={<ArrowRightAltIcon />}
             >
-              Let's see my work process
+              My Projects
             </Button>
           </motion.div>
         </motion.div>
@@ -60,12 +60,8 @@ const Home = () => {
       <HomeService />
       <UseFullTools />
       <QualificationAndExperience />
-      {/*
-     
-      
-      
       <InspringQuotes />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };

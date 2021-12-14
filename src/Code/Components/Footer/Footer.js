@@ -6,7 +6,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const socialMedia = [
   {
@@ -85,7 +85,7 @@ const Footer = () => {
           {socialMedia.map((social) => {
             return (
               <div className="footer--connect--social">
-                <div>{social.icon}</div>
+                <div className="footer--connect--social--Icon ">{social.icon}</div>
                 <p className="footer--connect--social--type">{social.type}</p>
                 <p className="footer--connect--social--add">{social.add}</p>
                 <p className="footer--connect--social--add">{social.add2}</p>
@@ -115,29 +115,41 @@ const Footer = () => {
           <div className="footer--moreInfo--form">
             <h2>Send Me a Message</h2>
             <div className="footer--moreInfo--form--name">
-           <div className="footer--moreInfo--form--userName">
-           <label>name*</label> <br />
-            <input type="text" placeholder="Name" importent />
-           </div>
-           <div className="footer--moreInfo--form--email">
-           <label>Email*</label> <br />
-            <input type="text" placeholder="hello@gmail.com"/>
-           </div>
+              <div className="footer--moreInfo--form--userName">
+                <label>name*</label> <br />
+                <input type="text" placeholder="Name" importent />
+              </div>
+              <div className="footer--moreInfo--form--email">
+                <label>Email*</label> <br />
+                <input type="text" placeholder="hello@gmail.com" />
+              </div>
             </div>
             <div className="footer--moreInfo--form--sub">
-           <label>Subject*</label> <br />
-            <input type="text" placeholder="address"/>
-           </div>
-           <div className="footer--moreInfo--form--message">
-           <label>Message*</label> <br />
-            <textarea type="text" placeholder="Message..." rows="5" cols="10"/>
-           </div>
-           <Button endIcon={<ArrowRightAltIcon />}className="footer--moreInfo--form--btn">Send a Message</Button>
+              <label>Subject*</label> <br />
+              <input type="text" placeholder="address" />
+            </div>
+            <div className="footer--moreInfo--form--message">
+              <label>Message*</label> <br />
+              <textarea
+                type="text"
+                placeholder="Message..."
+                rows="4"
+                cols="6"
+              />
+            </div>
+            <Button
+              endIcon={<ArrowRightAltIcon />}
+              className="footer--moreInfo--form--btn"
+            >
+              Send a Message
+            </Button>
           </div>
-        </div>
+        </div><br />
 
         <center>
-          <p style={{ marginTop: "2rem", paddingBottom:"1rem", color: "gray" }}>
+          <p
+            style={{ marginTop: "2rem", paddingBottom: "1rem", color: "gray" }}
+          >
             No ©copyright issues | This portfolio is made by
             <span style={{ color: "#db9a64" }}> Dolly</span>
             <DoneAllOutlinedIcon />

@@ -43,18 +43,18 @@ const QualificationAndExperience = () => {
             Experience
             </div>
           </div>
-          <div className="qualificationAndExperience--list--Education">
-            <h1 className="qualificationAndExperience--list--Education--h1">
+          <div className="qualificationAndExperience--list2--experience">
+          <h1 className="qualificationAndExperience--list2--experience--h1">
             My Experience
             </h1>
 
             {experience.map((job) => {
               return (
-                <div className="qualificationAndExperience--list--Education--study">
-                  <div className="qualificationAndExperience--list--Education--study--year">
+                <div className="qualificationAndExperience--list2--experience--job">
+                  <div className="qualificationAndExperience--list2--experience--job--year">
                     {job.year} <br />{job.status}
                   </div>
-                  <div className="qualificationAndExperience--list--Education--study--details">
+                  <div className="qualificationAndExperience--list2--experience--job--details">
                     <h3>{job.role}</h3>
                     <h2>{job.name}</h2>
                     <h4>{job.Place}</h4>

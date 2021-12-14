@@ -117,7 +117,7 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 @mixin forMobile--HomeInfo {
   .homeInfo {
     font-family: $font-family;
-    margin: 0 10% 100px 10%;
+    margin: 15% 10% 0 10%;
     flex-wrap: wrap;
     color: $textWhite;
     .homeInfo--skills {
