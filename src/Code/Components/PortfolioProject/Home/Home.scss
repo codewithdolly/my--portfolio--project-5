@@ -2,7 +2,6 @@
 
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
-$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
 
 .main {
@@ -30,7 +29,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       height: 500px;
     }
     .main--body--name {
-      font-family: $font-family;
+
       font-weight: 500;
       font-size: 4rem;
       text-align: center;
@@ -42,7 +41,6 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       cursor: pointer;
       margin-bottom: 5rem;
       .main--body--work {
-        font-family: $font-family;
         color: $textColor;
         font-size: 4rem;
         font-weight: 500;
@@ -51,8 +49,8 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     .main--body--btn {
       font-size: 18px;
       text-transform: capitalize;
+      font-family: auto !important;
       color: $textColor;
-      padding: 15px 25px 15px 25px;
       border: 0.7px solid $textColor;
       border-radius: 0;
       position: relative;
@@ -88,7 +86,6 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
         }
       }
       .main--body--degi {
-        font-family: $font-family;
         width: 100%;
         cursor: pointer;
         .main--body--work {

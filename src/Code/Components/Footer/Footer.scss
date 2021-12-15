@@ -3,7 +3,6 @@
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $textWhite: white;
-$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 
 .inputBackground {
   color: white;
@@ -23,14 +22,12 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  padding: 10rem 15rem;
+  padding: 5rem 15rem;
   padding-bottom: 0;
   .footer--btn {
-    font-size: 25px;
-    text-transform: capitalize;
-    // padding: 10px 35px;
+    font-size: 40px;
+    text-align: center;
     color: $textWhite;
-    border: 2px solid $textWhite;
     border-radius: 0;
   }
   .footer--connect {
@@ -62,7 +59,8 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
       }
       .footer--moreInfo--SocialIcons--social {
         color: $textWhite;
-        padding: 20px 0;
+        margin: 20px 0;
+        width: 20%;
         .footer--moreInfo--SocialIcons--social--icon {
           display: flex;
           padding: 5px 0;
@@ -85,7 +83,7 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
       }
     }
     .footer--moreInfo--form {
-      width: 60%;
+      width: 80%;
       color: white;
       h2 {
         color: $textWhite;
@@ -123,7 +121,7 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
       }
       input {
         @extend .inputBackground;
-        width: 100%;
+        width: 92%;
       }
     }
     .footer--moreInfo--form--message {
@@ -132,12 +130,14 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
       }
       textarea {
         @extend .inputBackground;
-        width: 100%;
       }
     }
     .footer--moreInfo--form--btn {
-      font-size: 12px;
+      font-family: inherit;
+      font-size: 15px;
+      text-transform: capitalize;
       float: right;
+      right: 3rem;
       color: $textWhite;
       background-color: $textColor;
       border: 1px solid $textColor;
@@ -151,174 +151,170 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 }
 
 @mixin forMobile--Footer {
-  .footer{
+  .footer {
+    background-image: none;
+    background-color: $backGroundcolor;
     padding: 0 2rem;
-    background-repeat:repeat;
     width: 100%;
 
-    .footer--btn{
-      font-size: 16px;
+    .footer--btn {
+      font-size: 0;
       margin-top: 1rem;
+      text-align: left;
     }
-    .footer--connect{
+    .footer--connect {
       width: 100%;
-      padding: 1rem 3rem;
-      padding-bottom: 0;
+      padding: 0;
+      margin: 2rem 0;
       display: inline-block;
-      .footer--connect--social{
+      .footer--connect--social {
         margin-bottom: 2rem;
-     .footer--connect--social--Icon {
-      // font-size: 20px;
-     }
       }
     }
-    .footer--moreInfo{
+    .footer--moreInfo {
       display: block;
-      .footer--moreInfo--SocialIcons{
-        margin-left: 3rem;
-        h2{
-          width: 100%; 
+      .footer--moreInfo--SocialIcons {
+        margin-left: 0;
+        h2 {
+          width: 100%;
           font-size: 20px;
-
         }
       }
-      .footer--moreInfo--form{
+      .footer--moreInfo--form {
         width: 90%;
-        h2{
+        h2 {
           font: 20px !important;
         }
-        .footer--moreInfo--form--name{
+        .footer--moreInfo--form--name {
           display: block;
-           padding-right: 5rem;
-           .footer--moreInfo--form--userName{
-             input{
+          padding-right: 5rem;
+          .footer--moreInfo--form--userName {
+            input {
               padding-right: 5rem;
-             }
-           }
+            }
+          }
         }
-        .footer--moreInfo--form--email{
-          input{
+        .footer--moreInfo--form--email {
+          input {
             padding-right: 5rem;
           }
         }
-        .footer--moreInfo--form--sub{
+        .footer--moreInfo--form--sub {
           padding: 0;
-          input{
+          input {
             width: 95%;
           }
         }
-        .footer--moreInfo--form--message{
-          textarea{
-            width: 95%
+        .footer--moreInfo--form--message {
+          textarea {
+            width: 95%;
           }
         }
-        .footer--moreInfo--form--btn{
-          margin-right: 1rem
+        .footer--moreInfo--form--btn {
+          float: left;
+          left: 0;
         }
       }
     }
   }
 }
 
-
 @mixin forTablet--Footer {
-  .footer{
-    background-repeat:initial;
-    padding: 2rem ;
+  .footer {
+    background-image: none;
+    background-color: $backGroundcolor;
+    padding: 2rem;
     width: 100%;
 
-    .footer--btn{
+    .footer--btn {
       font-size: 32px;
       margin-top: 4rem;
     }
-    .footer--connect{
+    .footer--connect {
       width: 100%;
       padding: 1rem 3rem;
       padding-bottom: 0;
       display: inline-block;
-      .footer--connect--social{
+      .footer--connect--social {
         display: inline-block;
         padding: 0 1rem;
         margin: 10px;
         margin-bottom: 2rem;
-        .footer--connect--social--Icon{
+        .footer--connect--social--Icon {
           font-size: 70px;
         }
-        .footer--connect--social--type{
+        .footer--connect--social--type {
           font-size: 30px;
           font-weight: 400;
         }
-     .footer--connect--social--add{
-       font-size: 25px;
-     }
+        .footer--connect--social--add {
+          font-size: 25px;
+        }
       }
     }
-    .footer--moreInfo{
+    .footer--moreInfo {
       display: flex;
       margin: 0 1rem;
-      font-family: $font-family;
-      .footer--moreInfo--SocialIcons{
-        h2{
-          width: 100%; 
-          font-size: 30px; 
+      .footer--moreInfo--SocialIcons {
+        h2 {
+          width: 100%;
+          font-size: 30px;
         }
-        .footer--moreInfo--SocialIcons--social{
-          a{
+        .footer--moreInfo--SocialIcons--social {
+          a {
             font-size: 20px;
           }
-          p{
+          p {
             font-size: 18px !important;
           }
         }
       }
-      .footer--moreInfo--form{
+      .footer--moreInfo--form {
         width: 80%;
         margin-left: 2rem;
-        h2{
+        h2 {
           font-size: 30px !important;
         }
-        .footer--moreInfo--form--name{
+        .footer--moreInfo--form--name {
           display: block;
-           .footer--moreInfo--form--userName{
-            label{
+          .footer--moreInfo--form--userName {
+            label {
               font-size: 20px;
             }
-             input{
+            input {
               padding-right: 10rem;
-             }
-           }
+            }
+          }
         }
-        .footer--moreInfo--form--email{
-          label{
+        .footer--moreInfo--form--email {
+          label {
             font-size: 20px;
           }
-          input{
+          input {
             padding-right: 10rem;
           }
         }
-        .footer--moreInfo--form--sub{
+        .footer--moreInfo--form--sub {
           padding: 0;
-          label{
+          label {
             font-size: 20px;
           }
-          input{
+          input {
             width: 88%;
           }
         }
-        .footer--moreInfo--form--message{
-          textarea{
+        .footer--moreInfo--form--message {
+          textarea {
             width: 88%;
           }
         }
-        .footer--moreInfo--form--btn{
-          margin-right: 3rem;
+        .footer--moreInfo--form--btn {
           font-size: 20px;
         }
       }
     }
   }
 }
-
 
 @include breapoint(mobile) {
   @include forMobile--Footer;
@@ -327,4 +323,3 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 @include breapoint(tablet) {
   @include forTablet--Footer;
 }
-

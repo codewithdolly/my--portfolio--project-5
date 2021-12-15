@@ -8,11 +8,12 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
 
 .useFullTools {
   background-color: $backGroundcolor;
-  padding: 10rem;
+  padding: 7rem;
   display: flex;
 
   .useFullTools--Weapons {
     width: 50%;
+    padding-top: 2rem;
     .useFullTools--Weapons--icon {
       display: flex;
       .useFullTools--Weapons--Weapons--name {
@@ -24,7 +25,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       color: white;
       font-family: auto;
       font-size: 40px;
-      padding: 2rem 0  2rem 0;
+      padding: 2rem 0  1rem 0;
       span {
         color: $textColor;
       }
@@ -64,7 +65,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     display: block;
   
     .useFullTools--Weapons {
-      width: 90%;
+      width: 100%;
       .useFullTools--Weapons--icon {
         display: flex;
         margin-top: 3rem;
@@ -98,7 +99,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
     }
     .useFullTools--WeaponsImg {
       display: inline-block;
-      width: 100%;
+      width: 90%;
       margin-left: 2rem;
       margin-top: 3rem;
       .useFullTools--WeaponsImg--image {

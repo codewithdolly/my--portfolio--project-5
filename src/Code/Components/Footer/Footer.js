@@ -19,7 +19,7 @@ const socialMedia = [
     icon: <PhoneInTalkOutlinedIcon className="footer--connect--social--Icon" />,
     type: "Phone",
     add: "+91 6300-810-401",
-    add2: "+91 8328-082-526",
+    add2: "+91 9393-466-853",
   },
   {
     icon: <MailOutlinedIcon className="footer--connect--social--Icon" />,
@@ -29,7 +29,7 @@ const socialMedia = [
   },
   {
     icon: <ChatOutlinedIcon className="footer--connect--social--Icon" />,
-    type: "LinkedIn Chat",
+    type: "Social media chat",
     add: "@CodeWithDolly",
   },
 ];
@@ -53,7 +53,7 @@ const SocialIcon = [
   {
     name: "Twitter",
     icon: <i class="fab fa-twitter"></i>,
-    link: "https://twitter.com/intensedolly",
+    link: "https://twitter.com/CodeWithDolly/",
   },
   {
     name: "YouTube",
@@ -63,7 +63,7 @@ const SocialIcon = [
   {
     name: "Skype",
     icon: <i class="fab fa-skype"></i>,
-    link: "https://www.linkedin.com/in/codewithdolly/",
+    link: "#",
   },
 ];
 
@@ -71,21 +71,16 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        <center>
-          <Button
-            href="https://www.linkedin.com/in/codewithdolly/"
-            target="_blank"
-            variant="outlined"
-            className="footer--btn"
-          >
-            Get in Touch
-          </Button>
-        </center>
+        <h2 target="_blank" className="footer--btn">
+          Get In Touch
+        </h2>
         <div className="footer--connect">
           {socialMedia.map((social) => {
             return (
               <div className="footer--connect--social">
-                <div className="footer--connect--social--Icon ">{social.icon}</div>
+                <div className="footer--connect--social--Icon ">
+                  {social.icon}
+                </div>
                 <p className="footer--connect--social--type">{social.type}</p>
                 <p className="footer--connect--social--add">{social.add}</p>
                 <p className="footer--connect--social--add">{social.add2}</p>
@@ -116,7 +111,7 @@ const Footer = () => {
             <h2>Send Me a Message</h2>
             <div className="footer--moreInfo--form--name">
               <div className="footer--moreInfo--form--userName">
-                <label>name*</label> <br />
+                <label>Name*</label> <br />
                 <input type="text" placeholder="Name" importent />
               </div>
               <div className="footer--moreInfo--form--email">
@@ -126,7 +121,7 @@ const Footer = () => {
             </div>
             <div className="footer--moreInfo--form--sub">
               <label>Subject*</label> <br />
-              <input type="text" placeholder="address" />
+              <input type="text" placeholder="Topic..." />
             </div>
             <div className="footer--moreInfo--form--message">
               <label>Message*</label> <br />
@@ -134,27 +129,39 @@ const Footer = () => {
                 type="text"
                 placeholder="Message..."
                 rows="4"
-                cols="6"
+                cols="68"
               />
             </div>
             <Button
               endIcon={<ArrowRightAltIcon />}
               className="footer--moreInfo--form--btn"
+              onClick={() => {
+                alert("This for is just UI. Please contact on social media.");
+              }}
             >
               Send a Message
             </Button>
           </div>
-        </div><br />
+        </div>
 
-        <center>
-          <p
-            style={{ marginTop: "2rem", paddingBottom: "1rem", color: "gray" }}
+        <p
+          style={{
+            marginTop: "4rem",
+            paddingBottom: "1rem",
+            color: "gray",
+            textAlign: "center",
+          }}
+        >
+          This portfolio has made from scratch by
+          <span style={{ color: "#db9a64" }}> Dolly</span> | No ©copyright
+          issues |Anyone can use this for their projects.{" "}
+          <a
+            style={{ color: "#db9a64" }}
+            href="https://github.com/hcmay2021-Dolly/my--portfolio--project-5"
           >
-            No ©copyright issues | This portfolio is made by
-            <span style={{ color: "#db9a64" }}> Dolly</span>
-            <DoneAllOutlinedIcon />
-          </p>
-        </center>
+            Project source code.
+          </a>
+        </p>
       </div>
     </>
   );

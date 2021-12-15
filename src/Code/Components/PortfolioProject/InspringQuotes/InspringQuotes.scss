@@ -45,7 +45,7 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 }
 
 .css-26w9jf-MuiMobileStepper-dot{
-    background-color: $textColor;
+    background-color: $textColor !important;
 }
 
 @include breapoint(mobile) {

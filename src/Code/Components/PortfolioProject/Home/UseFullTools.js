@@ -56,11 +56,11 @@ const UseFullTools = () => {
           <div className="useFullTools--Weapons--icon">
             <DoubleArrowIcon sx={{ mx: 1, color: "white" }} />
             <div className="useFullTools--Weapons--Weapons--name">
-              Qualification
+            Weapons
             </div>
           </div>
           <h1 className="useFullTools--Weapons--favoriteTools">
-            These are my all-time favorite <span> everyday tools</span>
+            These are my all-time favorite <span>Weapons</span>
           </h1>
           <p>
             I always loved those software that I use in my work, because I am
