@@ -1,6 +1,5 @@
 import React from "react";
 import "./FactsAndStats.scss";
-import IntegrationInstructionsIcon from "@mui/icons-material/IntegrationInstructions";
 import DvrIcon from '@mui/icons-material/Dvr';
 import IntegrationInstructionsOutlinedIcon from '@mui/icons-material/IntegrationInstructionsOutlined';
 import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
@@ -10,7 +9,7 @@ let states = [
   {
     icon:  <DvrIcon className="factsAndStats--work--details--icon" />,
     number: "10+",
-    done:"Website Designed",
+    done:"Website Developed",
   },
   {
     icon:  <IntegrationInstructionsOutlinedIcon className="factsAndStats--work--details--icon" />,

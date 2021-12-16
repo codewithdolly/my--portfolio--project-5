@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.scss";
-import Plane from "../../Images/plane.gif";
 import Dolly from "../../Images/d2.png";
 import Footer from "../../Footer/Footer";
 import { Button } from "@mui/material";
@@ -102,12 +101,16 @@ const About = () => {
             </div>
             <div className="about--intro2--btns">
               <Button
+               href="tel: 6300810401"
                 endIcon={<ArrowRightAltIcon />}
                 className="about--intro2--btns--contact"
               >
                 Contact me
               </Button>
-              <Button startIcon={<FileDownloadOutlinedIcon />}>
+              <Button 
+                className="about--intro2--btns--cv"
+              href="https://www.canva.com/design/DAEY8Pnsb70/Gk7V8fwb5AFxZJ48UUanYQ/view"
+              startIcon={<FileDownloadOutlinedIcon />}>
                 Download CV
               </Button>
             </div>

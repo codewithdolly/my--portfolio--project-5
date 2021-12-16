@@ -89,7 +89,7 @@ const MultipleVideo= ()=> {
         {images.map((step, index) => (
           <div key={step.label}>
             {Math.abs(activeStep - index) <= 2 ? (
-              <a href="">
+              <a href={step.youtubeLink}>
               <Box
               className='multipleVideo--imgName'
                 component="img"
@@ -97,7 +97,7 @@ const MultipleVideo= ()=> {
                   height: 350,
                   display: 'block',
                   maxWidth: 600,
-                  // overflow: 'hidden',
+                  overflow: 'hidden',
                   width: '100%',
                 }}
                 src={step.imgPath}

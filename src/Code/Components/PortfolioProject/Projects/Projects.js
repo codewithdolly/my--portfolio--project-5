@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.scss";
-import { Routes, Route, Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -9,52 +8,46 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import DescriptionIcon from "@mui/icons-material/Description";
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import { motion } from "framer-motion";
-import YouTubeProject from "./YouTubeProject";
-import Static from "./Static";
-import Myntra from "./Myntra";
-import Gaana from "./Gaana";
-import CoWin from "./CoWin";
-import Slack from "./Slack";
-import WhatsApp from "./WhatsApp";
 import Footer from "../../Footer/Footer";
+import FactsAndStats from "../Home/FactsAndStats";
 
 const ProjectDetails = [
   {
-    img: "process.env.PUBLIC_URL + ../../Images/youtube.jpg",
-    header: "1. YouTube Project cloned with HTML, CSS, BootsTrap & JavaScript",
+    img: "process.env.PUBLIC_URL + ../../Images/static.jpg",
+    header: "1. Static Website created from scratch using HTML, CSS, BootsTrap",
     content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
+      "This is My First project. I hadto build this from scratch using HTML, CSS and JavaScript. To make this project We got 3 days and we  had to build 12+ page. By the way i got this project in team and there was 3 member.",
+    youtubeLink: "https://www.youtube.com/watch?v=tQ1dn55q8jA&t=262s",
+    // singleProjectDetails: <Static />,
+    projectpath: "https://github.com/hcmay2021-Dolly/static-website_project_1",
+  },
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/youtube.jpg",
+    header: "2. YouTube Project done with HTML, CSS, BootsTrap & JavaScript",
+    content:
+      "YouTube is my Second project and I was quite happy and excited for this project, because Its a big project. Again I made this project from scatch using HTML, CSS, JavaScript & Bootstrap. I have made this project alone.",
     path: "/youtube",
     youtubeLink: "https://www.youtube.com/watch?v=MFV4WSxAnjs&t=30s",
-    singleProjectDetails: <YouTubeProject />,
+    // singleProjectDetails: <YouTubeProject />,
     projectpath: "https://github.com/hcmay2021-Dolly/youtube-clone_project_2",
   },
 
   {
-    img: "process.env.PUBLIC_URL + ../../Images/mintra.jpg",
-    header: "2. Myntra Project cloned with React, and Material-ui (mui)",
-    content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
-    youtubeLink: "https://www.youtube.com/watch?v=ege7EYue2RE&t=3s",
-    singleProjectDetails: <Myntra />,
-    projectpath: "https://github.com/hcmay2021-Dolly/react--Myntra--Project-4",
-  },
-  {
     img: "process.env.PUBLIC_URL + ../../Images/gaana.jpg",
-    header: "3. Gaana Project cloned with HTML, CSS & BootsTrap",
+    header: "3. Gaana Project Projectd with HTML, CSS & BootsTrap",
     content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
+      "We listen ganna everyday. to again this project was exciting project. And I hade to make this project from Scratch using HTML, CSS and Bootstrap. To make this project i got 2 days.",
     youtubeLink: "https://www.youtube.com/watch?v=qxvtOmXSHCc",
-    singleProjectDetails: <Gaana />,
+    // singleProjectDetails: <Gaana />,
     projectpath: "https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/project04--%20Gaana.com",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/cowin.jpg",
-    header: "4. CoWIN Project cloned with React, and MUI (Material-ui)",
+    header: "4. CoWIN Project done with React, and MUI (Material-ui)",
     content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
+      "This Project has done from scratch using MUI (material-UI) and React. I was new In react so I was getting lot of confusin but finall its done in 2 days.",
     youtubeLink: "https://www.youtube.com/watch?v=Y6z2GuEu1f0&t=25s",
-    singleProjectDetails: <CoWin />,
+    // singleProjectDetails: <CoWin />,
     projectpath: "https://github.com/hcmay2021-Dolly/react--Cowin--Project_project_3",
   },
 
@@ -62,39 +55,49 @@ const ProjectDetails = [
     img: "process.env.PUBLIC_URL + ../../Images/form.jpg",
     header: "5. Google Form created from scratch using Material-ui (mui)",
     content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
+      "Actually This project i haven't got from HiCoder. But there we were getting Attendance sheet. So I thought to make that. I have used MUI(material-UI) and React.",
     youtubeLink: "https://www.youtube.com/watch?v=U3ZXQkdx1pY&t=179s",
-    singleProjectDetails: <Gaana />,
-    projectpath: "https://github.com/hcmay2021-Dolly/react--GoogleForm--Project",
+    // singleProjectDetails: <Gaana />,
+    projectpath: "https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/google%20form--project--5",
   },
   {
-    img: "process.env.PUBLIC_URL + ../../Images/static.jpg",
-    header: "6. Static Website created from scratch using HTML, CSS, BootsTrap",
+    img: "process.env.PUBLIC_URL + ../../Images/mintra.jpg",
+    header: "6. Myntra Project done with React, and Material-ui (mui)",
     content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
-    youtubeLink: "https://www.youtube.com/watch?v=tQ1dn55q8jA&t=262s",
-    singleProjectDetails: <Static />,
-    projectpath: "https://github.com/hcmay2021-Dolly/static-website_project_1",
+      "This Myntra Project I got in Diwali time. I hade to clone this and add new features as well. So I build this from scratch using MUI(material-ui) and React.",
+    youtubeLink: "https://www.youtube.com/watch?v=ege7EYue2RE&t=3s",
+    // singleProjectDetails: <Myntra />,
+    projectpath: "https://github.com/hcmay2021-Dolly/react--Myntra--Project-4",
   },
 
   {
     img: "process.env.PUBLIC_URL + ../../Images/whatsapp.jpg",
-    header: "7. WhatsApp Clone from scratch using React, MUI(material-ui)",
+    header: "7. WhatsApp Project from scratch using React, MUI(material-ui)",
     content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
-    youtubeLink: "",
-    singleProjectDetails: <WhatsApp />,
+      "WhatsApp web in one day project and I wanted to build Chat box so I build this project and completed in just one day. To make this I have used  MUI(material-ui) and React.",
+    youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
+    // singleProjectDetails: <WhatsApp />,
     projectpath: "https://github.com/hcmay2021-Dolly/hicoder--whatsapp--web--project-6",
   },
 
   {
     img: "process.env.PUBLIC_URL + ../../Images/slack.jpg",
-    header: "8. Slack Clone from scratch using React, MUI(material-ui)",
+    header: "8. Slack Project from scratch using React, MUI(material-ui)",
     content:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
-    youtubeLink: "",
-    singleProjectDetails: <Slack />,
+      "Slack is a very Big project. and its very usefull. Slack can be used in office, collage Or anywhere. So I got this project. To build this I have used  MUI(material-ui), React and many other packages.",
+    youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
+    // singleProjectDetails: <Slack />,
     projectpath: "https://github.com/hcmay2021-Dolly/hicoder--slack--project-7",
+  },
+
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/instagram.jpg",
+    header: "9. Instagram Project design with MUI(material-ui) and react",
+    content:
+      "This Project I got to build this in 2 days. I was new in react. So I was quite confused building it. But I learnt so  many Things in React and MUI(material-UI)",
+    youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
+    // singleProjectDetails: <Instagram />,
+    projectpath: "https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/Instagram%20Project-%209/Components/InstagtamPage",
   },
 ];
 
@@ -125,7 +128,11 @@ const Projects = () => {
                     <CardMedia component="img" image={project.img} alt="" />
                     <CardContent>
                       <Typography className="Projects--details--single--card--header">
-                        {project.header}
+                       <a 
+                      href={project.projectpath}
+                       target="_blank"
+                       className="Projects--details--single--card--header--link"
+                       > {project.header}</a>
                       </Typography>
                       <Typography
                         className="Projects--details--single--card--content"
@@ -169,6 +176,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      <FactsAndStats />
       <Footer />
     </>
   );

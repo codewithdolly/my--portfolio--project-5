@@ -64,26 +64,35 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
         .about--intro2--contact--info {
           div {
             margin-bottom: 10px;
+            font-family: auto;
           }
         }
       }
       .about--intro2--btns {
-        margin-top: 20px;
-        Button {
-          font-family: auto;
-          color: $textColor;
-          border: 1px solid $textColor;
-          margin-right: 10px;
-          padding: 10px 20px;
-          border-radius: 0;
-          &:hover {
-            background-color: rgb(231, 110, 66);
-            color: $textWhite;
-          }
-        }
+        font-family: auto;
+        margin: 20px;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+           
+      
+        
         .about--intro2--btns--contact {
           background-color: $textColor;
           color: $textWhite;
+          border: 1px solid $textColor;
+          &:hover {
+            background-color: rgb(231, 110, 66);
+            color: $textWhite;}
+        
+        }
+        .about--intro2--btns--cv{
+          color: $textColor;
+          border: 1px solid $textColor;
+          &:hover {
+            background-color: rgb(231, 110, 66);
+            color: $textWhite;}
         }
       }
     }

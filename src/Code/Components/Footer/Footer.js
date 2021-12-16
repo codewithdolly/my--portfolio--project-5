@@ -1,12 +1,12 @@
 import React from "react";
 import "./Footer.scss";
-import DoneAllOutlinedIcon from "@mui/icons-material/DoneAllOutlined";
 import { Button } from "@material-ui/core";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const socialMedia = [
   {
@@ -96,8 +96,8 @@ const Footer = () => {
               {SocialIcon.map((social) => {
                 return (
                   <a
+                  target="_blank"
                     href={social.link}
-                    target="_blank"
                     className="footer--moreInfo--SocialIcons--social--icon"
                   >
                     {social.icon}
@@ -164,6 +164,7 @@ const Footer = () => {
           </a>
         </p>
       </div>
+      <div><ArrowUpwardIcon/ ></div>
     </>
   );
 };

@@ -34,6 +34,7 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
         max-width: 400px;
         border: 3px solid $backGroundcolor;
         margin: 1.5rem;
+        margin-bottom: 0;
         .Projects--details--single--card--btn {
           text-decoration: none;
         }
@@ -88,6 +89,10 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
           .Projects--details--single--card--header {
             font-size: 35px;
             margin: 10px 0;
+            .Projects--details--single--card--header--link{
+              text-decoration: none !important;
+
+            }
           }
           .Projects--details--single--card--content {
             font-size: 25px;

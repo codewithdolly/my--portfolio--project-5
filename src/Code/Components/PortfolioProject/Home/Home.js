@@ -8,7 +8,6 @@ import DollyHome from "../../Images/dolly2.png";
 import Plane from "../../Images/plane.gif";
 import HomeService from "./HomeService";
 import Footer from "../../Footer/Footer";
-import InspringQuotes from "../InspringQuotes/InspringQuotes";
 import QualificationAndExperience from "./QualificationAndExperience";
 import UseFullTools from "./UseFullTools";
 import FactsAndStats from "./FactsAndStats";

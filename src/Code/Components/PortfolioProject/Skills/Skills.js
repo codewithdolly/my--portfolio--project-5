@@ -2,7 +2,6 @@ import React from "react";
 import "./Skills.scss";
 import { motion } from "framer-motion";
 import Footer from "../../Footer/Footer";
-import skillImg from "../../Images/skills.jpg";
 import HomeInfo from "../Home/HomeInfo";
 import InspringQuotes from "../InspringQuotes/InspringQuotes";
 

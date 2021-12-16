@@ -9,106 +9,105 @@ const Images = [
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/brave.png",
     alt: "Brave",
-    link:"https://brave.com/",
+    link: "https://brave.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/canva.png",
     alt: "Canva",
-    link:"https://www.canva.com/",
+    link: "https://www.canva.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/firebase.png",
     alt: "Firebase",
-    link:"https://firebase.google.com/",
+    link: "https://firebase.google.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/git.png",
     alt: "Git",
-    link:"https://git-scm.com/"
+    link: "https://git-scm.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/github.png",
     alt: "Github",
-    link:"https://github.com/",
+    link: "https://github.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/google.png",
     alt: "Google",
-    link:"https://www.google.com/",
+    link: "https://www.google.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/mui.png",
     alt: "MUI (material-ui)",
-    link:"https://mui.com/",
+    link: "https://mui.com/",
   },
 
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/devtool.png",
     alt: "Devtool",
-    link:"https://developer.chrome.com/docs/devtools/",
+    link: "https://developer.chrome.com/docs/devtools/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/bootstrap.png",
     alt: "Bootstrap",
-    link:"https://getbootstrap.com/",
+    link: "https://getbootstrap.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/slack.png",
     alt: "Slack",
-    link:"https://slack.com/",
+    link: "https://slack.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/vscode.png",
     alt: "Vscode",
-    link:"https://code.visualstudio.com/",
+    link: "https://code.visualstudio.com/",
   },
 
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/analitics.png",
     alt: "analitcs",
-    link:"https://analytics.google.com/",
+    link: "https://analytics.google.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/react.png",
     alt: "React",
-    link:"https://reactjs.org/",
+    link: "https://reactjs.org/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/elementor.png",
     alt: "Elementor",
-    link:"https://elementor.com/",
+    link: "https://elementor.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/redux.png",
     alt: "Redux",
-    link:"https://redux.js.org/",
+    link: "https://redux.js.org/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/fontawesome.png",
     alt: "Fontawesome",
-    link:"https://fontawesome.com/",
+    link: "https://fontawesome.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/searchconsole.png",
     alt: "Search Console",
-    link:"hhttps://search.google.com/search-console/welcome",
+    link: "hhttps://search.google.com/search-console/welcome",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/wordpress.png",
     alt: "Wordpress",
-    link:"https://wordpress.com/",
+    link: "https://wordpress.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/envato.png",
     alt: "Envato",
-    link:"https://www.envato.com/",
+    link: "https://www.envato.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/motion.png",
     alt: "Framer Motion",
-    link:"https://www.framer.com/motion/",
+    link: "https://www.framer.com/motion/",
   },
- 
 ];
 
 const UseFullTools = () => {
@@ -118,9 +117,7 @@ const UseFullTools = () => {
         <div className="useFullTools--Weapons">
           <div className="useFullTools--Weapons--icon">
             <DoubleArrowIcon sx={{ mx: 1, color: "white" }} />
-            <div className="useFullTools--Weapons--Weapons--name">
-            Weapons
-            </div>
+            <div className="useFullTools--Weapons--Weapons--name">Weapons</div>
           </div>
           <h1 className="useFullTools--Weapons--favoriteTools">
             These are my all-time favorite <span>Weapons</span>
@@ -145,19 +142,22 @@ const UseFullTools = () => {
             return (
               <>
                 {" "}
-               <a href={image.link} target="_blank"> <motion.img
-                  animate={{ opacity: 1 }}
-                  whileHover={{ scale: 1.2, opacity: 1 }}
-                  whileTap={{
-                    scale: 0.8,
-                    borderRadius: "100%",
-                  }}
-                  transition={{ duration: 0.5 }}
-                  src={image.imgPath}
-                  alt={image.alt}
-                  name={image.alt}
-                  className="useFullTools--WeaponsImg--image"
-                /></a>
+                <a href={image.link} target="_blank">
+                  {" "}
+                  <motion.img
+                    animate={{ opacity: 1 }}
+                    whileHover={{ scale: 1.2, opacity: 1 }}
+                    whileTap={{
+                      scale: 0.8,
+                      borderRadius: "100%",
+                    }}
+                    transition={{ duration: 0.5 }}
+                    src={image.imgPath}
+                    alt={image.alt}
+                    name={image.alt}
+                    className="useFullTools--WeaponsImg--image"
+                  />
+                </a>
               </>
             );
           })}
