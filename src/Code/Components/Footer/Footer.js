@@ -158,6 +158,7 @@ const Footer = () => {
           <a
             style={{ color: "#db9a64" }}
             href="https://github.com/hcmay2021-Dolly/my--portfolio--project-5"
+            target="_blank"
           >
             Project source code.
           </a>

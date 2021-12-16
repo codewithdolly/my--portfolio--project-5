@@ -69,7 +69,7 @@ const Gaana = () => {
               pariatur velit dolores. Animi, laboriosam!
             </p>
             <Button
-            href="https://bit.ly/3oHyVEG"
+            href="https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/project04--%20Gaana.com/Gaana_main/images"
               className="projects--details--info--btn"
               variant="outlined"
               fullWidth

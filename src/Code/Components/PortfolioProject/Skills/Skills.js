@@ -3,6 +3,8 @@ import "./Skills.scss";
 import { motion } from "framer-motion";
 import Footer from "../../Footer/Footer";
 import skillImg from "../../Images/skills.jpg";
+import HomeInfo from "../Home/HomeInfo";
+import InspringQuotes from "../InspringQuotes/InspringQuotes";
 
 const Skills = () => {
   return (
@@ -16,9 +18,10 @@ const Skills = () => {
           className="skills--main--name">Skills & Knowledge</motion.h1>
         </div>
         
-        <div className="skills--main--img">
-        <img src={skillImg} alt="" width="100%"/>
-        </div>
+       <div className="skills--info">
+       <HomeInfo />
+       </div>
+       <InspringQuotes />
       </div>
       <Footer />
     </>

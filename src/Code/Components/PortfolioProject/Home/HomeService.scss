@@ -3,13 +3,12 @@
 $textColor: #db9a64;
 $textWhite: white;
 $backGroundcolor: #311e25;
-$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 
 
 .homeService {
   background-color: #3b2930;
   cursor: pointer;
-  padding: 3rem 18%;
+  padding: 3rem;
 
   .homeService--service {
     color: $textWhite;
@@ -19,16 +18,14 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
   .homeService--border {
     text-align: center;
     color: $textWhite;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
   .homeService--cards {
-    font-family: $font-family;
     color: $textWhite;
     border: 1px solid $backGroundcolor;
-    width: 40%;
-    margin: 2rem;
-    padding: 2rem 5rem;
-   
+    width: 30%;
+    margin: 20px;
+   padding: 3rem;
     display: inline-block;
     .homeService--cards--icon{
         font-size: 3rem;

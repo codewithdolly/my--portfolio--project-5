@@ -1,0 +1,33 @@
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+
+.factsAndStats {
+  color: white;
+  text-align: center;
+  margin: 3rem;
+  h2 {
+    font-size: 50px;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  .factsAndStats--work{
+      display: inline-block;
+      margin: 3rem;
+        
+      .factsAndStats--work--details{
+          display: flex;
+          align-content: center;
+          text-align: center;
+          .factsAndStats--work--details--icon{
+              font-size: 5rem;
+              color: $textColor;
+              margin: 0 5px;
+          }
+          h3{
+              font-size: 45px;
+          }
+      }
+  }
+}

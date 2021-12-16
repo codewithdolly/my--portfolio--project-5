@@ -11,11 +11,12 @@ import Footer from "../../Footer/Footer";
 import InspringQuotes from "../InspringQuotes/InspringQuotes";
 import QualificationAndExperience from "./QualificationAndExperience";
 import UseFullTools from "./UseFullTools";
+import FactsAndStats from "./FactsAndStats";
 
 const Home = () => {
   return (
     <div className="main">
-          <img src={Plane} alt="" className="main--plane"/>
+      <img src={Plane} alt="" className="main--plane" />
       <div className="main--body">
         <motion.div
           initial={{ opacity: 0 }}
@@ -26,7 +27,7 @@ const Home = () => {
             <span>Hello There,</span> I am Dolly
           </h1>
           <div className="main--body--degi">
-          <p className="main--body--work">A Web Developer.</p>
+            <p className="main--body--work">A Web Developer.</p>
           </div>
           {/* <marquee direction="up" scrollamount="5" className="main--body--degi">
             <p className="main--body--work">A Web Developer.</p>
@@ -60,8 +61,8 @@ const Home = () => {
       <HomeService />
       <UseFullTools />
       <QualificationAndExperience />
-      <InspringQuotes />
-    
+      <FactsAndStats />
+
 
       <Footer />
     </div>

@@ -27,7 +27,7 @@ const ProjectDetails = [
     path: "/youtube",
     youtubeLink: "https://www.youtube.com/watch?v=MFV4WSxAnjs&t=30s",
     singleProjectDetails: <YouTubeProject />,
-    projectpath: "/youtube",
+    projectpath: "https://github.com/hcmay2021-Dolly/youtube-clone_project_2",
   },
 
   {
@@ -37,7 +37,7 @@ const ProjectDetails = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=ege7EYue2RE&t=3s",
     singleProjectDetails: <Myntra />,
-    projectpath: "/myntra",
+    projectpath: "https://github.com/hcmay2021-Dolly/react--Myntra--Project-4",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/gaana.jpg",
@@ -46,55 +46,55 @@ const ProjectDetails = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=qxvtOmXSHCc",
     singleProjectDetails: <Gaana />,
-    projectpath: "/gaana",
+    projectpath: "https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/project04--%20Gaana.com",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/cowin.jpg",
-    header: "4. CoWIN Project cloned with React, and Material-ui (mui)",
+    header: "4. CoWIN Project cloned with React, and MUI (Material-ui)",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=Y6z2GuEu1f0&t=25s",
     singleProjectDetails: <CoWin />,
-    projectpath: "/cowin",
+    projectpath: "https://github.com/hcmay2021-Dolly/react--Cowin--Project_project_3",
   },
 
   {
     img: "process.env.PUBLIC_URL + ../../Images/form.jpg",
-    header: "4. Google Form created from scratch using Material-ui (mui)",
+    header: "5. Google Form created from scratch using Material-ui (mui)",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=U3ZXQkdx1pY&t=179s",
-    singleProjectDetails: <CoWin />,
-    projectpath: "/google-form",
+    singleProjectDetails: <Gaana />,
+    projectpath: "https://github.com/hcmay2021-Dolly/react--GoogleForm--Project",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/static.jpg",
-    header: "5. Static Website created from scratch using HTML, CSS, BootsTrap",
+    header: "6. Static Website created from scratch using HTML, CSS, BootsTrap",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "https://www.youtube.com/watch?v=tQ1dn55q8jA&t=262s",
     singleProjectDetails: <Static />,
-    projectpath: "/youtube",
+    projectpath: "https://github.com/hcmay2021-Dolly/static-website_project_1",
   },
 
   {
     img: "process.env.PUBLIC_URL + ../../Images/whatsapp.jpg",
-    header: "6. WhatsApp Clone from scratch using React, MUI(material-ui)",
+    header: "7. WhatsApp Clone from scratch using React, MUI(material-ui)",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "",
     singleProjectDetails: <WhatsApp />,
-    projectpath: "/whatsapp",
+    projectpath: "https://github.com/hcmay2021-Dolly/hicoder--whatsapp--web--project-6",
   },
 
   {
     img: "process.env.PUBLIC_URL + ../../Images/slack.jpg",
-    header: "7. Slack Clone from scratch using React, MUI(material-ui)",
+    header: "8. Slack Clone from scratch using React, MUI(material-ui)",
     content:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate laboriosam officia aliquam voluptas, distinctio ipsa sequi, eveniet ipsum corporis nam cum nulla facere unde autem?",
     youtubeLink: "",
     singleProjectDetails: <Slack />,
-    projectpath: "/slack",
+    projectpath: "https://github.com/hcmay2021-Dolly/hicoder--slack--project-7",
   },
 ];
 
@@ -137,31 +137,22 @@ const Projects = () => {
                     </CardContent>
                   </CardActionArea>
                   <CardActions>
-                    <Link
-                      to="{project.projectpath}"
-                      className="Projects--details--single--card--btn"
-                    >
+                  
                       <Button
+                      href={project.projectpath}
+                      target="_blank"
                         size="small"
                         color="primary"
                         variant="contained"
-                        sx={{mb:2}}
+                        sx={{mb:2, mx:1}}
                         startIcon={<DescriptionIcon />}
                       >
-                        Blog
+                        code
                       </Button>
-                    </Link>
-                    <Routes>
-                      <Route
-                        path={project.projectpath}
-                        exact
-                        element={project.singleProjectDetails}
-                      />
-                    </Routes>
-
                     <Button
                        sx={{mb:2}}
-                      href={project.youtubeLink}
+                       href={project.youtubeLink}
+                      target="_blank"
                       size="small"
                       className="projectBtn"
                       color="error"

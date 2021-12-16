@@ -5,6 +5,7 @@ import { Button } from "@mui/material";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { motion } from "framer-motion";
+import MultipleVideo from "./MultipleVideo";
 
 const YouTube = () => {
   return (
@@ -59,8 +60,8 @@ const YouTube = () => {
         Please Open in iPad or Desktop/Laptop. 
         </center>
       </div>
-     
      <div  id= "aboutFooter"></div>
+<MultipleVideo />
       <Footer/>
     </>
   );

@@ -9,43 +9,106 @@ const Images = [
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/brave.png",
     alt: "Brave",
+    link:"https://brave.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/canva.png",
     alt: "Canva",
+    link:"https://www.canva.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/firebase.png",
     alt: "Firebase",
+    link:"https://firebase.google.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/git.png",
     alt: "Git",
+    link:"https://git-scm.com/"
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/github.png",
     alt: "Github",
+    link:"https://github.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/google.png",
     alt: "Google",
+    link:"https://www.google.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/mui.png",
     alt: "MUI (material-ui)",
+    link:"https://mui.com/",
+  },
+
+  {
+    imgPath: "process.env.PUBLIC_URL +../../Images/devtool.png",
+    alt: "Devtool",
+    link:"https://developer.chrome.com/docs/devtools/",
   },
   {
-    imgPath: "process.env.PUBLIC_URL +../../Images/Skype.png",
-    alt: "Skype",
+    imgPath: "process.env.PUBLIC_URL +../../Images/bootstrap.png",
+    alt: "Bootstrap",
+    link:"https://getbootstrap.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/slack.png",
     alt: "Slack",
+    link:"https://slack.com/",
   },
   {
     imgPath: "process.env.PUBLIC_URL +../../Images/vscode.png",
     alt: "Vscode",
+    link:"https://code.visualstudio.com/",
   },
+
+  {
+    imgPath: "process.env.PUBLIC_URL +../../Images/analitics.png",
+    alt: "analitcs",
+    link:"https://analytics.google.com/",
+  },
+  {
+    imgPath: "process.env.PUBLIC_URL +../../Images/react.png",
+    alt: "React",
+    link:"https://reactjs.org/",
+  },
+  {
+    imgPath: "process.env.PUBLIC_URL +../../Images/elementor.png",
+    alt: "Elementor",
+    link:"https://elementor.com/",
+  },
+  {
+    imgPath: "process.env.PUBLIC_URL +../../Images/redux.png",
+    alt: "Redux",
+    link:"https://redux.js.org/",
+  },
+  {
+    imgPath: "process.env.PUBLIC_URL +../../Images/fontawesome.png",
+    alt: "Fontawesome",
+    link:"https://fontawesome.com/",
+  },
+  {
+    imgPath: "process.env.PUBLIC_URL +../../Images/searchconsole.png",
+    alt: "Search Console",
+    link:"hhttps://search.google.com/search-console/welcome",
+  },
+  {
+    imgPath: "process.env.PUBLIC_URL +../../Images/wordpress.png",
+    alt: "Wordpress",
+    link:"https://wordpress.com/",
+  },
+  {
+    imgPath: "process.env.PUBLIC_URL +../../Images/envato.png",
+    alt: "Envato",
+    link:"https://www.envato.com/",
+  },
+  {
+    imgPath: "process.env.PUBLIC_URL +../../Images/motion.png",
+    alt: "Framer Motion",
+    link:"https://www.framer.com/motion/",
+  },
+ 
 ];
 
 const UseFullTools = () => {
@@ -82,7 +145,7 @@ const UseFullTools = () => {
             return (
               <>
                 {" "}
-                <motion.img
+               <a href={image.link} target="_blank"> <motion.img
                   animate={{ opacity: 1 }}
                   whileHover={{ scale: 1.2, opacity: 1 }}
                   whileTap={{
@@ -94,7 +157,7 @@ const UseFullTools = () => {
                   alt={image.alt}
                   name={image.alt}
                   className="useFullTools--WeaponsImg--image"
-                />
+                /></a>
               </>
             );
           })}

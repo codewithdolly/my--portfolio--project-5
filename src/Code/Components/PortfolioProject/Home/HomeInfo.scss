@@ -3,7 +3,7 @@
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $textWhite: white;
-$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+$font-family: auto;
 
 .btn {
   padding: 15px 25px 15px 25px;
@@ -25,7 +25,7 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
 }
 .homeInfo {
   font-family: $font-family;
-  margin: 100px 10% 100px 10%;
+  margin:  3rem 10%;
   flex-wrap: wrap;
   color: $textWhite;
   .homeInfo--skills {
@@ -34,12 +34,10 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
   }
   .homeInfo--border {
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
 
   .homeInfo--information {
-    font-size: 30px;
-    font-weight: 700;
     margin-bottom: 3rem;
   }
 
@@ -48,7 +46,7 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
     justify-content: space-between;
     .homeInfo--info1 {
       width: 50%;
-      padding-top: 5rem;
+      padding-top: 4rem;
       .homeInfo--info1,
       P {
         font-size: 16px;
@@ -59,10 +57,12 @@ $font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
       background-color: $textColor;
       color: $textWhite;
       margin-right: 20px;
+      font-family: auto
     }
     .homeInfo--info--CV {
       @extend .btn;
       color: $textColor;
+      font-family: auto
     }
     .homeInfo--info--contact:hover,
     .homeInfo--info--CV:hover {

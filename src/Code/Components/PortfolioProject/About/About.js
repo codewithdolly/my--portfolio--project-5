@@ -13,7 +13,6 @@ const About = () => {
     <>
       <div className="about">
         <div className="about--main">
-          <img src={Plane} alt="plane" />
           <motion.h1 
            initial={{ opacity: 0, x:-100 }}
           animate={{ opacity: 2, x: 0 }}
@@ -68,7 +67,7 @@ const About = () => {
                 Have a Look at My
                 <a
                   href="https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA"
-                  style={{ color: "gray" }}
+                  style={{ color: "rgba(255, 255, 255, 0.63)" }}
                 >
                   {" "}
                   Youtube{" "}

@@ -68,15 +68,13 @@ const HomeService = () => {
         <p className="homeService--border">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
         {services.map((service) => (
           <>
-            <motion.div
-              // whileHover={{ scale: 1.3 }}
-              // transition={{ duration: 0.5 }}
+            <div
               className="homeService--cards"
             >
               <p>{service.icon}</p>
               <h2 className="homeService--cards--header">{service.header}</h2>
               <p className="homeService--cards--abt">{service.about}</p>
-            </motion.div>
+            </div>
           </>
         ))}
       </div>
