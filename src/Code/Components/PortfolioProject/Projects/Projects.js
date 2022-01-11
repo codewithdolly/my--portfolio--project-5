@@ -10,6 +10,7 @@ import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import { motion } from "framer-motion";
 import Footer from "../../Footer/Footer";
 import FactsAndStats from "../Home/FactsAndStats";
+import { Outlet } from "react-router-dom";
 
 const ProjectDetails = [
   {
@@ -94,10 +95,19 @@ const ProjectDetails = [
     img: "process.env.PUBLIC_URL + ../../Images/instagram.jpg",
     header: "9. Instagram Project design with MUI(material-ui) and react",
     content:
-      "This Project I got to build this in 2 days. I was new in react. So I was quite confused building it. But I learnt so  many Things in React and MUI(material-UI)",
+      "This Project I got to build in 2 days. I was new in react. So I was quite confused building it. But I learnt so  many Things in React and MUI(material-UI)",
     youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
     // singleProjectDetails: <Instagram />,
     projectpath: "https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/Instagram%20Project-%209/Components/InstagtamPage",
+  },
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/stackoverflow.jpg",
+    header: "10. Stack Overflow clone from Scratch using React, Scss and Bootstrap",
+    content:
+      "This is the second project which take longer times to build. I have not just build this project but also I have change design at some place. Because I thouse that it might look more good.",
+    youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
+    // singleProjectDetails: <Instagram />,
+    projectpath: "https://github.com/hcmay2021-Dolly/hicoder--stackoverflow--project-8",
   },
 ];
 
@@ -154,7 +164,7 @@ const Projects = () => {
                         sx={{mb:2, mx:1}}
                         startIcon={<DescriptionIcon />}
                       >
-                        code
+                        More 
                       </Button>
                     <Button
                        sx={{mb:2}}
@@ -178,6 +188,7 @@ const Projects = () => {
       </div>
       <FactsAndStats />
       <Footer />
+      <Outlet />
     </>
   );
 };

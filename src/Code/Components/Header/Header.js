@@ -8,6 +8,8 @@ import Skills from "../PortfolioProject/Skills/Skills";
 import About from "../PortfolioProject/About/About";
 import YouTube from "../PortfolioProject/YouTube/YouTube";
 import Projects from "../PortfolioProject/Projects/Projects";
+import CoWin from "../PortfolioProject/Projects/CoWin"
+import Gaana from "../PortfolioProject/Projects/Gaana"
 import { motion } from "framer-motion";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -102,7 +104,10 @@ const Header = () => {
       </div>
       <Routes element={<Header />}>
          <Route path="/" element={<Home />} />
-         <Route path="/projects" element={<Projects />} />
+         <Route path="/projects" element={<Projects />}>
+         <Route path="cowin" element={<CoWin/>} />
+         <Route path="gaana" element={<Gaana />} />
+         </Route>
          <Route path="/Skills" element={<Skills />} />
          <Route path="/youtube" element={<YouTube />} />
         <Route path="/about" element={<About />} />
