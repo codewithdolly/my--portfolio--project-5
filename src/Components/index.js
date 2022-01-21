@@ -1,0 +1,8 @@
+export {default as Home} from "./Home"
+export {default as Projects} from "./Projects"
+// export {default as CoWin} from "./CoWin"
+export {default as About} from "./About"
+export {default as Skills} from "./Skills"
+// export {default as Gaana} from "./Gaana"
+export {default as YouTube} from "./YouTube"
+export {default as Footer} from "./Footer"

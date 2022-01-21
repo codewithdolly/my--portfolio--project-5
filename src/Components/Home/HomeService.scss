@@ -1,0 +1,89 @@
+@import "../media-queriey";
+
+$textColor: #db9a64;
+$textWhite: white;
+$backGroundcolor: #311e25;
+
+
+.homeService {
+  background-color: #3b2930;
+  cursor: pointer;
+  padding: 3rem;
+
+  .homeService--service {
+    color: $textWhite;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .homeService--border {
+    text-align: center;
+    color: $textWhite;
+    margin-bottom: 3rem;
+  }
+  .homeService--cards {
+    color: $textWhite;
+    border: 1px solid $backGroundcolor;
+    width: 30%;
+    margin: 20px;
+   padding: 3rem;
+    display: inline-block;
+    .homeService--cards--icon{
+        font-size: 3rem;
+    }
+    .homeService--cards--header {
+      color: $textColor;
+      margin: 5px 0;
+     
+    }
+  }
+  .homeService--cards:hover {
+    border: 1px solid $textColor;
+    box-shadow: 2px 2px 10px #db9a6448
+  }
+}
+
+@mixin forMobile--HomeService {
+  .homeService {
+    padding: 3rem 0;
+    .homeService--service {
+      font-size: 2.5rem;
+    }
+    .homeService--border {
+      margin-bottom: 2rem;
+    }
+    .homeService--cards {
+      width: 80%;
+      padding: 2rem 1rem;
+    }
+  }
+}
+
+@mixin forTablet--HomeService {
+  .homeService {
+    padding: 3rem 0;
+    .homeService--border {
+      margin-bottom: 5rem;
+    }
+    .homeService--cards {
+      width: 40%;
+      padding: 2rem 1rem;
+      .homeService--cards--header{
+        font-size: 30px;
+      }
+      .homeService--cards--abt{
+        font-size: 25px
+      }
+    }
+  }
+}
+
+@include breapoint(mobile) {
+  @include forMobile--HomeService;
+}
+
+@include breapoint(tablet) {
+  @include forTablet--HomeService;
+}
+@include breapoint(desktop) {
+  @include forTablet--HomeService;
+}

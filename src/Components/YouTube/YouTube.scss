@@ -1,0 +1,104 @@
+@import "../media-queriey";
+
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$backgroundcolor2: #3b2930 ; 
+$textWhite: white;
+$font-family: auto;
+$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+
+.youtube {
+  .youtube--main {
+    // background-image: $background-image;
+    background-color: $backGroundcolor;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    top: 70px;
+    text-align: center;
+ 
+    .youtube--main--name {
+      font-size: 60px;
+      font-weight: 400;
+      color: $textWhite;
+    }
+    
+  }
+  .youtube--video{
+    background-color: $backgroundcolor2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+padding-top: 8rem;
+
+  }
+  .youtube--video2{
+    background-color: $backgroundcolor2;
+    padding: 2rem 0;
+    color: silver;
+    h2{
+      color: $textWhite;
+      padding-bottom: 1rem;
+    }
+    .youtube--video2--btn{
+      color: $textColor;
+      border: 1px solid $textColor;
+      text-transform: capitalize;
+      border-radius: 0;
+      &:hover{
+        background-color: rgb(231, 110, 66);
+        color: $textWhite;
+      }
+    }
+  }
+  
+}
+.alert{
+  display: none;
+}
+
+@mixin forMobile--YouTube {
+  .youtube{
+   display: none;
+  
+  }
+  #aboutFooter {
+    display: none !important;
+  }
+  .alert{
+    display: block;
+    font-size: 30px;
+    color: white;
+    margin-top: 10rem;
+  }
+}
+
+@mixin forTablet--YouTube {
+  .youtube{
+    .youtube--main{
+      height: 40vh;
+    }
+    .youtube--video2{
+      font-family: $font-family
+      h2{
+        font-size: 40px; 
+      }
+      p{
+        font-size: 25px;
+      }
+      .youtube--video2--btn{
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+
+@include breapoint(mobile) {
+  @include forMobile--YouTube;
+}
+
+@include breapoint(tablet) {
+  @include forTablet--YouTube;
+}

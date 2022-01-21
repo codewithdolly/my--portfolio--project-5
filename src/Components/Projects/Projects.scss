@@ -1,0 +1,120 @@
+@import "../media-queriey";
+
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$backgroundcolor2: #3b2930;
+$textWhite: white;
+$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+
+.Projects {
+  .Projects--bgImg {
+    // background-image: $background-image;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    background-color: $backGroundcolor;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    top: 70px;
+    .Projects--bgImg--h1 {
+      font-family: auto;
+      color: $textWhite;
+      text-align: center;
+      font-size: 60px;
+      font-weight: 400;
+    }
+  }
+  .Projects--details {
+    background-color: $backgroundcolor2;
+    padding: 10rem 5rem;
+    .Projects--details--single {
+      display: inline-block;
+      .Projects--details--single--card {
+        max-width: 400px;
+        border: 3px solid $backGroundcolor;
+        margin: 1.5rem;
+        margin-bottom: 0;
+        .Projects--details--single--card--btn {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@mixin forMobile--project {
+  .Projects {
+    .Projects--bgImg {
+      height: 40vh;
+      .Projects--bgImg--h1 {
+        padding-top: 5rem;
+      }
+    }
+    .Projects--details {
+      padding: 4rem 2rem;
+      .Projects--details--single {
+        width: 100%;
+        .Projects--details--single--card {
+          max-width: 800px;
+          border: 3px solid $backGroundcolor;
+          margin: 1rem 0;
+          .Projects--details--single--card--btn {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin forTablet--project {
+  .Projects {
+    .Projects--bgImg {
+      height: 40vh;
+      .Projects--bgImg--h1 {
+        width: 100%;
+        margin: auto;
+      }
+    }
+    .Projects--details {
+      padding: 4rem;
+      .Projects--details--single {
+        width: 100%;
+
+        .Projects--details--single--card {
+          max-width: 800px;
+          border: 3px solid $backGroundcolor;
+          margin: 1rem 0;
+          .Projects--details--single--card--header {
+            font-size: 35px;
+            margin: 10px 0;
+            .Projects--details--single--card--header--link{
+              text-decoration: none !important;
+
+            }
+          }
+          .Projects--details--single--card--content {
+            font-size: 25px;
+          }
+          .Projects--details--single--card--btn {
+            Button {
+              font-size: 20px;
+            }
+          }
+        }
+        .css-1t6e9jv-MuiCardActions-root > :not(:first-of-type) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include breapoint(mobile) {
+  @include forMobile--project;
+}
+
+@include breapoint(tablet) {
+  @include forTablet--project;
+}
