@@ -41,7 +41,7 @@ const Home = () => {
             transition={{ duration: "1", type: "spring" }}
           >
             <Button
-              href="http://localhost:3000/projects"
+              href="https://codewithdolly.netlify.app/projects"
               size="large"
               className="main--body--btn"
               endIcon={<ArrowRightAltIcon />}
