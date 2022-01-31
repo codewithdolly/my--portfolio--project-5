@@ -1,8 +1,8 @@
 import React from "react";
 import "./SingleProject.scss";
-import GaanaImg from "../../Images/gaana.jpg";
+import GaanaImg from "../Images/gaana.jpg";
 import { Button } from "@material-ui/core";
-import Footer from "../../Footer/Footer";
+import Footer from "../Footer";
 
 const Gaana = () => {
   return (

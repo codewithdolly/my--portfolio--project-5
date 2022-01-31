@@ -1,8 +1,8 @@
 import React from "react";
 import "./SingleProject.scss";
-import MyntraImg from "../../Images/mintra.jpg";
+import MyntraImg from "../Images/mintra.jpg";
 import { Button } from "@material-ui/core";
-import Footer from "../../Footer/Footer";
+import Footer from "../Footer";
 
 const Myntra = () => {
   return (

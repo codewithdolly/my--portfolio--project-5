@@ -1,13 +1,14 @@
 import React from "react";
 import "./SingleProject.scss";
-import StaticImg from "../../Images/static.jpg";
+import StaticImg from "../Images/static.jpg";
 import { Button } from "@material-ui/core";
-import Footer from "../../Footer/Footer";
+import Footer from "../Footer";
 
 const Static = () => {
+  let { Static } = React.useParams();
   return (
     <>
-      <div className="projects">
+      <div className="projects" {...Static}>
         <div className="projects--img">
           <p className="projects--img--header">Static Website Project</p>
         </div>

@@ -1,9 +1,8 @@
 import React from "react";
 import "./SingleProject.scss";
-import youtubeImg from "../../Images/youtube.jpg";
+import youtubeImg from "../Images/youtube.jpg";
 import { Button } from "@material-ui/core";
-import Footer from "../../Footer/Footer";
-
+import Footer from "../Footer";
 const YouTubeProject = () => {
   return (
     <>

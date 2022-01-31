@@ -1,8 +1,8 @@
 import React from "react";
 import "./SingleProject.scss";
-import WhatsAppImg from "../../Images/whatsapp.jpg";
+import WhatsAppImg from "../Images/whatsapp.jpg";
 import { Button } from "@material-ui/core";
-import Footer from "../../Footer/Footer";
+import Footer from "../Footer";
 
 const WhatsApp = () => {
   return (

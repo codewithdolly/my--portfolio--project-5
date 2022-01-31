@@ -3,7 +3,9 @@ import "./App.scss";
 import { Button } from "@material-ui/core";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import {Home, Projects, About, Skills, CoWin, Gaana, YouTube, Footer} from "./Components";
+import {Home, Projects, About, Skills, Gaana, YouTube, Footer} from "./Components";
+import CoWin from "./Components/Projects/CoWin";
+import Static from "./Components/Projects/Static";
 import { motion } from "framer-motion";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -99,8 +101,8 @@ const App = () => {
       <Routes element={<App />}>
          <Route path="/" element={<Home />} />
          <Route path="/projects" element={<Projects />}>
-         {/* <Route path="cowin" element={<CoWin/>} /> */}
-         {/* <Route path="gaana" element={<Gaana />} /> */}
+         <Route path=":cowin" element={<CoWin/>} />
+         <Route path=":static" element={<Static />} />
          </Route>
          <Route path="/Skills" element={<Skills />} />
          <Route path="/youtube" element={<YouTube />} />

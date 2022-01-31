@@ -1,8 +1,8 @@
 import React from "react";
 import "./SingleProject.scss";
-import GoogleFormImg from "../../Images/6.jpg";
+import GoogleFormImg from "../Images/6.jpg";
 import { Button } from "@material-ui/core";
-import Footer from "../../Footer/Footer";
+import Footer from "../Footer";
 
 const GoogleForm = () => {
   return (

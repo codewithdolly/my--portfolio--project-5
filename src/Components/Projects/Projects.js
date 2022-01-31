@@ -11,6 +11,14 @@ import { motion } from "framer-motion";
 import Footer from "../Footer";
 import FactsAndStats from "../Home/FactsAndStats";
 import { Outlet } from "react-router-dom";
+import CoWin from "./CoWin"
+import Static from "./Static"
+import YouTubeProject from "./YouTubeProject"
+import Myntra from "./Myntra"
+import WhatsApp from "./WhatsApp"
+import Slack from "./Slack"
+import Gaana from "./Gaana"
+import GoogleForm from "./GoogleForm"
 
 const Projects = () => {
   return (
@@ -77,7 +85,7 @@ const Projects = () => {
                       className="projectBtn"
                       color="error"
                       variant="outlined"
-                      target="_blank"
+                    
                       startIcon={<VideoLibraryIcon />}
                     >
                       Video
@@ -105,7 +113,7 @@ const ProjectDetails = [
     content:
       "This is My First project. I hadto build this from scratch using HTML, CSS and JavaScript. To make this project We got 3 days and we  had to build 12+ page. By the way i got this project in team and there was 3 member.",
     youtubeLink: "https://www.youtube.com/watch?v=tQ1dn55q8jA&t=262s",
-    // singleProjectDetails: <Static />,
+    singleProjectDetails: <Static />,
     projectpath: "https://github.com/hcmay2021-Dolly/static-website_project_1",
   },
   {
@@ -115,7 +123,7 @@ const ProjectDetails = [
       "YouTube is my Second project and I was quite happy and excited for this project, because Its a big project. Again I made this project from scatch using HTML, CSS, JavaScript & Bootstrap. I have made this project alone.",
     path: "/youtube",
     youtubeLink: "https://www.youtube.com/watch?v=MFV4WSxAnjs&t=30s",
-    // singleProjectDetails: <YouTubeProject />,
+    singleProjectDetails: <YouTubeProject />,
     projectpath: "https://github.com/hcmay2021-Dolly/youtube-clone_project_2",
   },
 
@@ -125,7 +133,7 @@ const ProjectDetails = [
     content:
       "We listen ganna everyday. to again this project was exciting project. And I hade to make this project from Scratch using HTML, CSS and Bootstrap. To make this project i got 2 days.",
     youtubeLink: "https://www.youtube.com/watch?v=qxvtOmXSHCc",
-    // singleProjectDetails: <Gaana />,
+    singleProjectDetails: <Gaana />,
     projectpath:
       "https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/project04--%20Gaana.com",
   },
@@ -135,7 +143,7 @@ const ProjectDetails = [
     content:
       "This Project has done from scratch using MUI (material-UI) and React. I was new In react so I was getting lot of confusin but finall its done in 2 days.",
     youtubeLink: "https://www.youtube.com/watch?v=Y6z2GuEu1f0&t=25s",
-    // singleProjectDetails: <CoWin />,
+    singleProjectDetails: <CoWin />,
     projectpath:
       "https://github.com/hcmay2021-Dolly/react--Cowin--Project_project_3",
   },
@@ -146,7 +154,7 @@ const ProjectDetails = [
     content:
       "Actually This project i haven't got from HiCoder. But there we were getting Attendance sheet. So I thought to make that. I have used MUI(material-UI) and React.",
     youtubeLink: "https://www.youtube.com/watch?v=U3ZXQkdx1pY&t=179s",
-    // singleProjectDetails: <Gaana />,
+    singleProjectDetails: <GoogleForm />,
     projectpath:
       "https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/google%20form--project--5",
   },
@@ -156,7 +164,7 @@ const ProjectDetails = [
     content:
       "This Myntra Project I got in Diwali time. I hade to clone this and add new features as well. So I build this from scratch using MUI(material-ui) and React.",
     youtubeLink: "https://www.youtube.com/watch?v=ege7EYue2RE&t=3s",
-    // singleProjectDetails: <Myntra />,
+    singleProjectDetails: <Myntra />,
     projectpath: "https://github.com/hcmay2021-Dolly/react--Myntra--Project-4",
   },
 
@@ -166,7 +174,7 @@ const ProjectDetails = [
     content:
       "WhatsApp web in one day project and I wanted to build Chat box so I build this project and completed in just one day. To make this I have used  MUI(material-ui) and React.",
     youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
-    // singleProjectDetails: <WhatsApp />,
+    singleProjectDetails: <WhatsApp />,
     projectpath:
       "https://github.com/hcmay2021-Dolly/hicoder--whatsapp--web--project-6",
   },
@@ -176,8 +184,8 @@ const ProjectDetails = [
     header: "8. Slack Project from scratch using React, MUI(material-ui)",
     content:
       "Slack is a very Big project. and its very usefull. Slack can be used in office, collage Or anywhere. So I got this project. To build this I have used  MUI(material-ui), React and many other packages.",
-    youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
-    // singleProjectDetails: <Slack />,
+    youtubeLink: "https://youtu.be/AJVZhCVGQ-o",
+    singleProjectDetails: <Slack />,
     projectpath: "https://github.com/hcmay2021-Dolly/hicoder--slack--project-7",
   },
 
@@ -187,7 +195,7 @@ const ProjectDetails = [
     content:
       "This Project I got to build in 2 days. I was new in react. So I was quite confused building it. But I learnt so  many Things in React and MUI(material-UI)",
     youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
-    // singleProjectDetails: <Instagram />,
+    singleProjectDetails: "",
     projectpath:
       "https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/Instagram%20Project-%209/Components/InstagtamPage",
   },
@@ -197,8 +205,8 @@ const ProjectDetails = [
       "10. Stack Overflow clone from Scratch using React, Scss and Bootstrap",
     content:
       "This is the second project which take longer times to build. I have not just build this project but also I have change design at some place. Because I thouse that it might look more good.",
-    youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
-    // singleProjectDetails: <Instagram />,
+    youtubeLink: "https://youtu.be/7KOjDoms_b4",
+    singleProjectDetails:"",
     projectpath:
       "https://github.com/hcmay2021-Dolly/hicoder--stackoverflow--project-8",
   },
