@@ -10,6 +10,7 @@ import HomeService from "./HomeService";
 import QualificationAndExperience from "./QualificationAndExperience";
 import UseFullTools from "./UseFullTools";
 import FactsAndStats from "./FactsAndStats";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -41,12 +42,11 @@ const Home = () => {
             transition={{ duration: "1", type: "spring" }}
           >
             <Button
-              href="codewithdolly.netlify.app/projects"
               size="large"
               className="main--body--btn"
               endIcon={<ArrowRightAltIcon />}
-            >
-              My Projects
+            ><Link to="/projects">
+              My Projects</Link>
             </Button>
           </motion.div>
         </motion.div>
