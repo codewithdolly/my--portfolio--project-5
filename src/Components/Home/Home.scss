@@ -4,6 +4,11 @@ $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
 
+
+.myproject{
+  text-decoration: none;
+}
+
 .main {
   background-image: $background-image;
   background-repeat: no-repeat;
@@ -57,7 +62,6 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
       bottom: 2rem;
     }
     .main--body--btn:hover {
-      padding: 15px 25px 15px 25px;
       box-shadow: 2px 2px 5px #311e2525;
       color: white;
       background-color: $textColor;

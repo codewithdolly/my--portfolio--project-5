@@ -41,13 +41,15 @@ const Home = () => {
             animate={{ x: 0 }}
             transition={{ duration: "1", type: "spring" }}
           >
+          <Link to="/projects" className="myproject">
             <Button
               size="large"
               className="main--body--btn"
               endIcon={<ArrowRightAltIcon />}
-            ><Link to="/projects">
-              My Projects</Link>
+            >
+              My Projects
             </Button>
+            </Link>
           </motion.div>
         </motion.div>
         <div>
