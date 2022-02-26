@@ -20,6 +20,7 @@ const Skills = () => {
        <div className="skills--info">
        <HomeInfo />
        </div>
+       
        <InspringQuotes />
       </div>
       <Footer />

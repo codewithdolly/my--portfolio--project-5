@@ -8,12 +8,12 @@ import EngineeringOutlinedIcon from '@mui/icons-material/EngineeringOutlined';
 let states = [
   {
     icon:  <DvrIcon className="factsAndStats--work--details--icon" />,
-    number: "10+",
+    number: "15+",
     done:"Website Developed",
   },
   {
     icon:  <IntegrationInstructionsOutlinedIcon className="factsAndStats--work--details--icon" />,
-    number: "25K+",
+    number: "30K+",
     done:"Lines Of Code",
   },
   {

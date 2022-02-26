@@ -145,7 +145,7 @@ const ProjectDetails = [
     youtubeLink: "https://www.youtube.com/watch?v=Y6z2GuEu1f0&t=25s",
     singleProjectDetails: <CoWin />,
     projectpath:
-      "https://github.com/hcmay2021-Dolly/react--Cowin--Project_project_3",
+      "https://github.com/codewithdolly/react--Cowin--Project_project_3",
   },
 
   {
@@ -209,5 +209,38 @@ const ProjectDetails = [
     singleProjectDetails:"",
     projectpath:
       "https://github.com/hcmay2021-Dolly/hicoder--stackoverflow--project-8",
+  },
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/ecommerce.png",
+    header:
+      "11. E-Commers website using API and Redux",
+    content:
+      "This is the second project which take longer times to build. I have not just build this project but also I have change design at some place. Because I thouse that it might look more good.",
+    youtubeLink: "https://youtu.be/7KOjDoms_b4",
+    singleProjectDetails:"",
+    projectpath:
+      "https://github.com/codewithdolly/hicoder-ecommers-redux--project-12",
+  },
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/bigbangbank.png",
+    header:
+      "12. Big Bang Best Project using bootstrap",
+    content:
+      "This is the second project which take longer times to build. I have not just build this project but also I have change design at some place. Because I thouse that it might look more good.",
+    youtubeLink: "https://youtu.be/7KOjDoms_b4",
+    singleProjectDetails:"",
+    projectpath:
+      "https://github.com/codewithdolly/big-bang-best-bootstrap--project-15",
+  },
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/blog.png",
+    header:
+      "13. Blog Website uing React and CRUD",
+    content:
+      "This is the second project which take longer times to build. I have not just build this project but also I have change design at some place. Because I thouse that it might look more good.",
+    youtubeLink: "https://youtu.be/7KOjDoms_b4",
+    singleProjectDetails:"",
+    projectpath:
+      "https://github.com/codewithdolly/crud01--blog-website--project-16",
   },
 ];

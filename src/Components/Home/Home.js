@@ -11,6 +11,7 @@ import QualificationAndExperience from "./QualificationAndExperience";
 import UseFullTools from "./UseFullTools";
 import FactsAndStats from "./FactsAndStats";
 import { Link } from "react-router-dom";
+import Footer from "../Footer";
 
 const Home = () => {
   return (
@@ -62,6 +63,7 @@ const Home = () => {
       <UseFullTools />
       <QualificationAndExperience />
       <FactsAndStats />
+      <Footer />
     </div>
   );
 };
