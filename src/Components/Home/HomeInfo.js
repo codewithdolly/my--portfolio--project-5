@@ -12,14 +12,14 @@ const HomeInfo = () => {
       <p className="homeInfo--border">~~~~~~~~~~~~~~~~~~~~~~~~</p>
         <h2 className="homeInfo--information">
           Hello I’m Dolly, a Software engineer in Hyderabad, India. She loves
-          Technology & likes to develop new tech things, She knows I also enjoy
-          cooking.
+          Technology & likes to develop new Tech things, And also enjoy
+          cooking!
         </h2>
         <div className="homeInfo--info">
           <div className="homeInfo--info1">
           <p>
                 Hello! I am Dolly Singh, Web developer, Digital marketer and a
-                YouTuber. I live in Hyderabad, India. I am Full stack developer
+                YouTuber. I live in Hyderabad, India. I am Frontend developer
                 and I have build some projects on wordpress Elementor.I also
                 know basic about SEO. I have Youtube Channel where I upload my
                 project's video and many more things.

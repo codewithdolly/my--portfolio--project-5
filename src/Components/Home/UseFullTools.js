@@ -123,7 +123,7 @@ const UseFullTools = () => {
             These are my all-time favorite <span>Weapons</span>
           </h1>
           <p>
-            I always loved those software that I use in my work, because I am
+            I always love those software and use in my daily work, because I am
             very good at these, these are the main tools of my design career
             those are help me for make sure my Clients satisfaction.
           </p>

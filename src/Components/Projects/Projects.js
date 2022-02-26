@@ -92,6 +92,7 @@ const Projects = () => {
                     </Button>
                   </CardActions>
                 </Card>
+               
               </motion.div>
             </>
           ))}
@@ -215,7 +216,7 @@ const ProjectDetails = [
     header:
       "11. E-Commers website using API and Redux",
     content:
-      "This is the second project which take longer times to build. I have not just build this project but also I have change design at some place. Because I thouse that it might look more good.",
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
     youtubeLink: "https://youtu.be/7KOjDoms_b4",
     singleProjectDetails:"",
     projectpath:
@@ -226,7 +227,7 @@ const ProjectDetails = [
     header:
       "12. Big Bang Best Project using bootstrap",
     content:
-      "This is the second project which take longer times to build. I have not just build this project but also I have change design at some place. Because I thouse that it might look more good.",
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
     youtubeLink: "https://youtu.be/7KOjDoms_b4",
     singleProjectDetails:"",
     projectpath:
@@ -237,10 +238,11 @@ const ProjectDetails = [
     header:
       "13. Blog Website uing React and CRUD",
     content:
-      "This is the second project which take longer times to build. I have not just build this project but also I have change design at some place. Because I thouse that it might look more good.",
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
     youtubeLink: "https://youtu.be/7KOjDoms_b4",
     singleProjectDetails:"",
     projectpath:
       "https://github.com/codewithdolly/crud01--blog-website--project-16",
   },
 ];
+
