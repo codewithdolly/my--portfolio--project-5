@@ -29,7 +29,7 @@ const Achivements = () => {
             <br />
             ~~~~~~~~~~~~~~~~~~~~
           </motion.h1>
-          <Box sx={{p:10, color:"#3b2930"}}>
+          <Box sx={{p:5, color:"#3b2930"}}>
             <Grid container spacing={2} sx={{py:10}}>
               <Grid xs={6}>
                 <Typography component='div' variant="h5"> 
