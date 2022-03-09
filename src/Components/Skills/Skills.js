@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Footer from "../Footer";
 import HomeInfo from "../Home/HomeInfo";
 import InspringQuotes from "../InspringQuotes/InspringQuotes";
+import Achivements from "../Achivements/Achivements";
+import Knowledge from "./Knowledge";
 
 const Skills = () => {
   return (
@@ -20,7 +22,8 @@ const Skills = () => {
        <div className="skills--info">
        <HomeInfo />
        </div>
-       
+       <Knowledge />
+       <Achivements />
        <InspringQuotes />
       </div>
       <Footer />
