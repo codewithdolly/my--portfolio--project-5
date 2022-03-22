@@ -20,6 +20,7 @@ import Slack from "./Slack"
 import Gaana from "./Gaana"
 import GoogleForm from "./GoogleForm"
 
+
 const Projects = () => {
   return (
     <>
@@ -75,7 +76,7 @@ const Projects = () => {
                       sx={{ mb: 2, mx: 1 }}
                       startIcon={<DescriptionIcon />}
                     >
-                      More
+                      Code
                     </Button>
                     <Button
                       sx={{ mb: 2 }}
@@ -243,6 +244,17 @@ const ProjectDetails = [
     singleProjectDetails:"",
     projectpath:
       "https://github.com/codewithdolly/crud01--blog-website--project-16",
+  },
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/ticktacktoe.jpg",
+    header:
+      "14. Tic Tack Toe Game",
+    content:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
+    youtubeLink: "https://youtu.be/LAsILX5zH5g",
+    singleProjectDetails:"",
+    projectpath:
+      "https://github.com/codewithdolly/TickTackToe--Game-project1",
   },
 ];
 

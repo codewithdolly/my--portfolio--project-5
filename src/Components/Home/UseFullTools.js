@@ -4,6 +4,71 @@ import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import { Button } from "@material-ui/core";
 import { motion } from "framer-motion";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { Link } from "react-router-dom";
+
+
+const UseFullTools = () => {
+  return (
+    <>
+      <div className="useFullTools">
+        <div className="useFullTools--Weapons">
+          <div className="useFullTools--Weapons--icon">
+            <DoubleArrowIcon sx={{ mx: 1, color: "white" }} />
+            <div className="useFullTools--Weapons--Weapons--name">Weapons</div>
+          </div>
+          <h1 className="useFullTools--Weapons--favoriteTools">
+            These are my all-time favorite <span>Weapons</span>
+          </h1>
+          <p>
+            I always love those software and use in my daily work, because I am
+            very good at these, these are the main tools of my design career
+            those are help me for make sure my Clients satisfaction.
+          </p>
+          <Link to="/projects" > 
+          <Button
+            className="useFullTools--Weapons--btn"
+            endIcon={<ArrowRightAltIcon />}
+            variant="text"
+         
+          >
+          Let's see my work process
+           
+          </Button>
+          </Link>
+        </div>
+
+        <div className="useFullTools--WeaponsImg">
+          {Images.map((image) => {
+            return (
+              <>
+                {" "}
+                <a href={image.link} target="_blank">
+                  {" "}
+                  <motion.img
+                    animate={{ opacity: 1 }}
+                    whileHover={{ scale: 1.2, opacity: 1 }}
+                    whileTap={{
+                      scale: 0.8,
+                      borderRadius: "100%",
+                    }}
+                    transition={{ duration: 0.5 }}
+                    src={image.imgPath}
+                    alt={image.alt}
+                    name={image.alt}
+                    className="useFullTools--WeaponsImg--image"
+                  />
+                </a>
+              </>
+            );
+          })}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default UseFullTools;
+
 
 const Images = [
   {
@@ -109,62 +174,3 @@ const Images = [
     link: "https://www.framer.com/motion/",
   },
 ];
-
-const UseFullTools = () => {
-  return (
-    <>
-      <div className="useFullTools">
-        <div className="useFullTools--Weapons">
-          <div className="useFullTools--Weapons--icon">
-            <DoubleArrowIcon sx={{ mx: 1, color: "white" }} />
-            <div className="useFullTools--Weapons--Weapons--name">Weapons</div>
-          </div>
-          <h1 className="useFullTools--Weapons--favoriteTools">
-            These are my all-time favorite <span>Weapons</span>
-          </h1>
-          <p>
-            I always love those software and use in my daily work, because I am
-            very good at these, these are the main tools of my design career
-            those are help me for make sure my Clients satisfaction.
-          </p>
-          <Button
-            className="useFullTools--Weapons--btn"
-            endIcon={<ArrowRightAltIcon />}
-            variant="text"
-            href="http://localhost:3000/projects"
-          >
-            Let's see my work process
-          </Button>
-        </div>
-
-        <div className="useFullTools--WeaponsImg">
-          {Images.map((image) => {
-            return (
-              <>
-                {" "}
-                <a href={image.link} target="_blank">
-                  {" "}
-                  <motion.img
-                    animate={{ opacity: 1 }}
-                    whileHover={{ scale: 1.2, opacity: 1 }}
-                    whileTap={{
-                      scale: 0.8,
-                      borderRadius: "100%",
-                    }}
-                    transition={{ duration: 0.5 }}
-                    src={image.imgPath}
-                    alt={image.alt}
-                    name={image.alt}
-                    className="useFullTools--WeaponsImg--image"
-                  />
-                </a>
-              </>
-            );
-          })}
-        </div>
-      </div>
-    </>
-  );
-};
-
-export default UseFullTools;

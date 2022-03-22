@@ -28,13 +28,14 @@ const App = () => {
   return (
     <Router>
       <div className="mainHeader">
+      <Link to="/" style={{textDecoration:"none", color:"#db9a64"}}> 
         <motion.h1
           animate={{ y: 0, opacity: 5 }}
           initial={{ y: -30, opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Dolly
-        </motion.h1>
+        Dolly
+        </motion.h1></Link>
         <motion.ul
           className="mainHeader--nav"
           animate={{ y: 0 }}
