@@ -11,15 +11,14 @@ import { motion } from "framer-motion";
 import Footer from "../Footer";
 import FactsAndStats from "../Home/FactsAndStats";
 import { Outlet } from "react-router-dom";
-import CoWin from "./CoWin"
-import Static from "./Static"
-import YouTubeProject from "./YouTubeProject"
-import Myntra from "./Myntra"
-import WhatsApp from "./WhatsApp"
-import Slack from "./Slack"
-import Gaana from "./Gaana"
-import GoogleForm from "./GoogleForm"
-
+import CoWin from "./CoWin";
+import Static from "./Static";
+import YouTubeProject from "./YouTubeProject";
+import Myntra from "./Myntra";
+import WhatsApp from "./WhatsApp";
+import Slack from "./Slack";
+import Gaana from "./Gaana";
+import GoogleForm from "./GoogleForm";
 
 const Projects = () => {
   return (
@@ -86,14 +85,12 @@ const Projects = () => {
                       className="projectBtn"
                       color="error"
                       variant="outlined"
-                    
                       startIcon={<VideoLibraryIcon />}
                     >
                       Video
                     </Button>
                   </CardActions>
                 </Card>
-               
               </motion.div>
             </>
           ))}
@@ -208,53 +205,47 @@ const ProjectDetails = [
     content:
       "This is the second project which take longer times to build. I have not just build this project but also I have change design at some place. Because I thouse that it might look more good.",
     youtubeLink: "https://youtu.be/7KOjDoms_b4",
-    singleProjectDetails:"",
+    singleProjectDetails: "",
     projectpath:
       "https://github.com/hcmay2021-Dolly/hicoder--stackoverflow--project-8",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/ecommerce.png",
-    header:
-      "11. E-Commers website using API and Redux",
+    header: "11. E-Commers website using API and Redux",
     content:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
     youtubeLink: "https://youtu.be/7KOjDoms_b4",
-    singleProjectDetails:"",
+    singleProjectDetails: "",
     projectpath:
       "https://github.com/codewithdolly/hicoder-ecommers-redux--project-12",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/bigbangbank.png",
-    header:
-      "12. Big Bang Best Project using bootstrap",
+    header: "12. Big Bang Best Project using bootstrap",
     content:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
     youtubeLink: "https://youtu.be/7KOjDoms_b4",
-    singleProjectDetails:"",
+    singleProjectDetails: "",
     projectpath:
       "https://github.com/codewithdolly/big-bang-best-bootstrap--project-15",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/blog.png",
-    header:
-      "13. Blog Website uing React and CRUD",
+    header: "13. Blog Website uing React and CRUD",
     content:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
     youtubeLink: "https://youtu.be/7KOjDoms_b4",
-    singleProjectDetails:"",
+    singleProjectDetails: "",
     projectpath:
       "https://github.com/codewithdolly/crud01--blog-website--project-16",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/ticktacktoe.jpg",
-    header:
-      "14. Tic Tack Toe Game",
+    header: "14. Tic Tack Toe Game",
     content:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
     youtubeLink: "https://youtu.be/LAsILX5zH5g",
-    singleProjectDetails:"",
-    projectpath:
-      "https://github.com/codewithdolly/TickTackToe--Game-project1",
+    singleProjectDetails: "",
+    projectpath: "https://github.com/codewithdolly/TickTackToe--Game-project1",
   },
 ];
-
