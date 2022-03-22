@@ -10,7 +10,7 @@ import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import { motion } from "framer-motion";
 import Footer from "../Footer";
 import FactsAndStats from "../Home/FactsAndStats";
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import CoWin from "./CoWin";
 import Static from "./Static";
 import YouTubeProject from "./YouTubeProject";
@@ -47,14 +47,10 @@ const Projects = () => {
                     <CardMedia component="img" image={project.img} alt="" />
                     <CardContent>
                       <Typography className="Projects--details--single--card--header">
-                        <a
-                          href={project.projectpath}
-                          target="_blank"
-                          className="Projects--details--single--card--header--link"
-                        >
+                    <a href={project.projectpath} target="_blank" >
                           {" "}
                           {project.header}
-                        </a>
+                          </a>
                       </Typography>
                       <Typography
                         className="Projects--details--single--card--content"

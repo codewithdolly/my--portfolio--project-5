@@ -1,14 +1,14 @@
-import React from "react";
+import React, {useParams} from "react";
 import "./SingleProject.scss";
 import CoWinImg from "../Images/cowin.jpg";
 import { Button } from "@material-ui/core";
 import Footer from "../Footer";
 
 const CoWin = () => {
-  let { CoWin } = React.useParams();
+  // let { cowin } = useParams();
   return (
     <>
-      <div className="projects" {...CoWin}>
+      <div className="projects" >
         <div className="projects--img">
           <p className="projects--img--header">CoWin Website Project</p>
         </div>
