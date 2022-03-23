@@ -1,6 +1,6 @@
 import React from "react";
 import "./SingleProject.scss";
-import GaanaImg from "../Images/gaana.jpg";
+import stackoverflow from "../Images/stackoverflow.jpg";
 import { Button } from "@material-ui/core";
 import Footer from "../Footer";
 
@@ -13,10 +13,10 @@ const StackOverFlow = () => {
         </div>
         <div className="projects--details">
           <img
-            src={GaanaImg}
-            alt="Gaana page"
-            width="850px"
-            height="500"
+            src={stackoverflow}
+            alt="Stack overflow"
+            width="920px"
+            height="auto"
             className="projects--details--images"
           />
           <div className="projects--details--info">
@@ -69,15 +69,15 @@ const StackOverFlow = () => {
               pariatur velit dolores. Animi, laboriosam!
             </p>
             <Button
-            href="https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/project04--%20Gaana.com/Gaana_main/images"
+            href="https://dolly-stack-overflow.netlify.app/"
               className="projects--details--info--btn"
               variant="outlined"
               fullWidth
             >
-              Project Link
+              Live Project
             </Button>
             <Button
-            href="https://www.youtube.com/watch?v=qxvtOmXSHCc"
+            href="https://youtu.be/7KOjDoms_b4"
               className="projects--details--info--btn2"
               variant="contained"
               fullWidth

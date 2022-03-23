@@ -9,14 +9,14 @@ const GoogleForm = () => {
     <>
       <div className="projects">
         <div className="projects--img">
-          <p className="projects--img--header">GoogleForm Website Project</p>
+          <p className="projects--img--header">GoogleForm  Project</p>
         </div>
         <div className="projects--details">
           <img
             src={GoogleFormImg}
             alt="GoogleForm page"
-            width="850px"
-            height="500"
+            width="920px"
+            height="auto"
             className="projects--details--images"
           />
           <div className="projects--details--info">
@@ -69,12 +69,12 @@ const GoogleForm = () => {
               pariatur velit dolores. Animi, laboriosam!
             </p>
             <Button
-            href="https://github.com/hcmay2021-Dolly/react--GoogleForm--Project"
+            href="https://dolly-google-form.netlify.app/"
               className="projects--details--info--btn"
               variant="outlined"
               fullWidth
             >
-              Project Link
+              Live Project
             </Button>
             <Button
             href="https://www.youtube.com/watch?v=U3ZXQkdx1pY&t=179s"

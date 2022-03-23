@@ -1,6 +1,6 @@
 import React from "react";
 import "./SingleProject.scss";
-import GaanaImg from "../Images/gaana.jpg";
+import bigbangbank from "../Images/bigbangbank.png";
 import { Button } from "@material-ui/core";
 import Footer from "../Footer";
 
@@ -13,10 +13,10 @@ const BigBangBest = () => {
         </div>
         <div className="projects--details">
           <img
-            src={GaanaImg}
-            alt="Gaana page"
-            width="850px"
-            height="500"
+            src={bigbangbank}
+            alt="bigbangbank page"
+            width="920px"
+            height="auto"
             className="projects--details--images"
           />
           <div className="projects--details--info">
@@ -69,15 +69,15 @@ const BigBangBest = () => {
               pariatur velit dolores. Animi, laboriosam!
             </p>
             <Button
-            href="https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/project04--%20Gaana.com/Gaana_main/images"
+            href=""
               className="projects--details--info--btn"
               variant="outlined"
               fullWidth
             >
-              Project Link
+              Live Project
             </Button>
             <Button
-            href="https://www.youtube.com/watch?v=qxvtOmXSHCc"
+            href="https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA"
               className="projects--details--info--btn2"
               variant="contained"
               fullWidth

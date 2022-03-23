@@ -15,8 +15,8 @@ const Slack = () => {
           <img
             src={slack}
             alt="slack page"
-            width="850px"
-            height="500"
+            width="920px"
+            height="auto"
             className="projects--details--images"
           />
           <div className="projects--details--info">
@@ -69,15 +69,15 @@ const Slack = () => {
               pariatur velit dolores. Animi, laboriosam!
             </p>
             <Button
-            href="https://github.com/hcmay2021-Dolly/hicoder--slack--project-7"
+            href="https://dolly-slack-messenger.netlify.app/"
               className="projects--details--info--btn"
               variant="outlined"
               fullWidth
             >
-              Project Link
+              Live Project
             </Button>
             <Button
-            href="#"
+            href="https://youtu.be/AJVZhCVGQ-o"
               className="projects--details--info--btn2"
               variant="contained"
               fullWidth

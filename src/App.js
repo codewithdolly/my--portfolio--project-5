@@ -22,6 +22,7 @@ import { motion } from "framer-motion";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
+import BlogWebsite from "./Components/Projects/BlogWebsite";
 
 
 let menubar = ["Home", "Skills", "About", "YouTube", "Projects"];
@@ -113,13 +114,13 @@ const App = () => {
       </div>
       <Routes element={<App />}>
          <Route path="/" element={<Home />} />
-         <Route path="/projects" element={<Projects />}>
-            {SingleProject.map((project)=>{
+         <Route path="/projects" element={<Projects />} />
+          
+         {SingleProject.map((project)=>{
               return (<>
                 <Route path={project.name} element={project.element} />
               </>)
             })}
-         </Route>
          <Route path="/Skills" element={<Skills />} />
          <Route path="/youtube" element={<YouTube />} />
         <Route path="/about" element={<About />} />
@@ -133,49 +134,57 @@ export default App;
 
 const SingleProject=[
   {
-    name:"static",
+    name:"/projects/static",
     element: <Static />
   },
   {
-    name:"youtube",
+    name:"/projects/youtube",
     element: <YouTubeProject />
   },
   {
-    name:"gaana",
+    name:"/projects/gaana",
     element: <Gaana />
   },
   {
-    name:"cowin",
+    name:"/projects/cowin",
     element: <CoWin />
   },
   {
-    name:"google-form",
+    name:"/projects/google-form",
     element: <GoogleForm />
   },
   {
-    name:"myntra",
+    name:"/projects/myntra",
     element: <Myntra />
   },
   {
-    name:"whatsapp-web",
+    name:"/projects/whatsapp-web",
     element: <WhatsApp />
   }, {
     name:"slack",
     element: <Slack />
   }, {
-    name:"instagram",
+    name:"/projects/instagram",
     element: <Instagram />
   }, {
-    name:"stack-overflow",
+    name:"/projects/stack-overflow",
     element: <StackOverFlow />
   }, {
-    name:"ecommerce",
+    name:"/projects/ecommerce",
     element: <Ecommerce />
+  }, 
+  {
+    name:"/projects/slack",
+    element: <Slack />
+  },
+  {
+    name:"/projects/blog",
+    element: <BlogWebsite />
   }, {
-    name:"big-bang-best",
+    name:"/projects/big-bang-best",
     element: <BigBangBest />
   }, {
-    name:"tic-tack-toe",
+    name:"/projects/tic-tack-toe",
     element: <TickTackToe />
   }
 

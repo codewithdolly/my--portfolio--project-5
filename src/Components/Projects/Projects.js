@@ -143,7 +143,7 @@ const ProjectDetails = [
     youtubeLink: "https://www.youtube.com/watch?v=U3ZXQkdx1pY&t=179s",
     singleProjectPath: "/projects/google-form",
     projectpath:
-      "https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/google%20form--project--5",
+      "https://github.com/hcmay2021-Dolly/hicoder--googleform--project11",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/mintra.jpg",
@@ -184,7 +184,7 @@ const ProjectDetails = [
     youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
     singleProjectPath: "/projects/instagram",
     projectpath:
-      "https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/Instagram%20Project-%209/Components/InstagtamPage",
+      "https://github.com/hcmay2021-Dolly/hicoder--instagram--clone--project-09",
   },
   {
     img: "process.env.PUBLIC_URL + ../../Images/stackoverflow.jpg",
@@ -202,7 +202,7 @@ const ProjectDetails = [
     header: "11. E-Commers website using API and Redux",
     content:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
-    youtubeLink: "https://youtu.be/7KOjDoms_b4",
+    youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
     singleProjectPath: "/projects/ecommerce",
     projectpath:
       "https://github.com/codewithdolly/hicoder-ecommers-redux--project-12",
@@ -212,7 +212,7 @@ const ProjectDetails = [
     header: "12. Big Bang Best Project using bootstrap",
     content:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
-    youtubeLink: "https://youtu.be/7KOjDoms_b4",
+    youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
     singleProjectPath: "/projects/big-bang-best",
     projectpath:
       "https://github.com/codewithdolly/big-bang-best-bootstrap--project-15",
@@ -222,7 +222,7 @@ const ProjectDetails = [
     header: "13. Blog Website uing React and CRUD",
     content:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
-    youtubeLink: "https://youtu.be/7KOjDoms_b4",
+    youtubeLink: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
     singleProjectPath: "/projects/blog",
     projectpath:
       "https://github.com/codewithdolly/crud01--blog-website--project-16",

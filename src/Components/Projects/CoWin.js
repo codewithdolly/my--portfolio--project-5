@@ -15,8 +15,8 @@ const CoWin = () => {
           <img
             src={CoWinImg}
             alt="CoWING page"
-            width="850px"
-            height="600"
+            width="920px"
+            height="auto"
             className="projects--details--images"
           />
           <div className="projects--details--info">
@@ -69,12 +69,12 @@ const CoWin = () => {
               pariatur velit dolores. Animi, laboriosam!
             </p>
             <Button
-            href="https://github.com/hcmay2021-Dolly/react--Cowin--Project"
+            href="https://dolly-cowin.netlify.app/"
               className="projects--details--info--btn"
               variant="outlined"
               fullWidth
             >
-              Project Link
+              Live Project
             </Button>
             <Button
             href="https://www.youtube.com/watch?v=Y6z2GuEu1f0&t=25s"

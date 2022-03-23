@@ -7,7 +7,7 @@ import Footer from "../Footer";
 const Static = () => {
   return (
     <>
-      <div className="projects" {...Static}>
+      <div className="projects">
         <div className="projects--img">
           <p className="projects--img--header">Static Website Project</p>
         </div>
@@ -15,8 +15,8 @@ const Static = () => {
           <img
             src={StaticImg}
             alt="Static page"
-            width="850px"
-            height="600"
+            width="920px"
+            height="auto"
             className="projects--details--images"
           />
           <div className="projects--details--info">

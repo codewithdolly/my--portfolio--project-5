@@ -1,20 +1,20 @@
 import React from "react";
 import "./SingleProject.scss";
-import WhatsAppImg from "../Images/whatsapp.jpg";
+import Blog from "../Images/blog.png";
 import { Button } from "@material-ui/core";
 import Footer from "../Footer";
 
-const WhatsApp = () => {
+const BlogWebsite = () => {
   return (
     <>
       <div className="projects">
         <div className="projects--img">
-          <p className="projects--img--header">WhatsApp Website Project</p>
+          <p className="projects--img--header">Personal Blog Project</p>
         </div>
         <div className="projects--details">
           <img
-            src={WhatsAppImg}
-            alt="WhatsApp page"
+            src={Blog}
+            alt="Blog page"
             width="920px"
             height="auto"
             className="projects--details--images"
@@ -69,7 +69,7 @@ const WhatsApp = () => {
               pariatur velit dolores. Animi, laboriosam!
             </p>
             <Button
-            href="https://dolly-whatsapp-web.netlify.app/"
+            href="https://dolly-blog-project.netlify.app/"
               className="projects--details--info--btn"
               variant="outlined"
               fullWidth
@@ -77,7 +77,7 @@ const WhatsApp = () => {
               Live Project
             </Button>
             <Button
-            href="#"
+            href="https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA"
               className="projects--details--info--btn2"
               variant="contained"
               fullWidth
@@ -92,4 +92,4 @@ const WhatsApp = () => {
   );
 };
 
-export default WhatsApp;
+export default BlogWebsite;
