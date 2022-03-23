@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
@@ -109,7 +110,8 @@ const Footer = () => {
         </p>
         
       </div>
-     <div  className="cercle" > <KeyboardArrowUpOutlinedIcon /></div>
+      <Link to="/"  className="cercle">
+     <KeyboardArrowUpOutlinedIcon /></Link>
     </>
   );
 };
