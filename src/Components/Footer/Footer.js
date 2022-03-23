@@ -6,66 +6,9 @@ import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowCircleUpOutlinedIcon from '@mui/icons-material/ArrowCircleUpOutlined';
+import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 
-const socialMedia = [
-  {
-    icon: <LocationOnOutlinedIcon className="footer--connect--social--Icon" />,
-    type: "Address",
-    add: "Banjara Hills ",
-    add2: "Hyderabad, 500045",
-  },
-  {
-    icon: <PhoneInTalkOutlinedIcon className="footer--connect--social--Icon" />,
-    type: "Phone",
-    add: "+91 6300-810-401",
-    add2: "+91 9393-466-853",
-  },
-  {
-    icon: <MailOutlinedIcon className="footer--connect--social--Icon" />,
-    type: "Email",
-    add: "heydollysingh@gmail.com",
-    add2: "intensedolly321@gmail.com",
-  },
-  {
-    icon: <ChatOutlinedIcon className="footer--connect--social--Icon" />,
-    type: "Social media chat",
-    add: "@CodeWithDolly",
-  },
-];
-
-const SocialIcon = [
-  {
-    name: "Facebook",
-    icon: <i class="fab fa-facebook-f "></i>,
-    link: "https://www.facebook.com/codewithdolly/",
-  },
-  {
-    name: "Instagram",
-    icon: <i class="fab fa-instagram"></i>,
-    link: "https://www.instagram.com/codewithdolly/",
-  },
-  {
-    name: "LinkedIn",
-    icon: <i class="fab fa-linkedin-in"></i>,
-    link: "https://www.linkedin.com/in/codewithdolly/",
-  },
-  {
-    name: "Twitter",
-    icon: <i class="fab fa-twitter"></i>,
-    link: "https://twitter.com/CodeWithDolly/",
-  },
-  {
-    name: "YouTube",
-    icon: <i class="fab fa-youtube"></i>,
-    link: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
-  },
-  {
-    name: "Skype",
-    icon: <i class="fab fa-skype"></i>,
-    link: "#",
-  },
-];
 
 const Footer = () => {
   return (
@@ -143,7 +86,7 @@ const Footer = () => {
             </Button>
           </div>
         </div>
-
+        
         <p
           style={{
             marginTop: "4rem",
@@ -162,11 +105,73 @@ const Footer = () => {
           >
             Project source code.
           </a>
+          
         </p>
+        
       </div>
-      <div><ArrowUpwardIcon/ ></div>
+     <div  className="cercle" > <KeyboardArrowUpOutlinedIcon /></div>
     </>
   );
 };
 
 export default Footer;
+
+
+const socialMedia = [
+  {
+    icon: <LocationOnOutlinedIcon className="footer--connect--social--Icon" />,
+    type: "Address",
+    add: "Banjara Hills ",
+    add2: "Hyderabad, 500045",
+  },
+  {
+    icon: <PhoneInTalkOutlinedIcon className="footer--connect--social--Icon" />,
+    type: "Phone",
+    add: "+91 6300-810-401",
+    add2: "+91 9393-466-853",
+  },
+  {
+    icon: <MailOutlinedIcon className="footer--connect--social--Icon" />,
+    type: "Email",
+    add: "heydollysingh@gmail.com",
+    add2: "intensedolly321@gmail.com",
+  },
+  {
+    icon: <ChatOutlinedIcon className="footer--connect--social--Icon" />,
+    type: "Social media chat",
+    add: "@CodeWithDolly",
+  },
+];
+
+const SocialIcon = [
+  {
+    name: "Facebook",
+    icon: <i class="fab fa-facebook-f "></i>,
+    link: "https://www.facebook.com/codewithdolly/",
+  },
+  {
+    name: "Instagram",
+    icon: <i class="fab fa-instagram"></i>,
+    link: "https://www.instagram.com/codewithdolly/",
+  },
+  {
+    name: "LinkedIn",
+    icon: <i class="fab fa-linkedin-in"></i>,
+    link: "https://www.linkedin.com/in/codewithdolly/",
+  },
+  {
+    name: "Twitter",
+    icon: <i class="fab fa-twitter"></i>,
+    link: "https://twitter.com/CodeWithDolly/",
+  },
+  {
+    name: "YouTube",
+    icon: <i class="fab fa-youtube"></i>,
+    link: "https://www.youtube.com/channel/UCD4YW5rhsXi-BK2tzbWVIZA",
+  },
+  {
+    name: "Skype",
+    icon: <i class="fab fa-skype"></i>,
+    link: "#",
+  },
+];
