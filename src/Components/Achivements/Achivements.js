@@ -97,7 +97,7 @@ const Achivements = () => {
 
               <Grid xs={6}>
                 <Typography component="div" variant="h5">
-                  4.Recently, I PortFolio got selected in top 20 best PortFolio List over 800+ protfolio. I was amaized because as a jr. developer I maid place over there. and recognised by the 
+                  4. Recently, My PortFolio got selected in top 20 best PortFolio List over 800+ protfolio/blog websites. Getting recognized by Uber's Software engineer is a great moment for me.
                 </Typography>
                 <motion.div
                   initial={{ x: "-100vw" }}
@@ -109,7 +109,7 @@ const Achivements = () => {
                     href="https://www.linkedin.com/posts/codewithdolly_winners-of-the-20-most-exciting-portfolio-activity-6908852712268537856-bIvS?utm_source=linkedin_share&utm_medium=member_desktop_web"
                       size="large"
                       variant="outlined"
-                      endIcon={<ArrowRightAltIcon />}
+                      color="error"
                       style={{ margin: "10px" }}
                     >
                      For More...
