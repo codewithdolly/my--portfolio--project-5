@@ -1,22 +1,22 @@
 import React from "react";
 import "./SingleProject.scss";
-import CoWinImg from "../Images/cowin.jpg";
+import GaanaImg from "../Images/gaana.jpg";
 import { Button } from "@material-ui/core";
 import Footer from "../Footer";
 
-const CoWin = () => {
+const Ecommerce = () => {
   return (
     <>
-      <div className="projects" >
+      <div className="projects">
         <div className="projects--img">
-          <p className="projects--img--header">CoWin Website Project</p>
+          <p className="projects--img--header">Ecommerce Website Project</p>
         </div>
         <div className="projects--details">
           <img
-            src={CoWinImg}
-            alt="CoWING page"
+            src={GaanaImg}
+            alt="Gaana page"
             width="850px"
-            height="600"
+            height="500"
             className="projects--details--images"
           />
           <div className="projects--details--info">
@@ -69,7 +69,7 @@ const CoWin = () => {
               pariatur velit dolores. Animi, laboriosam!
             </p>
             <Button
-            href="https://github.com/hcmay2021-Dolly/react--Cowin--Project"
+            href="https://github.com/hcmay2021-Dolly/Small_Projects/tree/main/project04--%20Gaana.com/Gaana_main/images"
               className="projects--details--info--btn"
               variant="outlined"
               fullWidth
@@ -77,7 +77,7 @@ const CoWin = () => {
               Project Link
             </Button>
             <Button
-            href="https://www.youtube.com/watch?v=Y6z2GuEu1f0&t=25s"
+            href="https://www.youtube.com/watch?v=qxvtOmXSHCc"
               className="projects--details--info--btn2"
               variant="contained"
               fullWidth
@@ -92,4 +92,4 @@ const CoWin = () => {
   );
 };
 
-export default CoWin;
+export default Ecommerce;

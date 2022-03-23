@@ -5,7 +5,6 @@ import { Button } from "@material-ui/core";
 import Footer from "../Footer";
 
 const Static = () => {
-  let { Static } = React.useParams();
   return (
     <>
       <div className="projects" {...Static}>

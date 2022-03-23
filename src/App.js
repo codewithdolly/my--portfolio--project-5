@@ -3,9 +3,21 @@ import "./App.scss";
 import { Button } from "@material-ui/core";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import {Home, Projects, About, Skills, Gaana, YouTube} from "./Components";
-import CoWin from "./Components/Projects/CoWin";
+import {Home, Projects, About, Skills, YouTube} from "./Components";
 import Static from "./Components/Projects/Static";
+import CoWin from "./Components/Projects/CoWin";
+import Gaana from "./Components/Projects/Gaana"
+import GoogleForm from "./Components/Projects/GoogleForm"
+import Myntra from "./Components/Projects/Myntra"
+import Slack from "./Components/Projects/Slack"
+import WhatsApp from "./Components/Projects/WhatsApp"
+import YouTubeProject from "./Components/Projects/YouTubeProject"
+import Instagram from "./Components/Projects/Instagram"
+import BigBangBest from "./Components/Projects/BigBangBest"
+import TickTackToe from "./Components/Projects/TickTackToe"
+import Ecommerce from "./Components/Projects/Ecommerce"
+import StackOverFlow from "./Components/Projects/StackOverFlow"
+
 import { motion } from "framer-motion";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
@@ -102,8 +114,11 @@ const App = () => {
       <Routes element={<App />}>
          <Route path="/" element={<Home />} />
          <Route path="/projects" element={<Projects />}>
-         <Route path="cowin" element={<CoWin/>} />
-         <Route path="static" element={<Static />} />
+            {SingleProject.map((project)=>{
+              return (<>
+                <Route path={project.name} element={project.element} />
+              </>)
+            })}
          </Route>
          <Route path="/Skills" element={<Skills />} />
          <Route path="/youtube" element={<YouTube />} />
@@ -115,3 +130,53 @@ const App = () => {
 };
 
 export default App;
+
+const SingleProject=[
+  {
+    name:"static",
+    element: <Static />
+  },
+  {
+    name:"youtube",
+    element: <YouTubeProject />
+  },
+  {
+    name:"gaana",
+    element: <Gaana />
+  },
+  {
+    name:"cowin",
+    element: <CoWin />
+  },
+  {
+    name:"google-form",
+    element: <GoogleForm />
+  },
+  {
+    name:"myntra",
+    element: <Myntra />
+  },
+  {
+    name:"whatsapp-web",
+    element: <WhatsApp />
+  }, {
+    name:"slack",
+    element: <Slack />
+  }, {
+    name:"instagram",
+    element: <Instagram />
+  }, {
+    name:"stack-overflow",
+    element: <StackOverFlow />
+  }, {
+    name:"ecommerce",
+    element: <Ecommerce />
+  }, {
+    name:"big-bang-best",
+    element: <BigBangBest />
+  }, {
+    name:"tic-tack-toe",
+    element: <TickTackToe />
+  }
+
+]
