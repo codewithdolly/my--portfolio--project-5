@@ -80,7 +80,7 @@ const Footer = () => {
               endIcon={<ArrowRightAltIcon />}
               className="footer--moreInfo--form--btn"
               onClick={() => {
-                alert("This for is just UI. Please contact on social media.");
+                alert("This is only fronted(ui). Please contact on social media.");
               }}
             >
               Send a Message
