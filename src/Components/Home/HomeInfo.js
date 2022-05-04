@@ -123,10 +123,28 @@ const HomeInfo = () => {
 
             <div className="homeInfo--info2--marks">
               <div className="homeInfo--info2--marks--mark">
-                <p>React</p>
+                <p>ReactJS</p>
                 <p>60%</p>
               </div>
               <div className="homeInfo--info2--react">
+                <div className="homeInfo--info2--rating--inner"></div>
+              </div>
+            </div>
+            <div className="homeInfo--info2--marks">
+              <div className="homeInfo--info2--marks--mark">
+                <p>NextJS</p>
+                <p>50%</p>
+              </div>
+              <div className="homeInfo--info2--next">
+                <div className="homeInfo--info2--rating--inner"></div>
+              </div>
+            </div>
+            <div className="homeInfo--info2--marks">
+              <div className="homeInfo--info2--marks--mark">
+                <p>Redux</p>
+                <p>55%</p>
+              </div>
+              <div className="homeInfo--info2--redux">
                 <div className="homeInfo--info2--rating--inner"></div>
               </div>
             </div>

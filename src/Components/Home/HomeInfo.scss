@@ -111,6 +111,15 @@ $font-family: auto;
       @extend .rating;
       padding-right: 10.5rem;
     }
+
+    .homeInfo--info2--next {
+      @extend .rating;
+      padding-right: 13.5rem;
+    }
+    .homeInfo--info2--redux {
+      @extend .rating;
+      padding-right: 11.5rem;
+    }
   }
 }
 
