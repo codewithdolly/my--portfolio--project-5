@@ -13,13 +13,19 @@ const Knowledge = () => {
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 2, x: 0 }}
         transition={{ duration: 0.5 }}
-        style={{color:"white", textAlign:"center", fontSize:"50px", paddingTop:"3rem"}}
+        style={{
+          color: "white",
+          textAlign: "center",
+          fontSize: "50px",
+          paddingTop: "3rem",
+        }}
       >
-        My Skills(More) <br />~~~~~~~~~~~~~~
+        My Skills(More) <br />
+        ~~~~~~~~~~~~~~
       </motion.h1>
 
       <ImageList
-        sx={{ width: "100%", height: "auto", px: 20, py:10 }}
+        sx={{ width: "100%", height: "auto", px: 20, py: 10 }}
         cols={3}
         key="Subheader"
       >
@@ -87,15 +93,11 @@ const itemData = [
     featured: true,
   },
   {
-    img: "./Images/DevTool2.png",
-    title: "DevTool",
-    use: "Browser Object Model ",
+    img: "./Images/Bootstrap2.png",
+    title: "Bootstrap",
+    use: "Bootstrap is a free and open-source CSS framework.",
   },
-  {
-    img: "./Images/git2.png",
-    title: " Github & Git",
-    use: "Internet hosting for software development and version control using Git",
-  },
+
   {
     img: "./Images/reactjs.jpg",
     title: " ReactJs",
@@ -107,21 +109,36 @@ const itemData = [
     use: "Redux is an open-source JavaScript library for centralizing application state.",
   },
   {
-    img: "./Images/mui2.png",
-    title: " MUI(Material-ui)",
-    use: "MUI is a simple and customizable component library.",
-  },
-  {
-    img: "./Images/Bootstrap2.png",
-    title: "Bootstrap",
-    use: "Bootstrap is a free and open-source CSS framework.",
+    img: "./Images/redux thunk.png",
+    title: " Github & Git",
+    use: "Redux Thunk middleware allows you to write action creators that return a function instead of an action.",
   },
   {
     img: "./Images/router.png",
     title: " Rear Router",
     use: "React Router is a standard library for routing in React.",
   },
+  {
+    img: "./Images/mui2.png",
+    title: " MUI(Material-ui)",
+    use: "MUI is a simple and customizable component library.",
+  },
+  {
+    img: "./Images/git2.png",
+    title: " Github & Git",
+    use: "Internet hosting for software development and version control using Git",
+  },
+  {
+    img: "./Images/DevTool2.png",
+    title: "DevTool",
+    use: "Browser Object Model ",
+  },
 
+  {
+    img: "./Images/nextjs.png",
+    title: "NextJs",
+    use: "Production grade React applications that scale. The world's leading companies use Next.js by Vercel to build static and dynamic websites",
+  },
   {
     img: "./Images/motion2.png",
     title: " Framer Motion",

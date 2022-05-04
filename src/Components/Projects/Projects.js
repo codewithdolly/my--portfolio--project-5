@@ -228,8 +228,17 @@ const ProjectDetails = [
       "https://github.com/codewithdolly/crud01--blog-website--project-16",
   },
   {
+    img: "process.env.PUBLIC_URL + ../../Images/twn.png",
+    header: "14. News Website using Nextjs",
+    content:
+      " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
+    youtubeLink: "https://youtu.be/LAsILX5zH5g",
+    singleProjectPath: "/projects/tic-tack-toe",
+    projectpath: "https://github.com/codewithdolly/TickTackToe--Game-project1",
+  },
+  {
     img: "process.env.PUBLIC_URL + ../../Images/ticktacktoe.jpg",
-    header: "14. Tic Tack Toe Game",
+    header: "15. Tic Tack Toe Game using Reactjs",
     content:
       " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo commodi molestias velit impedit doloribus. Blanditiis odit beatae repellat quia, id minus quibusdam sunt expedita, optio quasi nisi suscipit doloribus exercitationem?",
     youtubeLink: "https://youtu.be/LAsILX5zH5g",

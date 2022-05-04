@@ -33,8 +33,8 @@ const Achivements = () => {
           <Box sx={{ p: 5, color: "#3b2930" }}>
             <Grid container spacing={2} sx={{ py: 10 }}>
               <Grid xs={6}>
-                <Typography component="div" variant="h5">
-                  1. Chosen for Women in Tech @IIIT H for launching
+                <Typography component="div" variant="h5" sx={{ mr: 2 }}>
+                  1. Chosen for Women in Tech @IIIT for launching
                   recipesinhindi.net and gaining 90,000+ visitors in a month
                   without ads.
                 </Typography>
@@ -79,8 +79,8 @@ const Achivements = () => {
             <Grid container spacing={2} sx={{ py: 10 }}>
               <Grid xs={6}>
                 <Typography component="div" variant="h5">
-                  3. Won HiCoder website Dev competition in May, 2021 for
-                  completing 14 paged website in 3 days from scratch.
+                  3. Won HiCoder Website Development competition in May, 2021
+                  for completing 14 paged website in 3 days from scratch.
                 </Typography>
               </Grid>
               <Grid xs={6}>
@@ -89,35 +89,36 @@ const Achivements = () => {
                 </Typography>
               </Grid>
               <Grid container spacing={2} sx={{ py: 10 }}>
-              <Grid xs={6}>
-                <Typography component="div">
-                  <img src={bestPortFolio} alt="" width="450px" />
-                </Typography>
-              </Grid>
+                <Grid xs={6}>
+                  <Typography component="div">
+                    <img src={bestPortFolio} alt="" width="450px" />
+                  </Typography>
+                </Grid>
 
-              <Grid xs={6}>
-                <Typography component="div" variant="h5">
-                  4. Recently, My PortFolio got selected in top 20 best PortFolio List over 800+ protfolio/blog websites. Getting recognized by Uber's Software engineer is a great moment for me.
-                </Typography>
-                <motion.div
-                  initial={{ x: "-100vw" }}
-                  animate={{ x: 0 }}
-                  transition={{ duration: "1", type: "spring" }}
-                >
-                 
+                <Grid xs={6}>
+                  <Typography component="div" variant="h5">
+                    4. Recently, My PortFolio got selected in top 20 best
+                    PortFolio List over 800+ protfolio/blog websites. Getting
+                    recognized by Uber's Software engineer is a great moment for
+                    me.
+                  </Typography>
+                  <motion.div
+                    initial={{ x: "-100vw" }}
+                    animate={{ x: 0 }}
+                    transition={{ duration: "1", type: "spring" }}
+                  >
                     <Button
-                    href="https://www.linkedin.com/posts/codewithdolly_winners-of-the-20-most-exciting-portfolio-activity-6908852712268537856-bIvS?utm_source=linkedin_share&utm_medium=member_desktop_web"
+                      href="https://www.linkedin.com/posts/codewithdolly_winners-of-the-20-most-exciting-portfolio-activity-6908852712268537856-bIvS?utm_source=linkedin_share&utm_medium=member_desktop_web"
                       size="large"
                       variant="outlined"
                       color="error"
                       style={{ margin: "10px" }}
                     >
-                     For More...
+                      For More...
                     </Button>
-               
-                </motion.div>
+                  </motion.div>
+                </Grid>
               </Grid>
-            </Grid>
             </Grid>
           </Box>
         </Container>

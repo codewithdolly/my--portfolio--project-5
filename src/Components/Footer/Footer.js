@@ -7,7 +7,6 @@ import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import ArrowCircleUpOutlinedIcon from '@mui/icons-material/ArrowCircleUpOutlined';
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 
 
@@ -80,7 +79,7 @@ const Footer = () => {
               endIcon={<ArrowRightAltIcon />}
               className="footer--moreInfo--form--btn"
               onClick={() => {
-                alert("This is only fronted(ui). Please contact on social media.");
+                alert("This is only frontend(ui). Please contact on social media.");
               }}
             >
               Send a Message
