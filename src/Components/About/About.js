@@ -27,7 +27,7 @@ const About = () => {
             <div className="about--intro2--info">
               <p>
                 Hello! I am Dolly Singh, Web developer, Digital marketer and a
-                YouTuber. I live in Hyderabad, India. I am Frontend Developer
+                YouTuber. I live in Bangalore, India. I am Frontend Developer
                 and I have build some projects on wordpress Elementor.I also
                 know basic about SEO. I have Youtube Channel where I upload my
                 project's video and many more things.
