@@ -1,0 +1,63 @@
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$textWhite: white;
+$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+
+.projects {
+  .projects--img {
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    .projects--img--header {
+      padding-top: 8rem;
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+      color: $textWhite;
+    }
+  }
+  .projects--details {
+    background-color: $backGroundcolor;
+    display: block;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 8rem;
+  }
+  .projects--details--images {
+    margin-top: -15rem;
+
+  }
+  .projects--details--info {
+    color: $textWhite;
+    line-height: 30px;
+    width: 100%;
+    h2{
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+    .projects--details--info--btn {
+      color: $textColor;
+      border: 1px solid $textColor;
+      margin: 10px 0;
+      &:hover {
+        background-color: #df7823;
+        border: 1px solid white;
+        color: white;
+      }
+    }
+
+    .projects--details--info--btn2 {
+      background-color: $textColor;
+      color: $textWhite;
+      border: 1px solid $textWhite;
+      &:hover {
+        background-color: #df7823;
+        border: 1px solid white;
+        color: white;
+      }
+    }
+  }
+}

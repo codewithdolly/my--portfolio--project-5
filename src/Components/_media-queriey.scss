@@ -1,0 +1,19 @@
+@mixin breapoint($point) {
+  @if $point== mobile {
+      @media only screen and (min-width: 100px) and (max-width: 576px) {
+        @content;
+      }
+    } @else if $point== tablet {
+      @media only screen and (min-width: 577px) and (max-width: 768px) {
+        @content;
+      }
+    } @else if $point== desktop {
+      @media only screen and (min-width: 769px) and (max-width: 1200px) {
+        @content;
+      }
+    } @else if $point== LargerScreen {
+        @media only screen and (min-width: 1201px){
+          @content;
+        }
+      }
+  }

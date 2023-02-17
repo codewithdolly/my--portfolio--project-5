@@ -1,0 +1,92 @@
+@import "./Components/media-queriey";
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $textColor;
+  background-color: $backGroundcolor;
+}
+
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$background-image2: url("../Images/Dark.jpg");
+$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+
+.mainHeader {
+  background-image: $background-image;
+  // background-position: center;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.168);
+  .mainHeader--menu {
+    display: none;
+  }
+  .mainHeader--nav {
+    display: flex;
+    justify-content: space-between;
+    .mainHeader--nav--link {
+      text-decoration: none;
+      color: $textColor;
+      padding-right: 18px;
+      padding-left: 18px;
+
+      text-transform: uppercase;
+      .mainHeader--nav--link--submenu {
+        display: none;
+      }
+    }
+    .active,
+    .mainHeader--nav--link:hover {
+      padding-bottom: 1rem;
+      border-bottom: 3px solid $textColor;
+    }
+  }
+  .mainHeader--ConnectBtn {
+    background-color: #311e2525;
+    color: $textColor;
+    border: 0.7px solid $textColor;
+    border-radius: 0;
+  }
+  .mainHeader--ConnectBtn:hover {
+    box-shadow: 2px 2px 5px #311e2525;
+    color: white;
+    background-color: $textColor;
+  }
+  .PrivateTabIndicator-colorSecondary-3 {
+    background-color: $textColor;
+  }
+
+  @mixin header {
+    .mainHeader {
+        justify-items: center;
+      // display: grid;
+    }
+    .mainHeader--menu {
+      display: block;
+      font-size: 40px;
+    }
+    .mainHeader--nav,
+    .mainHeader--ConnectBtn {
+      display: none;
+    }
+  }
+
+  @include breapoint(mobile) {
+    @include header;
+  }
+
+  @include breapoint(tablet) {
+    @include header;
+  }
+ 
+}

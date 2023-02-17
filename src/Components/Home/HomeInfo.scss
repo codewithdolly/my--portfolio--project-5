@@ -1,0 +1,256 @@
+@import "../media-queriey";
+
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$textWhite: white;
+$font-family: auto;
+
+.btn {
+  padding: 15px 25px 15px 25px;
+  margin-top: 10px;
+  border: 0.7px solid $textColor;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.rating {
+  background-color: silver;
+  border-radius: 2px;
+  margin: 5px 0;
+  .homeInfo--info2--rating--inner {
+    padding: 2px;
+    background-color: $textColor;
+  }
+}
+.homeInfo {
+  font-family: $font-family;
+  margin:  4rem 10%;
+  flex-wrap: wrap;
+  color: $textWhite;
+  .homeInfo--skills {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .homeInfo--border {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .homeInfo--information {
+    margin-bottom: 3rem;
+  }
+
+  .homeInfo--info {
+    display: flex;
+    justify-content: space-between;
+    .homeInfo--info1 {
+      width: 50%;
+      padding-top: 4rem;
+      .homeInfo--info1,
+      P {
+        font-size: 16px;
+      }
+    }
+    .homeInfo--info--contact {
+      @extend .btn;
+      background-color: $textColor;
+      color: $textWhite;
+      margin-right: 20px;
+      font-family: auto
+    }
+    .homeInfo--info--CV {
+      @extend .btn;
+      color: $textColor;
+      font-family: auto
+    }
+    .homeInfo--info--contact:hover,
+    .homeInfo--info--CV:hover {
+      background-color: rgb(231, 110, 66);
+      color: white;
+      border: 1px solid $backGroundcolor;
+    }
+  }
+  .homeInfo--info2 {
+    width: 40%;
+    margin-left: 10%;
+    .homeInfo--info2--marks {
+      margin-bottom: 1.5rem;
+      .homeInfo--info2--marks--mark {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .homeInfo--info2--HTML {
+      @extend .rating;
+      padding-right: 5rem;
+    }
+
+    .homeInfo--info2--CSS {
+      @extend .rating;
+      padding-right: 6.5rem;
+    }
+    .homeInfo--info2--bootstrap {
+      @extend .rating;
+      padding-right: 8rem;
+    }
+    .homeInfo--info2--javascript {
+      @extend .rating;
+      padding-right: 9.5rem;
+    }
+    .homeInfo--info2--sass {
+      @extend .rating;
+      padding-right: 8rem;
+    }
+    .homeInfo--info2--mui {
+      @extend .rating;
+      padding-right: 9.5rem;
+    }
+
+    .homeInfo--info2--react {
+      @extend .rating;
+      padding-right: 10.5rem;
+    }
+
+    .homeInfo--info2--next {
+      @extend .rating;
+      padding-right: 13.5rem;
+    }
+    .homeInfo--info2--redux {
+      @extend .rating;
+      padding-right: 11.5rem;
+    }
+  }
+}
+
+@mixin forMobile--HomeInfo {
+  .homeInfo {
+    font-family: $font-family;
+    margin: 15% 10% 0 10%;
+    flex-wrap: wrap;
+    color: $textWhite;
+    .homeInfo--skills {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    .homeInfo--border {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .homeInfo--information {
+      display: none;
+    }
+  }
+  .homeInfo--info {
+    display: block !important;
+    text-align: justify;
+
+    .homeInfo--info1 {
+      width: 100% !important;
+      .homeInfo--info1--p2 {
+        display: none;
+      }
+    }
+    .homeInfo--info2 {
+      width: 100%;
+      margin-left: 0;
+    }
+    .homeInfo--info--contact--btn {
+      display: flex;
+      margin-top: 10px !important;
+
+      margin-bottom: 4rem !important;
+      .homeInfo--info--contact {
+        margin-top: 0 !important;
+        font-size: 10px !important;
+        padding: 10px  5px  !important;
+        font-weight: none !important;
+      }
+      .homeInfo--info--CV {
+        margin-top: 0 !important;
+        font-size: 10px !important;
+        padding: 10px 5px !important;
+        font-weight: none !important;
+      }
+    }
+    .homeInfo--info2 {
+      .homeInfo--info2--marks {
+        // margin-bottom: 1rem !important;
+      }
+    }
+  }
+}
+
+@mixin forTablat--HomeInfo {
+  .homeInfo {
+    font-family: $font-family;
+    margin: 15rem 10% 200px 10%;
+    flex-wrap: wrap;
+    color: $textWhite;
+    .homeInfo--skills {
+      font-size: 3rem;
+      text-align: center;
+    }
+    .homeInfo--border {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .homeInfo--information {
+      display: none;
+    }
+  }
+  .homeInfo--info {
+    display: block !important;
+    text-align: justify;
+
+    .homeInfo--info1 {
+      width: 100% !important;
+      p{
+        font-size: 25px !important;
+      }
+    }
+    .homeInfo--info2 {
+      width: 100%;
+      margin-left: 0;
+    }
+    .homeInfo--info--contact--btn {
+      margin-top: 3rem !important;
+      margin-bottom: 4rem !important;
+      .homeInfo--info--contact {
+        margin-top: 0 !important;
+        padding: 20px 25px !important;
+        font-size: 25px !important;
+        font-weight: none !important;
+      }
+      .homeInfo--info--CV {
+        margin-top: 0 !important;
+        padding: 20px 25px !important;
+        font-size: 25px !important;
+        font-weight: none !important;
+      }
+    }
+    .homeInfo--info2 {
+      .homeInfo--info2--marks {
+        margin-bottom: 1rem !important;
+        .homeInfo--info2--marks--mark{
+          p{
+            font-size: 32px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include breapoint(mobile) {
+  @include forMobile--HomeInfo;
+}
+
+@include breapoint(tablet) {
+  @include forTablat--HomeInfo;
+}
+
+@include breapoint(desktop) {
+  @include forTablat--HomeInfo;
+}

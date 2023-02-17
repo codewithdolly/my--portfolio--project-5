@@ -1,0 +1,183 @@
+@import "../media-queriey";
+
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+
+
+.myproject{
+  text-decoration: none;
+  color: $textColor;
+  // background-color: $textColor;
+}
+
+.main {
+  background-image: $background-image;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+
+  .main--plane {
+    display: none;
+  }
+  .main--body {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    .main--body--img {
+      margin-top: 4.8rem;
+    }
+    .main--body--name {
+
+      font-weight: 500;
+      font-size: 4rem;
+      text-align: center;
+      margin-top: 12rem;
+      cursor: pointer;
+    }
+    .main--body--degi {
+      width: 100%;
+      cursor: pointer;
+      margin-bottom: 5rem;
+      .main--body--work {
+        color: $textColor;
+        font-size: 4rem;
+        font-weight: 500;
+      }
+    }
+    .main--body--btn {
+      font-size: 18px;
+      text-transform: capitalize;
+      font-family: auto !important;
+      color: $textColor;
+      border: 0.7px solid $textColor;
+      border-radius: 0;
+      position: relative;
+      bottom: 2rem;
+    }
+    .main--body--btn:hover {
+      box-shadow: 2px 2px 5px #311e2525;
+      color: white;
+      background-color: $textColor;
+    }
+  }
+}
+
+@mixin forMobile {
+  .main {
+    width: 100%;
+    height: 50vh;
+    .main--plane{
+      display: none;
+    }
+    .main--body {
+      margin: 0;
+      margin: 0 20px;
+      .main--body--name {
+        margin-top: 3.5rem;
+        font-weight: 500;
+        font-size: 3.7rem;
+        text-align: center;
+        cursor: pointer;
+        span {
+          display: none;
+        }
+      }
+      .main--body--degi {
+        width: 100%;
+        cursor: pointer;
+        .main--body--work {
+          color: $textColor;
+          font-size: 2rem;
+          font-weight: 500;
+        }
+      }
+      .main--body--btn {
+        font-size: 12px;
+        color: $textColor;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        border-radius: 100px;
+        position: relative;
+        bottom: 4rem;
+        
+        &:hover {
+          padding: 10px;
+          box-shadow: 2px 2px 5px #311e2525;
+          box-shadow: 2px 2px 10px rgba(192, 192, 192, 0.692);
+          color: white;
+          background-color: $textColor;
+        }
+      }
+      .main--body--img {
+        display: none;
+      }
+    }
+  }
+}
+
+@mixin forTablat {
+  .main {
+    width: 100%;
+    position: relative;
+    top: 30%;
+    .main--plane{
+      width: 25rem;
+      display: block;
+      position: relative;
+      left: 25%;
+    }
+    .main--body {
+      margin: 0;
+      margin: 0 20px;
+      text-align: center;
+      margin: auto;
+      width: 90%;
+      .main--body--name {
+        margin-top: 0;
+        font-weight: bold;
+        font-size: 3.9rem;
+
+      }
+      .main--body--degi {
+        cursor: pointer;
+        .main--body--work {
+          color: $textColor;
+          font-size: 4.5rem;
+          font-weight: 500;
+        }
+      }
+      .main--body--btn {
+        font-size: 35px;
+        color: $textColor;
+        align-items: center;
+        padding: 20px;
+        border-radius: 100px;
+        cursor: pointer;
+        &:hover {
+          padding: 10px;
+          box-shadow: 2px 2px 5px #311e2525;
+          color: white;
+          background-color: $textColor;
+        }
+      }
+      .main--body--img {
+        display: none;
+     
+
+      }
+    }
+  }
+}
+
+
+@include breapoint(mobile) {
+  @include forMobile;
+}
+
+
+@include breapoint(tablet) {
+  @include forTablat;
+}

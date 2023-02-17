@@ -1,0 +1,55 @@
+@import "../media-queriey";
+
+$textColor: #db9a64;
+$backGroundcolor: #311e25;
+$textWhite: white;
+$font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana;
+
+
+.quotes{
+    background-color: #311e25;
+    text-align: center;
+    padding: 3rem 15%;
+    
+    .quotes--head{
+        font-size: 70px;
+        font-weight: 100;
+        text-align: center;
+        margin-bottom: 6rem;
+        color: $textWhite;
+    } 
+    .quotes--lines{
+        display: flex;
+      text-align: center;
+        background-color: $backGroundcolor;
+        color: $textWhite;
+        height: 50px;
+        padding-left: 10px;
+
+    }
+    .quotes--line{
+        font-size: 28px;
+    }
+    .quotes--name{
+        text-align: center;
+        margin-left: 24rem;
+        margin-top: 4rem;
+    }
+    .quotes--btn{
+        color: $textColor;
+        width: 20px;
+        padding: 18px 0 18px 0;
+        border: 1px solid $textColor;
+        border-radius: 50%;
+    }
+}
+
+.css-26w9jf-MuiMobileStepper-dot{
+    background-color: $textColor !important;
+}
+
+@include breapoint(mobile) {
+    .quotes{
+        display: none;
+    }
+  }
