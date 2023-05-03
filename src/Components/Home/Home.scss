@@ -4,8 +4,7 @@ $textColor: #db9a64;
 $backGroundcolor: #311e25;
 $background-image: url("../Images/check-bg.jpg");
 
-
-.myproject{
+.myproject {
   text-decoration: none;
   color: $textColor;
   // background-color: $textColor;
@@ -29,7 +28,6 @@ $background-image: url("../Images/check-bg.jpg");
       margin-top: 4.8rem;
     }
     .main--body--name {
-
       font-weight: 500;
       font-size: 4rem;
       text-align: center;
@@ -68,7 +66,7 @@ $background-image: url("../Images/check-bg.jpg");
   .main {
     width: 100%;
     height: 50vh;
-    .main--plane{
+    .main--plane {
       display: none;
     }
     .main--body {
@@ -102,7 +100,7 @@ $background-image: url("../Images/check-bg.jpg");
         border-radius: 100px;
         position: relative;
         bottom: 4rem;
-        
+
         &:hover {
           padding: 10px;
           box-shadow: 2px 2px 5px #311e2525;
@@ -123,7 +121,7 @@ $background-image: url("../Images/check-bg.jpg");
     width: 100%;
     position: relative;
     top: 30%;
-    .main--plane{
+    .main--plane {
       width: 25rem;
       display: block;
       position: relative;
@@ -139,7 +137,6 @@ $background-image: url("../Images/check-bg.jpg");
         margin-top: 0;
         font-weight: bold;
         font-size: 3.9rem;
-
       }
       .main--body--degi {
         cursor: pointer;
@@ -165,18 +162,14 @@ $background-image: url("../Images/check-bg.jpg");
       }
       .main--body--img {
         display: none;
-     
-
       }
     }
   }
 }
 
-
 @include breapoint(mobile) {
   @include forMobile;
 }
-
 
 @include breapoint(tablet) {
   @include forTablat;
