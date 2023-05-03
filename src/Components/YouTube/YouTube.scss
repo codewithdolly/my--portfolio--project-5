@@ -9,15 +9,17 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
 
 .youtube {
   .youtube--main {
-    // background-image: $background-image;
-    background-color: $backGroundcolor;
+    background: linear-gradient(180deg, #5b414a, 5%, #3d232c, 50%, #140c0f);
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     position: relative;
-    top: 70px;
     text-align: center;
  
     .youtube--main--name {
+      top: 35%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      position: absolute;
       font-size: 60px;
       font-weight: 400;
       color: $textWhite;

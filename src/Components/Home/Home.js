@@ -16,8 +16,10 @@ import Footer from "../Footer";
 const Home = () => {
   return (
     <div className="main">
-      <img src={Plane} alt="" className="main--plane" />
-      <div className="main--body">
+      {/* <img src={Plane} alt="" className="main--plane" /> */}
+      
+      <div className="main--body stars">
+        
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 5, fontSize: "50" }}
@@ -42,14 +44,14 @@ const Home = () => {
             animate={{ x: 0 }}
             transition={{ duration: "1", type: "spring" }}
           >
-          <Link to="/projects" className="myproject">
-            <Button
-              size="large"
-              className="main--body--btn"
-              endIcon={<ArrowRightAltIcon />}
-            >
-              My Projects
-            </Button>
+            <Link to="/projects" className="myproject">
+              <Button
+                size="large"
+                className="main--body--btn"
+                endIcon={<ArrowRightAltIcon />}
+              >
+                My Projects
+              </Button>
             </Link>
           </motion.div>
         </motion.div>
@@ -57,6 +59,55 @@ const Home = () => {
           <img className="main--body--img" src={DollyHome} alt="Dolly" />
         </div>
       </div>
+      {/* <div class="wrapper">
+     
+      <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 5, fontSize: "50" }}
+          transition={{ duration: 1 }}
+        >
+          <h1 className="main--body--name">
+            <span>Hello There,</span> I am Dolly
+          </h1>
+          <p className="main--body--degi">
+            <p className="main--body--work">A Web Developer.</p>
+          </p>
+       
+          <motion.p
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ duration: "1", type: "spring" }}
+          >
+            <Link to="/projects" className="myproject">
+              <Button
+                size="large"
+                className="main--body--btn"
+                endIcon={<ArrowRightAltIcon />}
+              >
+                My Projects
+              </Button>
+            </Link>
+          </motion.p>
+        </motion.p>
+       
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <img className="main--body--img" src={DollyHome} alt="Dolly" />
+    </div> */}
+    
 
       <HomeInfo />
       <HomeService />

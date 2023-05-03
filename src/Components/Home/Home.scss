@@ -2,7 +2,7 @@
 
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
-$background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
+$background-image: url("../Images/check-bg.jpg");
 
 
 .myproject{
@@ -12,12 +12,12 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
 }
 
 .main {
-  background-image: $background-image;
+  background: linear-gradient(180deg, #5b414a, 5%, #3d232c, 50%, #140c0f);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   width: 100%;
   height: 80vh;
-
   .main--plane {
     display: none;
   }

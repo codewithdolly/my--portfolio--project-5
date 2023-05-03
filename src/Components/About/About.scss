@@ -9,16 +9,18 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
 
 .about {
   .about--main {
-    background-color: $backGroundcolor;
-    // background-image: $background-image;
+    background: linear-gradient(180deg, #5b414a, 5%, #3d232c, 50%, #140c0f);
     width: 100%;
     height: 50vh;
     text-align: center;
     .about--main--name {
-      font-size: 70px;
+      top: 30%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      font-size: 60px;
+      font-weight: 400;
       color: $textWhite;
-      position: relative;
-     top: 70px;
     }
   }
   .about--intro {

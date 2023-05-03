@@ -16,7 +16,7 @@ body{
 
 $textColor: #db9a64;
 $backGroundcolor: #311e25;
-$background-image2: url("../Images/Dark.jpg");
+$background-image2: url("../public/Images/check-bg.jpg");
 $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbanner.png.pagespeed.ic.cglMh6XWYb.png");
 
 .mainHeader {
@@ -27,7 +27,8 @@ $background-image: url("https://preview.colorlib.com/theme/jony/img/banner/xbann
   justify-content: space-evenly;
   align-items: center;
   padding: 25px 0;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.168);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.168);
+  box-shadow: 1px 2px rgba(144, 141, 141, 0.307);
   .mainHeader--menu {
     display: none;
   }
