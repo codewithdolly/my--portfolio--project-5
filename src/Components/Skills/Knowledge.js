@@ -115,7 +115,7 @@ const itemData = [
   },
   {
     img: "./Images/router.png",
-    title: " Rear Router",
+    title: " React Router",
     use: "React Router is a standard library for routing in React.",
   },
   {

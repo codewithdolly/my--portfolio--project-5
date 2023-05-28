@@ -33,8 +33,7 @@ const QualificationAndExperience = () => {
                     <p style={{ color: "#db9a64" }}>
                       <b>{job.role}</b>
                     </p>
-                    <p>add
-                      <b>Place:</b> {job.Place}
+                    <p><b>Place:</b> {job.Place}
                     </p>
                     <p>
                       <b>Time: </b>

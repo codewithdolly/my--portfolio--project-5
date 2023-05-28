@@ -5,7 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
-import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import { motion } from "framer-motion";
 import Footer from "../Footer";
@@ -58,10 +58,10 @@ const Projects = () => {
                       href={project.projectpath}
                       target="_blank"
                       size="small"
-                      color="primary"
+                      style={{backgroundColor:"black"}}
                       variant="contained"
                       sx={{ mb: 2 }}
-                      startIcon={<VisibilityOutlinedIcon />}
+                      startIcon={<GitHubIcon />}
                     >
                       Code
                     </Button>
