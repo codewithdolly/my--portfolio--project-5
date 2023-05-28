@@ -8,6 +8,7 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import { motion } from "framer-motion";
+import CallMadeIcon from '@mui/icons-material/CallMade';
 import Footer from "../Footer";
 import FactsAndStats from "../Home/FactsAndStats";
 import { Outlet, Link } from "react-router-dom";
@@ -62,8 +63,10 @@ const Projects = () => {
                       variant="contained"
                       sx={{ mb: 2 }}
                       startIcon={<GitHubIcon />}
+                      // endIcon={<CallMadeIcon />}
+
                     >
-                      Code
+                      Code<CallMadeIcon />
                     </Button>
                     <Button
                       sx={{ mb: 2 }}
@@ -74,8 +77,9 @@ const Projects = () => {
                       color="error"
                       variant="outlined"
                       startIcon={<VideoLibraryIcon />}
+                      // endIcon={<CallMadeIcon />}
                     >
-                      Video
+                      Video<CallMadeIcon />
                     </Button>
                   </CardActions>
                 </Card>
