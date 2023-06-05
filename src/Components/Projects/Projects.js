@@ -12,6 +12,7 @@ import CallMadeIcon from '@mui/icons-material/CallMade';
 import Footer from "../Footer";
 import FactsAndStats from "../Home/FactsAndStats";
 import { Outlet, Link } from "react-router-dom";
+import LiveProject from "./LiveProject";
 
 const Projects = () => {
   return (
@@ -27,7 +28,61 @@ const Projects = () => {
             Projects
           </motion.h1>
         </div>
+
+       
         <div className="Projects--details">
+        <h2 className="Projects--skills">Live Projects</h2>
+        <p className="Projects--border">~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+          {LiveProjectDetails.map((project) => (
+            <>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.5 }}
+                className="Projects--details--single"
+              >
+                <Card className="Projects--details--single--card">
+                  <CardActionArea>
+                    <CardMedia component="img" image={project.img} alt="" />
+                    <CardContent>
+                      <Typography className="Projects--details--single--card--header">
+                      {project.header}
+                      </Typography>
+                      <Typography
+                        className="Projects--details--single--card--content"
+                        variant="body2"
+                        color="text.secondary"
+                      >
+                        {project.content}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Button
+                      href={project.websitepath}
+                      target="_blank"
+                      size="medium"
+                      className="Projects--details--single--card--visitsidebtn"
+                      fullWidth
+                      // style={{backgroundColor:"black"}}
+                      variant="contained"
+                      sx={{ mb: 2 }}
+                      // startIcon={<GitHubIcon />}
+                      endIcon={<CallMadeIcon />}
+
+                    >
+                      Visit website
+                    </Button>
+                   
+                  </CardActions>
+                </Card>
+              </motion.div>
+            </>
+          ))}
+        </div>
+       
+        <div className="Projects--details">
+        <h2 className="Projects--skills">Other Projects</h2>
+        <p className="Projects--border">~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
           {ProjectDetails.map((project) => (
             <>
               <motion.div
@@ -96,6 +151,54 @@ const Projects = () => {
 };
 
 export default Projects;
+
+const LiveProjectDetails = [
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/stablx1.jpg",
+    header: "STABLX- Service based compan in Hyderabad, India.",
+    content:
+      "Estimate time, technology, Resources and Execution cost of your project. I worked there as a content writer, Marketer, researcher and web developer.",
+    websitepath: "https://www.stablx.com/",
+  },
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/mantrang1.jpg",
+    header: "Mantrang EdTech LLP - Company",
+    content:
+      "Mantrang Edtech Llp is a Limited Liability Partnership firm incorporated on 23 October 2020. And I had the opportunity to work on this project as part of a dynamic team of two as a freelance Web designer.",
+    websitepath: "https://mantrangedtech.com/",
+  },
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/amaySolution1.jpg",
+    header: "Amay Design Solutions",
+    content:
+      "AMAY Design solution is a full-service client market-specific consultancy firm based in Jalgaon, India. And I had the opportunity to work on this project as part of a dynamic team of two as a freelance Web designer.",
+    websitepath: "https://amaydesignsolutions.com/",
+  },
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/360.png",
+    header: "360 Technology",
+    content:
+      "360 Technology delivers digital transformation and technology services from ideation to execution, enabling Global clients. I worked there as full time frontend developer and build project on Reactjs and Nextjs.",
+    websitepath: "https://360.technology/",
+  },
+
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/mixcommerce1.png",
+    header: "Mixcommerce",
+    content:
+      "MixCommerce is a free CRM for startups. Its a marketing and technology company based in Bangalore India. We build software that simplifies marketing for businesses.",
+    websitepath: "https://www.mixcommerce.co/",
+  },
+
+  {
+    img: "process.env.PUBLIC_URL + ../../Images/photos.mixcommerce.png",
+    header: "Photos.mixmmerce",
+    content:
+      "MixPhotos. MixPhotos is free Indian stock photo website. Anyone can use photos for their business or individual needs for free. ",
+    websitepath: "https://photos.mixcommerce.co/",
+  },
+  
+];
 
 const ProjectDetails = [
   {
