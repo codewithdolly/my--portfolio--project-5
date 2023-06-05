@@ -35,7 +35,7 @@ const HomeInfo = () => {
                 {" "}
                 Youtube{" "}
               </a>
-              Channel, It will Students/developer to learn thing in easy ways
+              Channel, It helps Students/developer to learn thing in easy ways
               and help you to make projects. Or you can connect me on Facebook,
               Linkdin or Instagram. I am always excited to talk about Tech.
             </p>
