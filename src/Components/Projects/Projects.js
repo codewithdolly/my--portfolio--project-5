@@ -12,7 +12,7 @@ import CallMadeIcon from '@mui/icons-material/CallMade';
 import Footer from "../Footer";
 import FactsAndStats from "../Home/FactsAndStats";
 import { Outlet, Link } from "react-router-dom";
-import LiveProject from "./LiveProject";
+// import LiveProject from "./LiveProject";
 
 const Projects = () => {
   return (

@@ -4,7 +4,7 @@ import { Button } from "@material-ui/core";
 import { motion } from "framer-motion";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import DollyHome from "../Images/dolly2.png";
-import Plane from "../Images/plane.gif";
+// import Plane from "../Images/plane.gif";
 import HomeInfo from "./HomeInfo";
 import HomeService from "./HomeService";
 import QualificationAndExperience from "./QualificationAndExperience";
