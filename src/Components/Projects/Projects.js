@@ -29,8 +29,17 @@ const Projects = () => {
           </motion.h1>
         </div>
 
+<div className="companies m-2">
+{/* <img src={process.env.PUBLIC_URL + ../../Images/mantrang1.jpg} /> */}
+<img src="../../Images/Companies/Avontix.png" alt="Avontix" width="auto" height="auto" />
+<img src="../../Images/Companies/Stablx.png" alt="Stablx" width="auto" height="auto" />
+<img src="../../Images/Companies/Mantarang.png" alt="Mantarang" width="auto" height="auto" />
+<img src="../../Images/Companies/360.png" alt="360 Technology" width="auto" height="auto" />
+<img src="../../Images/Companies/Mixcommerce.png" alt="Mixcommerce" width="auto" height="auto" />
+<img src="../../Images/Companies/MixPhotos.png" alt="MixPhotos" width="auto" height="auto" />
+</div>
        
-        <div className="Projects--details">
+        {/* <div className="Projects--details">
         <h2 className="Projects--skills">Live Projects</h2>
         <p className="Projects--border">~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
           {LiveProjectDetails.map((project) => (
@@ -78,11 +87,12 @@ const Projects = () => {
               </motion.div>
             </>
           ))}
-        </div>
+        </div> */}
+
        
         <div className="Projects--details">
-        <h2 className="Projects--skills">Other Projects</h2>
-        <p className="Projects--border">~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+        <h2 className="Projects--skills">Projects</h2>
+        <p className="Projects--border">~~~~~~~~~~~~~~~~~~</p>
           {ProjectDetails.map((project) => (
             <>
               <motion.div
