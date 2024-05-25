@@ -29,7 +29,7 @@ const Projects = () => {
           </motion.h1>
         </div>
 
-<div className="companies m-2">
+<div className="companies m-2" style={{margin: "auto", width:"80%", display:"flex", flexWrap:"wrap", alignContent:"space-evenly"}}>
 {/* <img src={process.env.PUBLIC_URL + ../../Images/mantrang1.jpg} /> */}
 <img src="../../Images/Companies/Avontix.png" alt="Avontix" width="auto" height="auto" />
 <img src="../../Images/Companies/Stablx.png" alt="Stablx" width="auto" height="auto" />
