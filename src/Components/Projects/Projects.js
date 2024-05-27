@@ -31,7 +31,7 @@ const Projects = () => {
 
 <div className="companies m-2" style={{margin: "auto", width:"80%", display:"flex", flexWrap:"wrap", alignContent:"space-evenly"}}>
 {/* <img src={process.env.PUBLIC_URL + ../../Images/mantrang1.jpg} /> */}
-<img src="../../Images/Companies/Avontix.png" alt="Avontix" width="auto" height="auto" />
+<img className="mr-2" src="../../Images/Companies/Avontix.png" alt="Avontix" width="auto" height="auto" />
 <img src="../../Images/Companies/Stablx.png" alt="Stablx" width="auto" height="auto" />
 <img src="../../Images/Companies/Mantarang.png" alt="Mantarang" width="auto" height="auto" />
 <img src="../../Images/Companies/360.png" alt="360 Technology" width="auto" height="auto" />
